@@ -1,0 +1,49 @@
+#source 'https://git.coding.net/hging/Specs.git'
+#
+#platform :ios
+#
+#target "LayZhangDemo" do
+#
+#pod 'AFNetworking'
+#pod 'GDataXML -HTML','~> 1.1.0'
+#end
+
+platform :ios, '8.0'
+
+#use_frameworks!个别需要用到它，比如reactiveCocoa
+
+target 'LayZhangDemo' do
+    
+#    pod 'AFNetworking', '~> 2.0'
+#    
+#    pod 'GDataXML-HTML','~> 1.3.0'
+#    pod 'SMPageControl', '~> 1.2'
+#    pod 'Masonry', '~> 1.0.2'
+#    pod 'JazzHands', '~> 2.0.8'
+#    pod 'WebViewJavascriptBridge', '~> 6.0.0'
+#    
+#    pod 'GVUserDefaults', '~> 1.0.2'
+#    
+#    pod 'FMDB', '~> 2.6'
+#    pod 'JSPatch', '~> 1.1.2'
+#    
+#    pod 'JSONModel', '~> 1.7.0'
+#    
+#    pod 'SDWebImage', '~> 4.0.0'
+#    
+#    pod 'TTTAttributedLabel', '~>2.0.0'
+#    
+#    pod 'SCLAlertView-Objective-C'
+#    pod 'YYKit', '~>1.0.9'
+#    pod 'YYModel'
+#    pod 'YYWebImage'
+#    
+    pod 'YYCategories'
+
+#    pod 'SVProgressHUD'
+#    
+#    pod 'YYWebImage'
+
+
+    
+end

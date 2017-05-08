@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Zhanglei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZLViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : ZLViewController
 
 
 @end
