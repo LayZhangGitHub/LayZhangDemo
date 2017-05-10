@@ -1,14 +1,17 @@
 PODS:
+  - GDataXML-HTML (1.3.0)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
+  - GDataXML-HTML (~> 1.3.0)
   - YYCategories
 
 SPEC CHECKSUMS:
+  GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 4af5c5f686366b2688c2871cdd61827aebeee55d
+PODFILE CHECKSUM: b23f0bb1ee98436671cbda778d815ce60f5dc2c4
 
 COCOAPODS: 1.2.0

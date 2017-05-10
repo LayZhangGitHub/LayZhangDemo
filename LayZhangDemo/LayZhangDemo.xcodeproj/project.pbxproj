@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		48E557E61EC0580000FE30E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E51EC0580000FE30E0 /* main.m */; };
 		48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E81EC0580000FE30E0 /* AppDelegate.m */; };
-		48E557EC1EC0580000FE30E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557EB1EC0580000FE30E0 /* ViewController.m */; };
 		48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557ED1EC0580000FE30E0 /* Main.storyboard */; };
 		48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F01EC0580000FE30E0 /* Assets.xcassets */; };
 		48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F21EC0580000FE30E0 /* LaunchScreen.storyboard */; };
 		48E557FF1EC0580000FE30E0 /* LayZhangDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557FE1EC0580000FE30E0 /* LayZhangDemoTests.m */; };
 		48E5580A1EC0580000FE30E0 /* LayZhangDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558091EC0580000FE30E0 /* LayZhangDemoUITests.m */; };
-		48E5581A1EC05E5000FE30E0 /* ZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558191EC05E5000FE30E0 /* ZLViewController.m */; };
+		48E5585B1EC2EFE400FE30E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E5585A1EC2EFE400FE30E0 /* main.m */; };
+		48E5585D1EC2F00200FE30E0 /* ZLDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */; };
+		48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48E558611EC2F33800FE30E0 /* MessageErr.xml */; };
+		48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48E558621EC2F33900FE30E0 /* MessageLang.xml */; };
+		48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558681EC2F3C800FE30E0 /* CALayer+ZLEX.m */; };
+		48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E5586A1EC2F3C800FE30E0 /* UIImage+ZLEX.m */; };
+		48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E5586C1EC2F3C800FE30E0 /* UIView+ZLEX.m */; };
+		48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558701EC2F3C800FE30E0 /* ZLViewController.m */; };
+		48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558731EC2F3C800FE30E0 /* MainViewCell.m */; };
+		48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558751EC2F3C800FE30E0 /* ViewController.m */; };
+		48E5587F1EC2F3C800FE30E0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558781EC2F3C800FE30E0 /* XMLParseController.m */; };
+		48E558821EC2F68400FE30E0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558811EC2F68400FE30E0 /* LangCaptain.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +48,8 @@
 /* Begin PBXFileReference section */
 		17D9B2066DB61E161FE09D1C /* Pods-LayZhangDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		48E557E11EC0580000FE30E0 /* LayZhangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayZhangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E557E51EC0580000FE30E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48E557E71EC0580000FE30E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E557E81EC0580000FE30E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48E557EA1EC0580000FE30E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48E557EB1EC0580000FE30E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48E557EE1EC0580000FE30E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48E557F01EC0580000FE30E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E557F31EC0580000FE30E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,9 +60,27 @@
 		48E558051EC0580000FE30E0 /* LayZhangDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayZhangDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E558091EC0580000FE30E0 /* LayZhangDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayZhangDemoUITests.m; sourceTree = "<group>"; };
 		48E5580B1EC0580000FE30E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E558181EC05E5000FE30E0 /* ZLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLViewController.h; sourceTree = "<group>"; };
-		48E558191EC05E5000FE30E0 /* ZLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLViewController.m; sourceTree = "<group>"; };
-		48E5582A1EC06E5E00FE30E0 /* ZLPreMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPreMacro.h; sourceTree = "<group>"; };
+		48E5585A1EC2EFE400FE30E0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZLDemoList.plist; sourceTree = "<group>"; };
+		48E558611EC2F33800FE30E0 /* MessageErr.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MessageErr.xml; sourceTree = "<group>"; };
+		48E558621EC2F33900FE30E0 /* MessageLang.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MessageLang.xml; sourceTree = "<group>"; };
+		48E558671EC2F3C800FE30E0 /* CALayer+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ZLEX.h"; sourceTree = "<group>"; };
+		48E558681EC2F3C800FE30E0 /* CALayer+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ZLEX.m"; sourceTree = "<group>"; };
+		48E558691EC2F3C800FE30E0 /* UIImage+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZLEX.h"; sourceTree = "<group>"; };
+		48E5586A1EC2F3C800FE30E0 /* UIImage+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZLEX.m"; sourceTree = "<group>"; };
+		48E5586B1EC2F3C800FE30E0 /* UIView+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLEX.h"; sourceTree = "<group>"; };
+		48E5586C1EC2F3C800FE30E0 /* UIView+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZLEX.m"; sourceTree = "<group>"; };
+		48E5586D1EC2F3C800FE30E0 /* ZLPreMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPreMacro.h; sourceTree = "<group>"; };
+		48E5586F1EC2F3C800FE30E0 /* ZLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLViewController.h; sourceTree = "<group>"; };
+		48E558701EC2F3C800FE30E0 /* ZLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLViewController.m; sourceTree = "<group>"; };
+		48E558721EC2F3C800FE30E0 /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
+		48E558731EC2F3C800FE30E0 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
+		48E558741EC2F3C800FE30E0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48E558751EC2F3C800FE30E0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48E558771EC2F3C800FE30E0 /* XMLParseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseController.h; sourceTree = "<group>"; };
+		48E558781EC2F3C800FE30E0 /* XMLParseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseController.m; sourceTree = "<group>"; };
+		48E558801EC2F68400FE30E0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
+		48E558811EC2F68400FE30E0 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,27 +145,16 @@
 		48E557E31EC0580000FE30E0 /* LayZhangDemo */ = {
 			isa = PBXGroup;
 			children = (
-				48E558291EC06E5E00FE30E0 /* Macro */,
-				48E558171EC05E4300FE30E0 /* ZLViewController */,
+				48E558651EC2F3C800FE30E0 /* class */,
 				48E557E71EC0580000FE30E0 /* AppDelegate.h */,
 				48E557E81EC0580000FE30E0 /* AppDelegate.m */,
-				48E557EA1EC0580000FE30E0 /* ViewController.h */,
-				48E557EB1EC0580000FE30E0 /* ViewController.m */,
 				48E557ED1EC0580000FE30E0 /* Main.storyboard */,
 				48E557F01EC0580000FE30E0 /* Assets.xcassets */,
 				48E557F21EC0580000FE30E0 /* LaunchScreen.storyboard */,
 				48E557F51EC0580000FE30E0 /* Info.plist */,
-				48E557E41EC0580000FE30E0 /* Supporting Files */,
+				48E558591EC2EFE400FE30E0 /* Supporting Files */,
 			);
 			path = LayZhangDemo;
-			sourceTree = "<group>";
-		};
-		48E557E41EC0580000FE30E0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				48E557E51EC0580000FE30E0 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		48E557FD1EC0580000FE30E0 /* LayZhangDemoTests */ = {
@@ -162,21 +175,71 @@
 			path = LayZhangDemoUITests;
 			sourceTree = "<group>";
 		};
-		48E558171EC05E4300FE30E0 /* ZLViewController */ = {
+		48E558591EC2EFE400FE30E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				48E558181EC05E5000FE30E0 /* ZLViewController.h */,
-				48E558191EC05E5000FE30E0 /* ZLViewController.m */,
+				48E558611EC2F33800FE30E0 /* MessageErr.xml */,
+				48E558621EC2F33900FE30E0 /* MessageLang.xml */,
+				48E5585A1EC2EFE400FE30E0 /* main.m */,
+				48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */,
 			);
-			path = ZLViewController;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		48E558291EC06E5E00FE30E0 /* Macro */ = {
+		48E558651EC2F3C800FE30E0 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				48E5582A1EC06E5E00FE30E0 /* ZLPreMacro.h */,
+				48E558661EC2F3C800FE30E0 /* Categories */,
+				48E5586E1EC2F3C800FE30E0 /* FatherController */,
+				48E558711EC2F3C800FE30E0 /* MainDemo */,
+				48E558761EC2F3C800FE30E0 /* XMLParseDemo */,
 			);
-			path = Macro;
+			path = class;
+			sourceTree = "<group>";
+		};
+		48E558661EC2F3C800FE30E0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				48E558671EC2F3C800FE30E0 /* CALayer+ZLEX.h */,
+				48E558681EC2F3C800FE30E0 /* CALayer+ZLEX.m */,
+				48E558691EC2F3C800FE30E0 /* UIImage+ZLEX.h */,
+				48E5586A1EC2F3C800FE30E0 /* UIImage+ZLEX.m */,
+				48E5586B1EC2F3C800FE30E0 /* UIView+ZLEX.h */,
+				48E5586C1EC2F3C800FE30E0 /* UIView+ZLEX.m */,
+				48E5586D1EC2F3C800FE30E0 /* ZLPreMacro.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		48E5586E1EC2F3C800FE30E0 /* FatherController */ = {
+			isa = PBXGroup;
+			children = (
+				48E5586F1EC2F3C800FE30E0 /* ZLViewController.h */,
+				48E558701EC2F3C800FE30E0 /* ZLViewController.m */,
+			);
+			path = FatherController;
+			sourceTree = "<group>";
+		};
+		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48E558721EC2F3C800FE30E0 /* MainViewCell.h */,
+				48E558731EC2F3C800FE30E0 /* MainViewCell.m */,
+				48E558741EC2F3C800FE30E0 /* ViewController.h */,
+				48E558751EC2F3C800FE30E0 /* ViewController.m */,
+			);
+			path = MainDemo;
+			sourceTree = "<group>";
+		};
+		48E558761EC2F3C800FE30E0 /* XMLParseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48E558801EC2F68400FE30E0 /* LangCaptain.h */,
+				48E558811EC2F68400FE30E0 /* LangCaptain.m */,
+				48E558771EC2F3C800FE30E0 /* XMLParseController.h */,
+				48E558781EC2F3C800FE30E0 /* XMLParseController.m */,
+			);
+			path = XMLParseDemo;
 			sourceTree = "<group>";
 		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
@@ -257,6 +320,7 @@
 				TargetAttributes = {
 					48E557E01EC0580000FE30E0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VH7JGCM338;
 						ProvisioningStyle = Automatic;
 					};
 					48E557F91EC0580000FE30E0 = {
@@ -297,6 +361,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
+				48E5585D1EC2F00200FE30E0 /* ZLDemoList.plist in Resources */,
+				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
+				48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */,
 				48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */,
 				48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */,
 			);
@@ -371,10 +438,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E557EC1EC0580000FE30E0 /* ViewController.m in Sources */,
+				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
+				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
+				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
+				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
-				48E5581A1EC05E5000FE30E0 /* ZLViewController.m in Sources */,
-				48E557E61EC0580000FE30E0 /* main.m in Sources */,
+				48E5587F1EC2F3C800FE30E0 /* XMLParseController.m in Sources */,
+				48E558821EC2F68400FE30E0 /* LangCaptain.m in Sources */,
+				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
+				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
+				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +595,7 @@
 			baseConfigurationReference = 17D9B2066DB61E161FE09D1C /* Pods-LayZhangDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VH7JGCM338;
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayZhang.LayZhangDemo;
@@ -534,6 +608,7 @@
 			baseConfigurationReference = FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VH7JGCM338;
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayZhang.LayZhangDemo;

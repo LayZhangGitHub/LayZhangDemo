@@ -15,5 +15,6 @@
 - (void)leftBtnDidTouch;
 
 - (void)createNavBarWithTitle:(NSString *)title;
+- (void)createNavBarWithTitle:(NSString *)title withLeft:(UIImage *)leftImage;
 
 @end
