@@ -5,21 +5,27 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>IPController</string>
+			<key>title</key>
+			<string>IPDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>XMLParseController</string>
 			<key>title</key>
 			<string>XMLParse</string>
 		</dict>
 		<dict>
 			<key>controllerName</key>
-			<string></string>
+			<string>CustomAlertController</string>
 			<key>title</key>
-			<string>demo2</string>
+			<string>AlertView</string>
 		</dict>
 		<dict>
 			<key>controllerName</key>
-			<string></string>
+			<string>CustomKeyboardController</string>
 			<key>title</key>
-			<string>demo3</string>
+			<string>keyboardView</string>
 		</dict>
 	</array>
 </array>

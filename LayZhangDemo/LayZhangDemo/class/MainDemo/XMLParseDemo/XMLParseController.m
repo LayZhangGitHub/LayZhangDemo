@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createNavBarWithTitle:@"XMLParse111" withLeft:[UIImage imageNamed:@"icon_back"]];
+    [self createNavBarWithTitle:@"XMLParse" withLeft:[UIImage imageNamed:@"icon_back"]];
     [self parse];
 }
 

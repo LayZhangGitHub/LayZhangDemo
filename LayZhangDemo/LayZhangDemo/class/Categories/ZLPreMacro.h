@@ -9,6 +9,11 @@
 #ifndef ZLPreMacro_h
 #define ZLPreMacro_h
 
+#import "UIView+ZLEX.h"
+#import "UIImage+ZLEX.h"
+#import "CALayer+ZLEX.h"
+#import "UIButton+ZLEX.h"
+
 #pragma mark - screen
 #define Screen [UIScreen mainScreen]
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
@@ -17,9 +22,10 @@
 #define SCREENSCALE [UIScreen mainScreen].scale
 
 #pragma mark - color
-#define ZLWhiteColor [UIColor whiteColor]
-#define ZLClearColor [UIColor clearColor]
-#define ZLBlackColor [UIColor blackColor]
+#define ZLWhiteColor    [UIColor whiteColor]
+#define ZLClearColor    [UIColor clearColor]
+#define ZLBlackColor    [UIColor blackColor]
+#define ZLRedColor      [UIColor redColor]
 #define ZLColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
 #pragma mark - font

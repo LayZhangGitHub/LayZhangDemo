@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
+		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
+		48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A91EC98097009DB6D0 /* XMLParseController.m */; };
+		48BA56B31EC99772009DB6D0 /* IPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56B21EC99772009DB6D0 /* IPController.m */; };
 		48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E81EC0580000FE30E0 /* AppDelegate.m */; };
 		48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557ED1EC0580000FE30E0 /* Main.storyboard */; };
 		48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F01EC0580000FE30E0 /* Assets.xcassets */; };
@@ -23,8 +27,13 @@
 		48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558701EC2F3C800FE30E0 /* ZLViewController.m */; };
 		48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558731EC2F3C800FE30E0 /* MainViewCell.m */; };
 		48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558751EC2F3C800FE30E0 /* ViewController.m */; };
-		48E5587F1EC2F3C800FE30E0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558781EC2F3C800FE30E0 /* XMLParseController.m */; };
-		48E558821EC2F68400FE30E0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558811EC2F68400FE30E0 /* LangCaptain.m */; };
+		48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558911EC309EB00FE30E0 /* UIButton+ZLEX.m */; };
+		48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558961EC30B7200FE30E0 /* CustomAlertController.m */; };
+		48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558991EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m */; };
+		48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E5589B1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m */; };
+		48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558B41EC3154900FE30E0 /* CustomKeyboardController.m */; };
+		48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558C91EC31CD500FE30E0 /* ScreenAuotoSizeScale.m */; };
+		48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558CD1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +56,15 @@
 
 /* Begin PBXFileReference section */
 		17D9B2066DB61E161FE09D1C /* Pods-LayZhangDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
+		48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLEX.m"; sourceTree = "<group>"; };
+		48BA56A61EC98097009DB6D0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
+		48BA56A71EC98097009DB6D0 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
+		48BA56A81EC98097009DB6D0 /* XMLParseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseController.h; sourceTree = "<group>"; };
+		48BA56A91EC98097009DB6D0 /* XMLParseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseController.m; sourceTree = "<group>"; };
+		48BA56B11EC99772009DB6D0 /* IPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPController.h; sourceTree = "<group>"; };
+		48BA56B21EC99772009DB6D0 /* IPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPController.m; sourceTree = "<group>"; };
+		48CDDAF81EC5A4360000D92C /* ZLVerifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVerifyDelegate.h; sourceTree = "<group>"; };
 		48E557E11EC0580000FE30E0 /* LayZhangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayZhangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E557E71EC0580000FE30E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E557E81EC0580000FE30E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,10 +95,21 @@
 		48E558731EC2F3C800FE30E0 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
 		48E558741EC2F3C800FE30E0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		48E558751EC2F3C800FE30E0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		48E558771EC2F3C800FE30E0 /* XMLParseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseController.h; sourceTree = "<group>"; };
-		48E558781EC2F3C800FE30E0 /* XMLParseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseController.m; sourceTree = "<group>"; };
-		48E558801EC2F68400FE30E0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
-		48E558811EC2F68400FE30E0 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
+		48E5588F1EC3057C00FE30E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		48E558901EC309EB00FE30E0 /* UIButton+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZLEX.h"; sourceTree = "<group>"; };
+		48E558911EC309EB00FE30E0 /* UIButton+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZLEX.m"; sourceTree = "<group>"; };
+		48E558951EC30B7200FE30E0 /* CustomAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertController.h; sourceTree = "<group>"; };
+		48E558961EC30B7200FE30E0 /* CustomAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertController.m; sourceTree = "<group>"; };
+		48E558981EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCVerifyCodeAlertView.h; sourceTree = "<group>"; };
+		48E558991EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCVerifyCodeAlertView.m; sourceTree = "<group>"; };
+		48E5589A1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCVerifyCodeInputView.h; sourceTree = "<group>"; };
+		48E5589B1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCVerifyCodeInputView.m; sourceTree = "<group>"; };
+		48E558B31EC3154900FE30E0 /* CustomKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKeyboardController.h; sourceTree = "<group>"; };
+		48E558B41EC3154900FE30E0 /* CustomKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboardController.m; sourceTree = "<group>"; };
+		48E558C81EC31CD500FE30E0 /* ScreenAuotoSizeScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenAuotoSizeScale.h; sourceTree = "<group>"; };
+		48E558C91EC31CD500FE30E0 /* ScreenAuotoSizeScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenAuotoSizeScale.m; sourceTree = "<group>"; };
+		48E558CC1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMVerifyCodeAlertView.h; sourceTree = "<group>"; };
+		48E558CD1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMVerifyCodeAlertView.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +147,33 @@
 				FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		48BA56A51EC98097009DB6D0 /* XMLParseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48BA56A61EC98097009DB6D0 /* LangCaptain.h */,
+				48BA56A71EC98097009DB6D0 /* LangCaptain.m */,
+				48BA56A81EC98097009DB6D0 /* XMLParseController.h */,
+				48BA56A91EC98097009DB6D0 /* XMLParseController.m */,
+			);
+			path = XMLParseDemo;
+			sourceTree = "<group>";
+		};
+		48BA56AC1EC980C6009DB6D0 /* NSOperationQueueDemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSOperationQueueDemo;
+			sourceTree = "<group>";
+		};
+		48BA56B01EC9973F009DB6D0 /* IPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48BA56B11EC99772009DB6D0 /* IPController.h */,
+				48BA56B21EC99772009DB6D0 /* IPController.m */,
+			);
+			path = IPDemo;
 			sourceTree = "<group>";
 		};
 		48E557D81EC0580000FE30E0 = {
@@ -182,6 +238,7 @@
 				48E558621EC2F33900FE30E0 /* MessageLang.xml */,
 				48E5585A1EC2EFE400FE30E0 /* main.m */,
 				48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */,
+				48E5588F1EC3057C00FE30E0 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,9 +247,10 @@
 			isa = PBXGroup;
 			children = (
 				48E558661EC2F3C800FE30E0 /* Categories */,
+				48E558CB1EC31DC400FE30E0 /* Utils */,
+				48E558931EC30B7200FE30E0 /* CustomViewDemo */,
 				48E5586E1EC2F3C800FE30E0 /* FatherController */,
 				48E558711EC2F3C800FE30E0 /* MainDemo */,
-				48E558761EC2F3C800FE30E0 /* XMLParseDemo */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -200,13 +258,19 @@
 		48E558661EC2F3C800FE30E0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				48E558C81EC31CD500FE30E0 /* ScreenAuotoSizeScale.h */,
+				48E558C91EC31CD500FE30E0 /* ScreenAuotoSizeScale.m */,
+				48E5586D1EC2F3C800FE30E0 /* ZLPreMacro.h */,
 				48E558671EC2F3C800FE30E0 /* CALayer+ZLEX.h */,
 				48E558681EC2F3C800FE30E0 /* CALayer+ZLEX.m */,
 				48E558691EC2F3C800FE30E0 /* UIImage+ZLEX.h */,
 				48E5586A1EC2F3C800FE30E0 /* UIImage+ZLEX.m */,
 				48E5586B1EC2F3C800FE30E0 /* UIView+ZLEX.h */,
 				48E5586C1EC2F3C800FE30E0 /* UIView+ZLEX.m */,
-				48E5586D1EC2F3C800FE30E0 /* ZLPreMacro.h */,
+				48E558901EC309EB00FE30E0 /* UIButton+ZLEX.h */,
+				48E558911EC309EB00FE30E0 /* UIButton+ZLEX.m */,
+				48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */,
+				48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -223,6 +287,9 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48BA56B01EC9973F009DB6D0 /* IPDemo */,
+				48BA56AC1EC980C6009DB6D0 /* NSOperationQueueDemo */,
+				48BA56A51EC98097009DB6D0 /* XMLParseDemo */,
 				48E558721EC2F3C800FE30E0 /* MainViewCell.h */,
 				48E558731EC2F3C800FE30E0 /* MainViewCell.m */,
 				48E558741EC2F3C800FE30E0 /* ViewController.h */,
@@ -231,15 +298,61 @@
 			path = MainDemo;
 			sourceTree = "<group>";
 		};
-		48E558761EC2F3C800FE30E0 /* XMLParseDemo */ = {
+		48E558931EC30B7200FE30E0 /* CustomViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				48E558801EC2F68400FE30E0 /* LangCaptain.h */,
-				48E558811EC2F68400FE30E0 /* LangCaptain.m */,
-				48E558771EC2F3C800FE30E0 /* XMLParseController.h */,
-				48E558781EC2F3C800FE30E0 /* XMLParseController.m */,
+				48E5589F1EC3147F00FE30E0 /* KeyboardView */,
+				48E558941EC30B7200FE30E0 /* AlertView */,
 			);
-			path = XMLParseDemo;
+			path = CustomViewDemo;
+			sourceTree = "<group>";
+		};
+		48E558941EC30B7200FE30E0 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				48E558971EC30B7200FE30E0 /* Views */,
+				48E558951EC30B7200FE30E0 /* CustomAlertController.h */,
+				48E558961EC30B7200FE30E0 /* CustomAlertController.m */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		48E558971EC30B7200FE30E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48CDDAF81EC5A4360000D92C /* ZLVerifyDelegate.h */,
+				48E558981EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.h */,
+				48E558991EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m */,
+				48E5589A1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.h */,
+				48E5589B1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m */,
+				48E558CC1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.h */,
+				48E558CD1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48E5589F1EC3147F00FE30E0 /* KeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				48E558A01EC3147F00FE30E0 /* Views */,
+				48E558B31EC3154900FE30E0 /* CustomKeyboardController.h */,
+				48E558B41EC3154900FE30E0 /* CustomKeyboardController.m */,
+			);
+			path = KeyboardView;
+			sourceTree = "<group>";
+		};
+		48E558A01EC3147F00FE30E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48E558CB1EC31DC400FE30E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
@@ -438,16 +551,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
+				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
+				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
-				48E5587F1EC2F3C800FE30E0 /* XMLParseController.m in Sources */,
-				48E558821EC2F68400FE30E0 /* LangCaptain.m in Sources */,
+				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
+				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
+				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
+				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
+				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
+				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
+				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
 				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
+				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +718,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VH7JGCM338;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayZhang.LayZhangDemo;
@@ -609,6 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VH7JGCM338;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LayZhang.LayZhangDemo;
