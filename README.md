@@ -1,8 +1,29 @@
 # LayZhangDemo
 
-## 把以前写的demo整合在一起 
+## 把以前写的demo整合在一起 做一下简单的记录
 
 ### 1. XML 解析demo
+#### 需求
+简单的将XML中的配置信息解析，保存到缓存中。
+使用的是 pod 'GDataXML-HTML','~> 1.3.0'
+```
+- (void)parseLangConfig{
+    //获取工程目录的xml文件
+    NSString *path = [NSString stringWithFormat:@"MessageLang"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:path ofType:@"xml"];
+    NSData *xmlData = [[NSData alloc] initWithContentsOfFile:filePath];
+    
+    //使用NSData对象初始化
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:xmlData error:nil];
+    
+    //获取根节点（resources）
+    GDataXMLElement *rootElement = [doc rootElement];
+    
+    //获取根节点下的节点（Item）
+    NSArray * items = [rootElement elementsForName:@"item"];
+    [self parseElements:items atDictionary:_langMap];
+}
+```
 
 ### 2. TableViewCell NSTimer Demo
 #### 需求
