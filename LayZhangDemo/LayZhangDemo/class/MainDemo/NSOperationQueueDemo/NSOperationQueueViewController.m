@@ -20,17 +20,7 @@
     [self createNavBarWithTitle:@"NSOperationQueueDemo"
                        withLeft:[UIImage imageNamed:@"icon_back"]];
     [self operationTest];
-    
-    NSNumber* num1 = [NSNumber numberWithInt:23];
-    NSNumber* num2 = [NSNumber numberWithFloat:23.0f];
-    NSLog(@"%@", num1.stringValue);
-    NSLog(@"%@", num2.stringValue);
-    BOOL b = [num1 isEqualToNumber:num2];
-    if (b) {
-        NSLog(@"相等");
-    }else {
-        NSLog(@"不相等");
-    }
+
 }
 
 - (void)operationTest {
