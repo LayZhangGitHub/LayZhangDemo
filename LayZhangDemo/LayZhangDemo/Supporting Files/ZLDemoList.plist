@@ -5,6 +5,18 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>TableTimerViewController</string>
+			<key>title</key>
+			<string>TableTimerDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>NSOperationQueueViewController</string>
+			<key>title</key>
+			<string>OperationQueueDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>IPController</string>
 			<key>title</key>
 			<string>IPDemo</string>

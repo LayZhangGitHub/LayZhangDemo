@@ -10,6 +10,8 @@
 
 @interface CustomKeyboardController ()
 
+@property (nonatomic, strong, readwrite) NSString *string;
+
 @end
 
 @implementation CustomKeyboardController

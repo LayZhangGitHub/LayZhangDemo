@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) NSArray *groups;
 
+@property (nonatomic, copy) NSMutableArray *mArray;
+
 @end
 
 @implementation ViewController
@@ -25,6 +27,18 @@
     [super viewDidLoad];
     [self createNavBarWithTitle:@"mainView"];
     [self initTableView];
+    
+    
+//    NSMutableString *string = [NSMutableString stringWithString: @"origion"];
+//    NSString *stringCopy = [string copy];
+//    NSMutableString *mStringCopy = [string copy];
+//    NSMutableString *stringMCopy = [string mutableCopy];
+//    [mStringCopy appendString:@"mm"];//error
+//    [string appendString:@" origion!"];
+//    [stringMCopy appendString:@"!!"];
+//    NSMutableArray *mArray = [[NSMutableArray alloc] init];
+//    self.mArray = mArray;
+//    NSLog(@"%@", [self.mArray class]);
 }
 
 - (NSArray *)groups {
@@ -64,7 +78,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    XMLParseController *con = [[XMLParseController alloc] init];
+    //    XMLParseController *con = [[XMLParseController alloc] init];
     NSString *controllerName = self.groups[indexPath.section][indexPath.row][@"controllerName"];
     [self.navigationController pushViewController:[[NSClassFromString(controllerName) alloc] init]
                                          animated:YES];

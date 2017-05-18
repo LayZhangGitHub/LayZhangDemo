@@ -113,4 +113,16 @@
     
 }
 
++ (UIButton *)buttonWithTitle:(NSString *)title image:(UIImage *)image highImage:(UIImage *)highImage titleColor:(UIColor *)color {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setImage:image forState:UIControlStateNormal];
+    [button setImage:highImage forState:UIControlStateHighlighted];
+    [button setTitleColor:color forState:UIControlStateNormal];
+    
+    button.titleLabel.font = [UIFont fontWithName:@"Avenir-Black" size:16.0f];
+    return button;
+}
+
 @end

@@ -36,5 +36,9 @@
 #pragma mark - scale
 #define SCALE (SCREENWIDTH/750.0)
 
+#pragma mark - notification
+#define DefaultNotificationCenter [NSNotificationCenter defaultCenter]
+
+#define TimerCellDeallocNotification @"TimerCellDeallocNotification"
 
 #endif /* ZLPreMacro_h */

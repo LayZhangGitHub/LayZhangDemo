@@ -10,4 +10,6 @@
 
 @interface CustomKeyboardController : ZLViewController
 
+@property (nonatomic, strong, readonly) NSString *string;
+
 @end
