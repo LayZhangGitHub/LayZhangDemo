@@ -5,6 +5,36 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>LoadInitController</string>
+			<key>title</key>
+			<string>loadInit</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>AFDemoController</string>
+			<key>title</key>
+			<string>AFDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>URLDemoController</string>
+			<key>title</key>
+			<string>urlDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>BlockDemoController</string>
+			<key>title</key>
+			<string>blockDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>SwizzlingController</string>
+			<key>title</key>
+			<string>swizzlingDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>KVOController</string>
 			<key>title</key>
 			<string>KVODemo</string>

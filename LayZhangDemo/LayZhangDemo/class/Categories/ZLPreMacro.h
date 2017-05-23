@@ -36,9 +36,31 @@
 #pragma mark - scale
 #define SCALE (SCREENWIDTH/750.0)
 
+#pragma mark - log
+#ifdef DEBUG
+#define AllLog(format, ...) \
+NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d] Log:" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define FileLog(format, ...) \
+NSLog((@"[文件名:%s] Log:" format), __FILE__, ##__VA_ARGS__);
+#define FuncLog(format, ...) \
+NSLog((@"[函数名:%s] Log:" format), __FUNCTION__, ##__VA_ARGS__);
+#define FuncLineLog(format, ...) \
+NSLog((@"[函数名:%s]" "[行号:%d] Log:" format), __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define AllLog(...);
+#define FileLog(...);
+#define FuncLog(...);
+#endif
+
+//NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+
+//
+//NSString * logStr = [NSString stringWithFormat:@"%s, %d", __FILE__, __LINE__]; \
+//NSLog(__VA_ARGS__, @"%s", __func__);
+
 #pragma mark - notification
 #define DefaultNotificationCenter [NSNotificationCenter defaultCenter]
-
 #define TimerCellDeallocNotification @"TimerCellDeallocNotification"
 
 #endif /* ZLPreMacro_h */

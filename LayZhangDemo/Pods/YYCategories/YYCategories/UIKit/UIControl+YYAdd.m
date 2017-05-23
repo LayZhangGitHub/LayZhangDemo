@@ -115,4 +115,9 @@ static const int block_key;
     return targets;
 }
 
+- (void)dealloc {
+    [self _yy_allUIControlBlockTargets];
+    NSLog(@"uicontrl dealloc");
+}
+
 @end

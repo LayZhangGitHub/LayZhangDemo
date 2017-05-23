@@ -12,6 +12,18 @@
 		480ABAB51ECC2B9600C6288E /* TableTimerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABAB41ECC2B9600C6288E /* TableTimerTableViewCell.m */; };
 		480ABB011ECD803F00C6288E /* KVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB001ECD803F00C6288E /* KVOController.m */; };
 		480ABB041ECD809400C6288E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB031ECD809400C6288E /* Person.m */; };
+		480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB0A1ECD9D5C00C6288E /* SwizzlingController.m */; };
+		480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB0D1ECD9DBF00C6288E /* UIViewController+Swizzling.m */; };
+		480ABB151ECE954100C6288E /* BlockDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB141ECE954100C6288E /* BlockDemoController.m */; };
+		480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB171ECED05600C6288E /* UIControl+Log.m */; };
+		480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB1B1ECEE44800C6288E /* URLDemoController.m */; };
+		480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB1F1ECEF81E00C6288E /* AFURLRequestSerialization.m */; };
+		480ABB231ECEFE1100C6288E /* AFDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB221ECEFE1100C6288E /* AFDemoController.m */; };
+		480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB261ED3D0C600C6288E /* LoadInitController.m */; };
+		480ABB301ED3DB9900C6288E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB2F1ED3DB9900C6288E /* Animal.m */; };
+		480ABB331ED3DBCE00C6288E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB321ED3DBCE00C6288E /* Dog.m */; };
+		480ABB361ED3DBF500C6288E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB351ED3DBF500C6288E /* Cat.m */; };
+		480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB381ED3DD4600C6288E /* Animal+init.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
 		48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A91EC98097009DB6D0 /* XMLParseController.m */; };
@@ -74,6 +86,30 @@
 		480ABB001ECD803F00C6288E /* KVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOController.m; sourceTree = "<group>"; };
 		480ABB021ECD809400C6288E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		480ABB031ECD809400C6288E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		480ABB091ECD9D5C00C6288E /* SwizzlingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzlingController.h; sourceTree = "<group>"; };
+		480ABB0A1ECD9D5C00C6288E /* SwizzlingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwizzlingController.m; sourceTree = "<group>"; };
+		480ABB0C1ECD9DBF00C6288E /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		480ABB0D1ECD9DBF00C6288E /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		480ABB131ECE954100C6288E /* BlockDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockDemoController.h; sourceTree = "<group>"; };
+		480ABB141ECE954100C6288E /* BlockDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockDemoController.m; sourceTree = "<group>"; };
+		480ABB161ECED05600C6288E /* UIControl+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Log.h"; sourceTree = "<group>"; };
+		480ABB171ECED05600C6288E /* UIControl+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Log.m"; sourceTree = "<group>"; };
+		480ABB1A1ECEE44800C6288E /* URLDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLDemoController.h; sourceTree = "<group>"; };
+		480ABB1B1ECEE44800C6288E /* URLDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLDemoController.m; sourceTree = "<group>"; };
+		480ABB1E1ECEF81E00C6288E /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		480ABB1F1ECEF81E00C6288E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		480ABB211ECEFE1100C6288E /* AFDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFDemoController.h; sourceTree = "<group>"; };
+		480ABB221ECEFE1100C6288E /* AFDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFDemoController.m; sourceTree = "<group>"; };
+		480ABB251ED3D0C600C6288E /* LoadInitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadInitController.h; sourceTree = "<group>"; };
+		480ABB261ED3D0C600C6288E /* LoadInitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadInitController.m; sourceTree = "<group>"; };
+		480ABB2E1ED3DB9800C6288E /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		480ABB2F1ED3DB9900C6288E /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		480ABB311ED3DBCE00C6288E /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		480ABB321ED3DBCE00C6288E /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		480ABB341ED3DBF500C6288E /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		480ABB351ED3DBF500C6288E /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		480ABB371ED3DD4600C6288E /* Animal+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+init.h"; sourceTree = "<group>"; };
+		480ABB381ED3DD4600C6288E /* Animal+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+init.m"; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
 		48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLEX.m"; sourceTree = "<group>"; };
 		48BA56A61EC98097009DB6D0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
@@ -193,6 +229,65 @@
 				480ABB031ECD809400C6288E /* Person.m */,
 			);
 			path = KVODemo;
+			sourceTree = "<group>";
+		};
+		480ABB051ECD9D0B00C6288E /* SwizzlingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB091ECD9D5C00C6288E /* SwizzlingController.h */,
+				480ABB0A1ECD9D5C00C6288E /* SwizzlingController.m */,
+				480ABB0C1ECD9DBF00C6288E /* UIViewController+Swizzling.h */,
+				480ABB0D1ECD9DBF00C6288E /* UIViewController+Swizzling.m */,
+				480ABB161ECED05600C6288E /* UIControl+Log.h */,
+				480ABB171ECED05600C6288E /* UIControl+Log.m */,
+			);
+			path = SwizzlingDemo;
+			sourceTree = "<group>";
+		};
+		480ABB121ECE952600C6288E /* BlockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB131ECE954100C6288E /* BlockDemoController.h */,
+				480ABB141ECE954100C6288E /* BlockDemoController.m */,
+			);
+			path = BlockDemo;
+			sourceTree = "<group>";
+		};
+		480ABB191ECEE43A00C6288E /* URLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB1A1ECEE44800C6288E /* URLDemoController.h */,
+				480ABB1B1ECEE44800C6288E /* URLDemoController.m */,
+			);
+			path = URLDemo;
+			sourceTree = "<group>";
+		};
+		480ABB1D1ECEF76C00C6288E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB1E1ECEF81E00C6288E /* AFURLRequestSerialization.h */,
+				480ABB1F1ECEF81E00C6288E /* AFURLRequestSerialization.m */,
+				480ABB211ECEFE1100C6288E /* AFDemoController.h */,
+				480ABB221ECEFE1100C6288E /* AFDemoController.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		480ABB241ED3D0A100C6288E /* loadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB251ED3D0C600C6288E /* LoadInitController.h */,
+				480ABB261ED3D0C600C6288E /* LoadInitController.m */,
+				480ABB2E1ED3DB9800C6288E /* Animal.h */,
+				480ABB2F1ED3DB9900C6288E /* Animal.m */,
+				480ABB311ED3DBCE00C6288E /* Dog.h */,
+				480ABB321ED3DBCE00C6288E /* Dog.m */,
+				480ABB341ED3DBF500C6288E /* Cat.h */,
+				480ABB351ED3DBF500C6288E /* Cat.m */,
+				480ABB371ED3DD4600C6288E /* Animal+init.h */,
+				480ABB381ED3DD4600C6288E /* Animal+init.m */,
+			);
+			path = loadDemo;
 			sourceTree = "<group>";
 		};
 		48BA56A51EC98097009DB6D0 /* XMLParseDemo */ = {
@@ -337,6 +432,11 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				480ABB241ED3D0A100C6288E /* loadDemo */,
+				480ABB1D1ECEF76C00C6288E /* Network */,
+				480ABB191ECEE43A00C6288E /* URLDemo */,
+				480ABB121ECE952600C6288E /* BlockDemo */,
+				480ABB051ECD9D0B00C6288E /* SwizzlingDemo */,
 				480ABAFE1ECD800900C6288E /* KVODemo */,
 				480ABAAF1ECC2B2F00C6288E /* TableTimerDemo */,
 				48BA56B01EC9973F009DB6D0 /* IPDemo */,
@@ -610,29 +710,41 @@
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				480ABAB51ECC2B9600C6288E /* TableTimerTableViewCell.m in Sources */,
+				480ABB231ECEFE1100C6288E /* AFDemoController.m in Sources */,
 				48BA56B91EC9A5C9009DB6D0 /* NSOperationQueueViewController.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
+				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
+				480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */,
+				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
+				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
+				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
 				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
+				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
 				48BA56CA1EC9BC0B009DB6D0 /* ZLKeyboardView.m in Sources */,
 				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
+				480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */,
+				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
 				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
 				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
 				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
+				480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */,
+				480ABB301ED3DB9900C6288E /* Animal.m in Sources */,
+				480ABB151ECE954100C6288E /* BlockDemoController.m in Sources */,
 				480ABAAE1ECAF6EA00C6288E /* TestObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
