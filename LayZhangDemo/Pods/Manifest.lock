@@ -6,6 +6,7 @@ PODS:
   - CocoaLumberjack/Extensions (3.2.0):
     - CocoaLumberjack/Default
   - GDataXML-HTML (1.3.0)
+  - JSONModel (1.7.0)
   - Masonry (1.0.2)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
@@ -14,15 +15,17 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack
   - GDataXML-HTML (~> 1.3.0)
+  - JSONModel (~> 1.7.0)
   - Masonry (~> 1.0.2)
   - YYCategories
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: c9e3ef0a9525d73760ff623aae025dd82ede46ac
+PODFILE CHECKSUM: f200158ac2356f70cc1cae0b0d8e2e1a4391679f
 
 COCOAPODS: 1.2.0

@@ -30,7 +30,7 @@ target 'LayZhangDemo' do
 #    pod 'FMDB', '~> 2.6'
 #    pod 'JSPatch', '~> 1.1.2'
 #    
-#    pod 'JSONModel', '~> 1.7.0'
+    pod 'JSONModel', '~> 1.7.0'
 #    
 #    pod 'SDWebImage', '~> 4.0.0'
 #    

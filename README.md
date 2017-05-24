@@ -111,7 +111,19 @@ viewcontroller之间的数据通信，iOS应用中无处不在。
 #### 总结
 
 |  | load | initialize |
-|--|:---|:---|
+|:--|:---|:---|
 |执行时间|在程序运行后立即执行|在类方法第一次被调用时执行，且只执行一次|
 |若自身未定义，是否调用父类|否|是|
 |Category中的调用| 全都执行，但是在比类方法晚|若父方法未执行，两个都会执行，且先父后子|
+
+### 6.bool Boolean BOOL
+
+| Name | type | True Value | False Value |
+|:--|:--|:--|:--|
+|bool|int|true|false|
+|Boolean|unsigned char|TRUE|FALSE|
+|BOOL|unsigned char|YES|NO|
+|boolean_t|int|true|false|
+
+int 当b!=0 有 b=true
+unsigned char 当b=1 有 b=YES

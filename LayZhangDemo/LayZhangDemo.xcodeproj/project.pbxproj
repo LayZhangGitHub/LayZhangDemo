@@ -24,6 +24,9 @@
 		480ABB331ED3DBCE00C6288E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB321ED3DBCE00C6288E /* Dog.m */; };
 		480ABB361ED3DBF500C6288E /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB351ED3DBF500C6288E /* Cat.m */; };
 		480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB381ED3DD4600C6288E /* Animal+init.m */; };
+		480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB3D1ED3E79500C6288E /* JSONParseDemoController.m */; };
+		480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */; };
+		480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB421ED3EB3600C6288E /* JSONModel01.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
 		48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A91EC98097009DB6D0 /* XMLParseController.m */; };
@@ -110,6 +113,11 @@
 		480ABB351ED3DBF500C6288E /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		480ABB371ED3DD4600C6288E /* Animal+init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Animal+init.h"; sourceTree = "<group>"; };
 		480ABB381ED3DD4600C6288E /* Animal+init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Animal+init.m"; sourceTree = "<group>"; };
+		480ABB3C1ED3E79500C6288E /* JSONParseDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParseDemoController.h; sourceTree = "<group>"; };
+		480ABB3D1ED3E79500C6288E /* JSONParseDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONParseDemoController.m; sourceTree = "<group>"; };
+		480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JSONDemo.plist; sourceTree = "<group>"; };
+		480ABB411ED3EB3600C6288E /* JSONModel01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel01.h; sourceTree = "<group>"; };
+		480ABB421ED3EB3600C6288E /* JSONModel01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel01.m; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
 		48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLEX.m"; sourceTree = "<group>"; };
 		48BA56A61EC98097009DB6D0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
@@ -290,6 +298,17 @@
 			path = loadDemo;
 			sourceTree = "<group>";
 		};
+		480ABB3B1ED3E77C00C6288E /* JSONParseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				480ABB3C1ED3E79500C6288E /* JSONParseDemoController.h */,
+				480ABB3D1ED3E79500C6288E /* JSONParseDemoController.m */,
+				480ABB411ED3EB3600C6288E /* JSONModel01.h */,
+				480ABB421ED3EB3600C6288E /* JSONModel01.m */,
+			);
+			path = JSONParseDemo;
+			sourceTree = "<group>";
+		};
 		48BA56A51EC98097009DB6D0 /* XMLParseDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +403,7 @@
 				48E5585A1EC2EFE400FE30E0 /* main.m */,
 				48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */,
 				48E5588F1EC3057C00FE30E0 /* PrefixHeader.pch */,
+				480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -432,6 +452,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				480ABB3B1ED3E77C00C6288E /* JSONParseDemo */,
 				480ABB241ED3D0A100C6288E /* loadDemo */,
 				480ABB1D1ECEF76C00C6288E /* Network */,
 				480ABB191ECEE43A00C6288E /* URLDemo */,
@@ -632,6 +653,7 @@
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
 				48E5585D1EC2F00200FE30E0 /* ZLDemoList.plist in Resources */,
 				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
+				480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */,
 				48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */,
 				48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */,
 				48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */,
@@ -713,10 +735,12 @@
 				480ABB231ECEFE1100C6288E /* AFDemoController.m in Sources */,
 				48BA56B91EC9A5C9009DB6D0 /* NSOperationQueueViewController.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
+				480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
+				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
 				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
 				480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */,
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,

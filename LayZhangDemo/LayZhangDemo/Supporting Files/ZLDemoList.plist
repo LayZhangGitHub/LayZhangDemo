@@ -5,6 +5,12 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>JSONParseDemoController</string>
+			<key>title</key>
+			<string>JSONParseDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>LoadInitController</string>
 			<key>title</key>
 			<string>loadInit</string>
