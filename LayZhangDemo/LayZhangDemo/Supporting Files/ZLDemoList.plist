@@ -5,6 +5,18 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>VPNDemoController</string>
+			<key>title</key>
+			<string>VPNDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>CacheHeightTableController</string>
+			<key>title</key>
+			<string>CacheHeightDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>JSONParseDemoController</string>
 			<key>title</key>
 			<string>JSONParseDemo</string>
