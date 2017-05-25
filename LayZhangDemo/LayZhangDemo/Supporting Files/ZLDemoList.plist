@@ -5,6 +5,12 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>SemaphoreDemoController</string>
+			<key>title</key>
+			<string>semaphoreDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>VPNDemoController</string>
 			<key>title</key>
 			<string>VPNDemo</string>

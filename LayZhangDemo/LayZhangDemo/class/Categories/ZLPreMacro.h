@@ -14,8 +14,10 @@
 #import "UIImage+ZLEX.h"
 #import "CALayer+ZLEX.h"
 #import "UIButton+ZLEX.h"
+#import "NSString+ZLEX.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "Masonry.h"
+#import "YYModel.h"
 
 #pragma mark - screen
 #define Screen [UIScreen mainScreen]

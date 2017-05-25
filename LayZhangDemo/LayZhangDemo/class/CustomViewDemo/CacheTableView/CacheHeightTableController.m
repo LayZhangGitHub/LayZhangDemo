@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self createNavBarWithTitle:@"CacheHeightDemo"];
+    [self createNavBarWithTitle:@"CacheHeightDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
     [self initComponent];
     [self loadMessage];
 }
@@ -122,6 +122,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MessageModel *message = self.messageArray[indexPath.row];
+    CGFloat height = [tableView fd_heightForCellWithIdentifier:@"AnnoucementCell"
+                                                    cacheByKey:message.ID
+                                                 configuration:^(AnnoucementCell *cell) {
+                                                     
+                                                 }];
+    [[NSString stringWithFormat:@"cell Height is : %f", height] showNotice];
 }
 
 

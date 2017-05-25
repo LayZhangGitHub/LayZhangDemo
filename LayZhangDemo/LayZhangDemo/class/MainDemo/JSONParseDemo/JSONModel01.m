@@ -10,5 +10,14 @@
 
 @implementation JSONModel01
 
++ (BOOL)propertyIsOptional:(NSString *)propertyName {
+    return YES;
+}
+
++ (JSONKeyMapper *)keyMapper {
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+                                                       @"mModel.name": @"name"
+                                                       }];
+}
 
 @end

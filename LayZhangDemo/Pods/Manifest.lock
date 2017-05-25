@@ -12,6 +12,7 @@ PODS:
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - CocoaLumberjack
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - Masonry (~> 1.0.2)
   - UITableView+FDTemplateLayoutCell
   - YYCategories
+  - YYModel
 
 SPEC CHECKSUMS:
   CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
@@ -28,7 +30,8 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 3a005463c6a353d79e59e0ccb2cb690f23565dc2
+PODFILE CHECKSUM: 23f8a7c97cd84e55a76e569b73f4ddd83adb460f
 
 COCOAPODS: 1.2.0
