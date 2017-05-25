@@ -10,9 +10,12 @@
 #define ZLPreMacro_h
 
 #import "UIView+ZLEX.h"
+#import "UIView+QuickNew.h"
 #import "UIImage+ZLEX.h"
 #import "CALayer+ZLEX.h"
 #import "UIButton+ZLEX.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "Masonry.h"
 
 #pragma mark - screen
 #define Screen [UIScreen mainScreen]
