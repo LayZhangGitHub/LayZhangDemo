@@ -5,6 +5,24 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>NSProxyDemoController</string>
+			<key>title</key>
+			<string>ProxyDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>PropertyDemoController</string>
+			<key>title</key>
+			<string>PropertyDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>RuntimeDemoController</string>
+			<key>title</key>
+			<string>runtimeDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>SemaphoreDemoController</string>
 			<key>title</key>
 			<string>semaphoreDemo</string>

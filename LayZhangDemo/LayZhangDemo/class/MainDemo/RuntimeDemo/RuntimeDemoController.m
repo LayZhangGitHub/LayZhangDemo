@@ -82,10 +82,29 @@
 - (void)getClassDemo {
     RuntimeDemoClass *runtimeclass = [[RuntimeDemoClass alloc] init];
     
+//     [RuntimeDemoClass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
+//     [runtimeclass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
+    
+    
+    
+    
     // 返回对象的类
     Class class1 = [RuntimeDemoClass class];
     Class class2 = [runtimeclass class];
     Class class3 = NSClassFromString(@"RuntimeDemoClass");
+    
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    NSString *value = @"value";
+    Class c1 = [runtimeclass class];
+    Class c2 = object_getClass(runtimeclass);
+//    Class c2 = [runtimeclass class];
+//    Class c3 = object_getClass(c1);
+    [dic setObject:value forKey:c1];
+    NSLog(@"%lu", (unsigned long)[dic count]);
+    [dic setObject:value forKey:c2];
+    NSLog(@"%lu", (unsigned long)[dic count]);
+//    [dic setObject:value forKey:c3];
+//    NSLog(@"%lu", (unsigned long)[dic count]);
     
     //    1.isKindOfClass           // 判断是否是这个类或者子类 （对象方法）
     //    2.isSubclassOfClass       // 判断是否是这个类或者子类 （类方法）
@@ -96,10 +115,11 @@
 //    NSLog(@"%@", [RuntimeDemoClass getClassName]);
     
     //  判断是否是元类
-    NSLog(@"%@", class1);
-    class_isMetaClass(class1) ? NSLog(@"yes") : NSLog(@"no");
-    NSLog(@"%@", object_getClass(class1));
-    class_isMetaClass(object_getClass(class1)) ? NSLog(@"yes") : NSLog(@"no");
+//    NSLog(@"%@", class1);
+//    class_isMetaClass(class1) ? NSLog(@"yes") : NSLog(@"no");
+//    NSLog(@"%@", object_getClass(class1));
+//    class_isMetaClass(object_getClass(class1)) ? NSLog(@"yes") : NSLog(@"no");
+//    class_isMetaClass() ? NSLog(@"yes") : NSLog(@"no");
     
     // 添加方法
 //    [RuntimeDemoClass addMethod:@selector(pppp) fromClass:self.class];

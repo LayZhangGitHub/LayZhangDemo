@@ -14,10 +14,10 @@
     return YES;
 }
 
-+ (JSONKeyMapper *)keyMapper {
-    return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                       @"mModel.name": @"name"
-                                                       }];
-}
+//+ (JSONKeyMapper *)keyMapper {
+//    return [[JSONKeyMapper alloc] initWithDictionary:@{
+//                                                       @"mModel.name": @"name"
+//                                                       }];
+//}
 
 @end

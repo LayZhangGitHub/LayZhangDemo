@@ -20,11 +20,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createNavBarWithTitle:@"VPNDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
-    [self vpnDemo];
-//        [self httpDemo];
+//    [self vpnDemo];
+//    [self httpDemo];
+    [self vpnPersonalDemo];
 }
 
 - (void)vpnDemo {
+    
+    // init VPN manager
+    self.vpnManager = [NEVPNManager sharedManager];
+    // load config from perference
+    
+    [NETunnelProviderManager loadAllFromPreferencesWithCompletionHandler:^(NSArray<NETunnelProviderManager *> * _Nullable managers, NSError * _Nullable error) {
+        NSLog(@"%lu",managers.count);
+        NETunnelProviderProtocol *p =  (NETunnelProviderProtocol *)managers[0].protocolConfiguration;
+        NSLog(@"%@", p.providerBundleIdentifier);
+        
+        NETunnelProviderManager *manager = [[NETunnelProviderManager alloc] init];
+        
+        NETunnelProviderProtocol *protocol = [[NETunnelProviderProtocol alloc] init];
+        
+        protocol.providerBundleIdentifier = @"com.tigervpns.hideme.ios.HideMe.HideMeTunnelProvider";// bundle ID of tunnel provider
+        
+        protocol.providerConfiguration = @{@"key": @"value"};
+        
+        protocol.serverAddress = @"server";// VPN server address
+        
+        manager.protocolConfiguration = protocol;
+        
+//        [manager saveToPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
+//            
+//        }];
+    }];
+}
+
+- (void)vpnPersonalDemo {
     // init VPN manager
     self.vpnManager = [NEVPNManager sharedManager];
     // load config from perference
@@ -33,6 +63,11 @@
             NSLog(@"Load config failed [%@]", error.localizedDescription);
             return;
         }
+        
+//        [_vpnManager removeFromPreferencesWithCompletionHandler:^(NSError * _Nullable error) {
+//            
+//        }];
+        
         NEVPNProtocolIPSec *p = _vpnManager.protocol;
         if (p) {
             // Protocol exists.
@@ -46,21 +81,28 @@
         p.serverAddress = @"60.191.4.206";;
         // Get password persistent reference from keychain
         // If password doesn't exist in keychain, should create it beforehand.
-        // [self createKeychainValue:@"your_password" forIdentifier:@"VPN_PASSWORD"];
-        p.passwordReference = [self searchKeychainCopyMatching:@"WNFHcBfx27UQVIZm"];
+        BOOL pwd = [self createKeychainValue:@"WNFHcBfx27UQVIZm" forIdentifier:@"VPN_PASSWORD"];
+        
+        p.passwordReference = [self searchKeychainCopyMatching:@"VPN_PASSWORD"];
+        NSLog(@"%@", p.passwordReference);
+        NSLog(@"%@", [[NSString alloc] initWithData:p.passwordReference  encoding:NSUTF8StringEncoding]);
         // PSK
         p.authenticationMethod = NEVPNIKEAuthenticationMethodSharedSecret;
-        // [self createKeychainValue:@"your_psk" forIdentifier:@"PSK"];
+        BOOL secret = [self createKeychainValue:@"ZXkj8888@" forIdentifier:@"PSK"];
         p.sharedSecretReference = [self searchKeychainCopyMatching:@"PSK"];
+        NSLog(@"%@", p.sharedSecretReference);
+        NSLog(@"%@", [[NSString alloc] initWithData:p.sharedSecretReference  encoding:NSUTF8StringEncoding]);
         /*
          // certificate
          p.identityData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"client" ofType:@"p12"]];
          p.identityDataPassword = @"[Your certificate import password]";
          */
-        p.localIdentifier = @"[VPN local identifier]";
-        p.remoteIdentifier = @"[VPN remote identifier]";
+//        p.identityDataPassword = @"ZXkj8888@";
+//        p.localIdentifier = @"[VPN local identifier]";
+//        p.remoteIdentifier = @"[VPN remote identifier]";
+//        p.useExtendedAuthentication = YES;
+//        p.disconnectOnSleep = NO;
         p.useExtendedAuthentication = YES;
-        p.disconnectOnSleep = NO;
         _vpnManager.protocol = p;
         _vpnManager.localizedDescription = @"IPSec Demo description";
         [_vpnManager saveToPreferencesWithCompletionHandler:^(NSError *error) {
@@ -158,29 +200,29 @@ static NSString * const serviceName = @"im.zorro.ipsec_demo.vpn_config";
     //     NSLog(@"supported Network Interface: %@", connectedNetwork);
     
     NSLog(@"in wifi scan");
-        NSMutableDictionary* options = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary* options = [[NSMutableDictionary alloc] init];
     //    NSMutableDictionary* infos = [[NSMutableDictionary alloc] init];
-        [options setObject:@"meme" forKey:kNEHotspotHelperOptionDisplayName];
+    [options setObject:@"meme" forKey:kNEHotspotHelperOptionDisplayName];
     
-        dispatch_queue_t queue = dispatch_queue_create("LiyiZhan.WifiDemo", 0);
+    dispatch_queue_t queue = dispatch_queue_create("LiyiZhan.WifiDemo", 0);
     
-        BOOL returnType = [NEHotspotHelper registerWithOptions:options queue:queue handler:^(NEHotspotHelperCommand * cmd){
-            NSLog(@"in block");
-            [cmd createResponse:kNEHotspotHelperResultAuthenticationRequired];
-            if(cmd.commandType == kNEHotspotHelperCommandTypeEvaluate || cmd.commandType == kNEHotspotHelperCommandTypeFilterScanList){
-    
-                NSLog(@"bbbb = %lu",cmd.networkList.count);
-                for(NEHotspotNetwork* network in cmd.networkList){
-                    NSString* ssid = network.SSID;
-                    NSString* bssid = network.BSSID;
-                    BOOL secure = network.secure;
-                    BOOL autoJoined = network.autoJoined;
-                    double signalStrength = network.signalStrength;
-    
-                    NSLog(@"SSID:%@ # BSSID:%@ # SIGNAL:%f ",ssid,bssid,signalStrength);
-                }
+    BOOL returnType = [NEHotspotHelper registerWithOptions:options queue:queue handler:^(NEHotspotHelperCommand * cmd){
+        NSLog(@"in block");
+        [cmd createResponse:kNEHotspotHelperResultAuthenticationRequired];
+        if(cmd.commandType == kNEHotspotHelperCommandTypeEvaluate || cmd.commandType == kNEHotspotHelperCommandTypeFilterScanList){
+            
+            NSLog(@"bbbb = %lu",cmd.networkList.count);
+            for(NEHotspotNetwork* network in cmd.networkList){
+                NSString* ssid = network.SSID;
+                NSString* bssid = network.BSSID;
+                BOOL secure = network.secure;
+                BOOL autoJoined = network.autoJoined;
+                double signalStrength = network.signalStrength;
+                
+                NSLog(@"SSID:%@ # BSSID:%@ # SIGNAL:%f ",ssid,bssid,signalStrength);
             }
-        }];
+        }
+    }];
     
     //    var matchDomains = [String]();
     //    matchDomains.append(".");
@@ -206,38 +248,38 @@ static NSString * const serviceName = @"im.zorro.ipsec_demo.vpn_config";
     //    settings.proxySettings.matchDomains = @[@"www.baidu.com"];
     
     
-//    
-//    [self setTunnelNetworkSettings:settings completionHandler:^(NSError * _Nullable error) {
-//        
-//        if (error) {
-//            
-//            NSLog(@"setTunnelNetworkSettings error: %@", error);
-//            
-//        } else {
-//            
-//            //            NSError *err;
-//            
-//            //            pendingCompletionHandler(err);
-//        }
-//        
-//    }];
-//
+    //
+    //    [self setTunnelNetworkSettings:settings completionHandler:^(NSError * _Nullable error) {
+    //
+    //        if (error) {
+    //
+    //            NSLog(@"setTunnelNetworkSettings error: %@", error);
+    //
+    //        } else {
+    //
+    //            //            NSError *err;
+    //
+    //            //            pendingCompletionHandler(err);
+    //        }
+    //
+    //    }];
+    //
     
-//    NSMutableDictionary* options = [[NSMutableDictionary alloc] init];
-//    [options setObject:@"Connect using my app" forKey:kNEHotspotHelperOptionDisplayName];
-//    dispatch_queue_t queue = dispatch_queue_create("com.myapp.wifi", 0);
-////    [NEHotspotHelper registerWithOptions:<#(nullable NSDictionary<NSString *,NSObject *> *)#> queue:<#(nonnull dispatch_queue_t)#> handler:<#^(NEHotspotHelperCommand * _Nonnull cmd)handler#>];
-//    
-//    [NEHotspotHelper registerWithOptions:options queue:queue handler: ^(NEHotspotHelperCommand * cmd) {
-//        if(cmd.commandType == kNEHotspotHelperCommandTypeFilterScanList){
-//            for (NEHotspotNetwork *eachNetwork in cmd.networkList) {
-//                // Get Informations of the network
-//                NSLog(@"%@", eachNetwork.SSID);
-//            }
-//        }
-//    }];
-//    
-//    NEHotspotNetwork
+    //    NSMutableDictionary* options = [[NSMutableDictionary alloc] init];
+    //    [options setObject:@"Connect using my app" forKey:kNEHotspotHelperOptionDisplayName];
+    //    dispatch_queue_t queue = dispatch_queue_create("com.myapp.wifi", 0);
+    ////    [NEHotspotHelper registerWithOptions:<#(nullable NSDictionary<NSString *,NSObject *> *)#> queue:<#(nonnull dispatch_queue_t)#> handler:<#^(NEHotspotHelperCommand * _Nonnull cmd)handler#>];
+    //
+    //    [NEHotspotHelper registerWithOptions:options queue:queue handler: ^(NEHotspotHelperCommand * cmd) {
+    //        if(cmd.commandType == kNEHotspotHelperCommandTypeFilterScanList){
+    //            for (NEHotspotNetwork *eachNetwork in cmd.networkList) {
+    //                // Get Informations of the network
+    //                NSLog(@"%@", eachNetwork.SSID);
+    //            }
+    //        }
+    //    }];
+    //    
+    //    NEHotspotNetwork
 }
 
 @end

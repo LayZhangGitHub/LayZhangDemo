@@ -33,6 +33,8 @@
     
     YJSONModel01 *model01 = [YJSONModel01 yy_modelWithJSON:ori01JSONString];
 //    NSLog(@"%@", model01.mModel.name);
+    id jsonObject = [model01 yy_modelToJSONObject];
+    NSString *s = [model01 yy_modelToJSONString];
 }
 
 - (void)jsonModelUseDemo {

@@ -8,8 +8,9 @@
 
 #import "SemaphoreDemoController.h"
 
-@interface SemaphoreDemoController ()
-
+@interface SemaphoreDemoController () {
+    Boolean isalive;
+}
 @end
 
 @implementation SemaphoreDemoController
@@ -86,13 +87,14 @@
 }
 
 - (void)semaphoreDemo03 {
+    isalive = true;
     __block int product = 0;
     dispatch_semaphore_t sem = dispatch_semaphore_create(10);
     
     // 消费
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ //消费者队列
         
-        while (1) {
+        while (isalive) {
             if(!dispatch_semaphore_wait(sem, dispatch_time(DISPATCH_TIME_NOW, DISPATCH_TIME_FOREVER))){
                 ////非 0的时候,就是成功的timeout了,这里判断就是没有timeout   成功的时候是 0
                 
@@ -104,7 +106,7 @@
     
     // 生产
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{ //生产者队列
-        while (1) {
+        while (isalive) {
             
             sleep(1); //wait for a while
             product++;
@@ -112,6 +114,11 @@
             dispatch_semaphore_signal(sem);
         }
     });
+}
+
+- (void)dealloc {
+    NSLog(@"semaphore dealloc");
+    isalive=  false;
 }
 
 @end

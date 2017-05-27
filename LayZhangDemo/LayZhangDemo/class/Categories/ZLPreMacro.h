@@ -18,6 +18,7 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "Masonry.h"
 #import "YYModel.h"
+#import "NSObject+Runtime.h"
 
 #pragma mark - screen
 #define Screen [UIScreen mainScreen]

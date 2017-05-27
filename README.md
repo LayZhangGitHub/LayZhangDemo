@@ -24,6 +24,7 @@
     [self parseElements:items atDictionary:_langMap];
 }
 ```
+---
 
 ### 2. TableViewCell NSTimer Demo
 #### 需求
@@ -77,6 +78,8 @@
 ```
 这样写代码简洁，又没有太多耦合。结构清晰容易维护。
 
+-----
+
 ### 3. 整理以前的KVO Demo
 #### 以观察者的方式 实现KVO
 关键代码是观察者订阅， 发送消息给观察者。
@@ -90,6 +93,8 @@
 //发送操作
 - (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
 ```
+
+----
 
 ### 4.谈谈 KVO delegate notification
 #### 前提 看了离职同事写的代码，头痛。数据太乱了。。。
@@ -107,6 +112,8 @@ viewcontroller之间的数据通信，iOS应用中无处不在。
 
 后续。
 
+----
+
 ### 5.load initialize
 #### 总结
 
@@ -115,6 +122,8 @@ viewcontroller之间的数据通信，iOS应用中无处不在。
 |执行时间|在程序运行后立即执行|在类方法第一次被调用时执行，且只执行一次|
 |若自身未定义，是否调用父类|否|是|
 |Category中的调用| 全都执行，但是在比类方法晚|若父方法未执行，两个都会执行，且先父后子|
+
+----
 
 ### 6.bool Boolean BOOL
 
@@ -127,3 +136,95 @@ viewcontroller之间的数据通信，iOS应用中无处不在。
 
 int 当b!=0 有 b=true
 unsigned char 当b=1 有 b=YES
+
+----
+
+### 7.__unsafe_unretain 和 __weak 区别
+
+__weak 当释放指针指向的对象时， 指针转换为nil。
+__unsafe_unretain 当释放指针指向的对象时， 指针还是继续指向原来的内存空间。（野指针）
+
+----
+
+### 8.消息发送
+
+* #### 动态方法解析
+当 Runtime 系统在 Cache 和类的方法列表(包括父类)中找不到要执行的方法时，Runtime 会调用 resolveInstanceMethod: 或 resolveClassMethod: 来给我们一次动态添加方法实现的机会。我们需要用 class_addMethod 函数完成向特定类添加特定方法实现的操作：
+```
++ (BOOL)resolveInstanceMethod:(SEL)aSEL {
+    if (aSEL == @selector(resolveThisMethodDynamically)) {
+          class_addMethod([self class], aSEL, (IMP) dynamicMethodIMP, "v@:");
+          return YES;
+    }
+    return [super resolveInstanceMethod:aSEL];
+}
+```
+* #### 消息重定向
+消息转发机制执行前，Runtime 系统允许我们替换消息的接收者为其他对象。通过 - (id)forwardingTargetForSelector:(SEL)aSelector 方法。
+
+```
+- (id)forwardingTargetForSelector:(SEL)aSelector {
+    if(aSelector == @selector(mysteriousMethod:)){
+        return alternateObject;
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+```
+
+* #### 消息转发
+当动态方法解析不做处理返回 NO 时，则会触发消息转发机制。这时 forwardInvocation: 方法会被执行，我们可以重写这个方法来自定义我们的转发逻辑：
+
+```
+- (void)forwardInvocation:(NSInvocation *)invocation {
+    TempClass * forwardClass = [TempClass new];
+    SEL sel = invocation.selector;
+    if ([forwardClass respondsToSelector:sel]) {
+        [invocation invokeWithTarget:forwardClass];
+    } else {
+        [self doesNotRecognizeSelector:sel];
+    }
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
+    //查找父类的方法签名
+    NSMethodSignature *signature = [super methodSignatureForSelector:selector];
+    if(signature == nil) {
+        signature = [NSMethodSignature signatureWithObjCTypes:"@@:"];
+        
+    }
+    return signature;
+}
+```
+
+### 9.runtime 操作函数
+
+1. 类相关操作函数：以class为前缀命名
+
+```
+class_getName 　　                       // 获取类名
+class_getSuperclass                       // 获取父类
+class_isMetaClass                          // 判断类是不是元类
+class_getInstanceSize                    // 获取实例大小
+class_getInstanceVariable              // 获取实例成员变量
+class_getClassVariable                   // 获取类成员变量
+class_addIvar                                // 添加实例变量
+class_copyIvarList                         // 获取整个成员变量表
+class_getProperty                         // 获取指定属性
+class_copyPropertyList                  // 获取整个属性表
+class_addProperty                         // 添加属性
+class_replaceProperty                   // 替换属性
+class_addMethod                         // 添加方法
+class_getInstanceMethod             // 获取实例方法
+class_getClassMethod                  // 获取类方法
+class_copyMethodList                  // 获取所有方法的数组
+class_replaceMethod                   // 替代方法的实现
+class_getMethodImplementation  // 返回方法的具体实现
+class_respondsToSelector            // 类实例是否响应指定的selector
+class_addProtocol                       // 添加协议
+class_conformsToProtocol            // 返回类是否实现指定的协议
+class_copyProtocolList                 // 返回类实现的协议列表
+class_getVersion                         // 获取版本号
+class_setVersion                         // 设置版本号
+
+```
+

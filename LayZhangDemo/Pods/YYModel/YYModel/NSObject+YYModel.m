@@ -636,6 +636,8 @@ static force_inline id YYValueForMultiKeys(__unsafe_unretained NSDictionary *dic
     });
     dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
     _YYModelMeta *meta = CFDictionaryGetValue(cache, (__bridge const void *)(cls));
+    NSLog(@"%@", cls);
+    class_isMetaClass(cls) ? NSLog(@"is meta class") : NSLog(@"is not meta class");
     dispatch_semaphore_signal(lock);
     if (!meta || meta->_classInfo.needUpdate) {
         meta = [[_YYModelMeta alloc] initWithClass:cls];

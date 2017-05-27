@@ -31,6 +31,14 @@
 		482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3521ED7044800409C04 /* YJSONModel01.m */; };
 		482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3551ED7045500409C04 /* YJSONModel02.m */; };
 		482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3591ED70D1100409C04 /* SemaphoreDemoController.m */; };
+		482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE35D1ED71CB200409C04 /* RuntimeDemoController.m */; };
+		482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3601ED71E4B00409C04 /* RuntimeDemoClass.m */; };
+		482CE3641ED8063A00409C04 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3631ED8063A00409C04 /* NSObject+Runtime.m */; };
+		482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3671ED8253100409C04 /* PropertyDemoController.m */; };
+		482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36B1ED928FE00409C04 /* NSProxyDemoController.m */; };
+		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
+		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
+		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
 		48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A91EC98097009DB6D0 /* XMLParseController.m */; };
@@ -136,6 +144,22 @@
 		482CE3551ED7045500409C04 /* YJSONModel02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSONModel02.m; sourceTree = "<group>"; };
 		482CE3581ED70D1100409C04 /* SemaphoreDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaphoreDemoController.h; sourceTree = "<group>"; };
 		482CE3591ED70D1100409C04 /* SemaphoreDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemoController.m; sourceTree = "<group>"; };
+		482CE35C1ED71CB200409C04 /* RuntimeDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDemoController.h; sourceTree = "<group>"; };
+		482CE35D1ED71CB200409C04 /* RuntimeDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemoController.m; sourceTree = "<group>"; };
+		482CE35F1ED71E4B00409C04 /* RuntimeDemoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeDemoClass.h; sourceTree = "<group>"; };
+		482CE3601ED71E4B00409C04 /* RuntimeDemoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeDemoClass.m; sourceTree = "<group>"; };
+		482CE3621ED8063A00409C04 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		482CE3631ED8063A00409C04 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		482CE3661ED8253100409C04 /* PropertyDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyDemoController.h; sourceTree = "<group>"; };
+		482CE3671ED8253100409C04 /* PropertyDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyDemoController.m; sourceTree = "<group>"; };
+		482CE36A1ED928FE00409C04 /* NSProxyDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSProxyDemoController.h; sourceTree = "<group>"; };
+		482CE36B1ED928FE00409C04 /* NSProxyDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSProxyDemoController.m; sourceTree = "<group>"; };
+		482CE36E1ED9292F00409C04 /* MiddleProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiddleProxy.h; sourceTree = "<group>"; };
+		482CE36F1ED9292F00409C04 /* MiddleProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiddleProxy.m; sourceTree = "<group>"; };
+		482CE3701ED9292F00409C04 /* ProductAProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductAProvider.h; sourceTree = "<group>"; };
+		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
+		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
+		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
 		48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLEX.m"; sourceTree = "<group>"; };
 		48BA56A61EC98097009DB6D0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
@@ -312,7 +336,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		480ABB241ED3D0A100C6288E /* loadDemo */ = {
+		480ABB241ED3D0A100C6288E /* LoadDemo */ = {
 			isa = PBXGroup;
 			children = (
 				480ABB251ED3D0C600C6288E /* LoadInitController.h */,
@@ -326,6 +350,7 @@
 				480ABB371ED3DD4600C6288E /* Animal+init.h */,
 				480ABB381ED3DD4600C6288E /* Animal+init.m */,
 			);
+			name = LoadDemo;
 			path = loadDemo;
 			sourceTree = "<group>";
 		};
@@ -353,6 +378,51 @@
 				482CE3591ED70D1100409C04 /* SemaphoreDemoController.m */,
 			);
 			path = SemaphoreDemo;
+			sourceTree = "<group>";
+		};
+		482CE35B1ED71C8300409C04 /* RuntimeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482CE3621ED8063A00409C04 /* NSObject+Runtime.h */,
+				482CE3631ED8063A00409C04 /* NSObject+Runtime.m */,
+				482CE35C1ED71CB200409C04 /* RuntimeDemoController.h */,
+				482CE35D1ED71CB200409C04 /* RuntimeDemoController.m */,
+				482CE35F1ED71E4B00409C04 /* RuntimeDemoClass.h */,
+				482CE3601ED71E4B00409C04 /* RuntimeDemoClass.m */,
+			);
+			path = RuntimeDemo;
+			sourceTree = "<group>";
+		};
+		482CE3651ED8251D00409C04 /* PropertyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482CE3661ED8253100409C04 /* PropertyDemoController.h */,
+				482CE3671ED8253100409C04 /* PropertyDemoController.m */,
+			);
+			path = PropertyDemo;
+			sourceTree = "<group>";
+		};
+		482CE3691ED928EE00409C04 /* NSProxyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482CE36D1ED9292F00409C04 /* ProxyDemo */,
+				482CE36A1ED928FE00409C04 /* NSProxyDemoController.h */,
+				482CE36B1ED928FE00409C04 /* NSProxyDemoController.m */,
+			);
+			path = NSProxyDemo;
+			sourceTree = "<group>";
+		};
+		482CE36D1ED9292F00409C04 /* ProxyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482CE36E1ED9292F00409C04 /* MiddleProxy.h */,
+				482CE36F1ED9292F00409C04 /* MiddleProxy.m */,
+				482CE3701ED9292F00409C04 /* ProductAProvider.h */,
+				482CE3711ED9292F00409C04 /* ProductAProvider.m */,
+				482CE3721ED9292F00409C04 /* ProductBProvider.h */,
+				482CE3731ED9292F00409C04 /* ProductBProvider.m */,
+			);
+			path = ProxyDemo;
 			sourceTree = "<group>";
 		};
 		48BA56A51EC98097009DB6D0 /* XMLParseDemo */ = {
@@ -501,10 +571,13 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				482CE3691ED928EE00409C04 /* NSProxyDemo */,
+				482CE3651ED8251D00409C04 /* PropertyDemo */,
+				482CE35B1ED71C8300409C04 /* RuntimeDemo */,
 				482CE3571ED70D0200409C04 /* SemaphoreDemo */,
 				48F79A8B1ED67E1A00280CBB /* VPNDemo */,
 				480ABB3B1ED3E77C00C6288E /* JSONParseDemo */,
-				480ABB241ED3D0A100C6288E /* loadDemo */,
+				480ABB241ED3D0A100C6288E /* LoadDemo */,
 				480ABB1D1ECEF76C00C6288E /* Network */,
 				480ABB191ECEE43A00C6288E /* URLDemo */,
 				480ABB121ECE952600C6288E /* BlockDemo */,
@@ -804,6 +877,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
@@ -812,6 +886,7 @@
 				48BA56B91EC9A5C9009DB6D0 /* NSOperationQueueViewController.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
 				480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */,
+				482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
@@ -832,15 +907,19 @@
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
+				482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */,
 				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
+				482CE3641ED8063A00409C04 /* NSObject+Runtime.m in Sources */,
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
 				48BA56CA1EC9BC0B009DB6D0 /* ZLKeyboardView.m in Sources */,
 				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
+				482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */,
 				480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */,
 				48F79A841ED59F2A00280CBB /* AnnoucementCell.m in Sources */,
+				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
@@ -849,7 +928,9 @@
 				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
 				480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */,
 				480ABB301ED3DB9900C6288E /* Animal.m in Sources */,
+				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
+				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,
 				48F79A8A1ED6702B00280CBB /* UIView+QuickNew.m in Sources */,
 				480ABB151ECE954100C6288E /* BlockDemoController.m in Sources */,
 				480ABAAE1ECAF6EA00C6288E /* TestObject.m in Sources */,

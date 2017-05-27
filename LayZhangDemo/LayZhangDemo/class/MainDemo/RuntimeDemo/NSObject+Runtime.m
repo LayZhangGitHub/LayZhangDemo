@@ -10,6 +10,14 @@
 
 @implementation NSObject (Runtime)
 
+//+ (BOOL)isMetaClass {
+//    return class_isMetaClass(object_getClass(self));
+//}
+
+- (BOOL)isMetaClass {
+    return class_isMetaClass(object_getClass(self));
+}
+
 + (NSString *)getClassName {
     const char *className = class_getName(self.self);
     return [NSString stringWithUTF8String:className];
