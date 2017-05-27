@@ -5,6 +5,24 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>KeyChainDemoController</string>
+			<key>title</key>
+			<string>KeyChainDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>SignatureController</string>
+			<key>title</key>
+			<string>SignatureDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>NSTimerDemoController</string>
+			<key>title</key>
+			<string>NSTimerDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>NSProxyDemoController</string>
 			<key>title</key>
 			<string>ProxyDemo</string>
