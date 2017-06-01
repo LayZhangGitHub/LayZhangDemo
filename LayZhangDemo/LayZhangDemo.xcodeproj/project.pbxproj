@@ -51,6 +51,10 @@
 		48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813D31ED96EB70080B5F3 /* NSTimerDemoController.m */; };
 		48D813D81ED970EA0080B5F3 /* KeyChainDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813D71ED970EA0080B5F3 /* KeyChainDemoController.m */; };
 		48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813DA1ED972450080B5F3 /* KeyChainUtil.m */; };
+		48D813DF1EDE58EE0080B5F3 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813DE1EDE58EE0080B5F3 /* MasonryViewController.m */; };
+		48D813E51EDE5DBE0080B5F3 /* BaseViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813E41EDE5DBE0080B5F3 /* BaseViewA.m */; };
+		48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813E71EDE5E800080B5F3 /* BaseViewB.m */; };
+		48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813EA1EDE5E890080B5F3 /* BaseViewC.m */; };
 		48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E81EC0580000FE30E0 /* AppDelegate.m */; };
 		48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557ED1EC0580000FE30E0 /* Main.storyboard */; };
 		48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F01EC0580000FE30E0 /* Assets.xcassets */; };
@@ -190,6 +194,14 @@
 		48D813D71ED970EA0080B5F3 /* KeyChainDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainDemoController.m; sourceTree = "<group>"; };
 		48D813D91ED972450080B5F3 /* KeyChainUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainUtil.h; sourceTree = "<group>"; };
 		48D813DA1ED972450080B5F3 /* KeyChainUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainUtil.m; sourceTree = "<group>"; wrapsLines = 0; };
+		48D813DD1EDE58EE0080B5F3 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		48D813DE1EDE58EE0080B5F3 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
+		48D813E31EDE5DBE0080B5F3 /* BaseViewA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewA.h; sourceTree = "<group>"; };
+		48D813E41EDE5DBE0080B5F3 /* BaseViewA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewA.m; sourceTree = "<group>"; };
+		48D813E61EDE5E800080B5F3 /* BaseViewB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewB.h; sourceTree = "<group>"; };
+		48D813E71EDE5E800080B5F3 /* BaseViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewB.m; sourceTree = "<group>"; };
+		48D813E91EDE5E890080B5F3 /* BaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewC.h; sourceTree = "<group>"; };
+		48D813EA1EDE5E890080B5F3 /* BaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewC.m; sourceTree = "<group>"; };
 		48E557E11EC0580000FE30E0 /* LayZhangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayZhangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E557E71EC0580000FE30E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E557E81EC0580000FE30E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -510,6 +522,21 @@
 			path = KeyChainDemo;
 			sourceTree = "<group>";
 		};
+		48D813DC1EDE58C60080B5F3 /* MasonryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48D813DD1EDE58EE0080B5F3 /* MasonryViewController.h */,
+				48D813DE1EDE58EE0080B5F3 /* MasonryViewController.m */,
+				48D813E31EDE5DBE0080B5F3 /* BaseViewA.h */,
+				48D813E41EDE5DBE0080B5F3 /* BaseViewA.m */,
+				48D813E61EDE5E800080B5F3 /* BaseViewB.h */,
+				48D813E71EDE5E800080B5F3 /* BaseViewB.m */,
+				48D813E91EDE5E890080B5F3 /* BaseViewC.h */,
+				48D813EA1EDE5E890080B5F3 /* BaseViewC.m */,
+			);
+			path = MasonryDemo;
+			sourceTree = "<group>";
+		};
 		48E557D81EC0580000FE30E0 = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +652,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48D813DC1EDE58C60080B5F3 /* MasonryDemo */,
 				48D813D51ED970D60080B5F3 /* KeyChainDemo */,
 				48D813D11ED96EAB0080B5F3 /* NSTimerDemo */,
 				482CE3691ED928EE00409C04 /* NSProxyDemo */,
@@ -958,8 +986,11 @@
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
+				48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */,
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
+				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
+				48D813DF1EDE58EE0080B5F3 /* MasonryViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
@@ -984,6 +1015,7 @@
 				48D813D01ED96E190080B5F3 /* SignatureController.m in Sources */,
 				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
 				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
+				48D813E51EDE5DBE0080B5F3 /* BaseViewA.m in Sources */,
 				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
 				480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */,
 				48D813CD1ED96E040080B5F3 /* ZLSignatureView.m in Sources */,

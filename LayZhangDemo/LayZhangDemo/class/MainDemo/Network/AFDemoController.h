@@ -1,13 +1,13 @@
+////
+////  AFDemoController.h
+////  LayZhangDemo
+////
+////  Created by LayZhang on 2017/5/19.
+////  Copyright © 2017年 Zhanglei. All rights reserved.
+////
 //
-//  AFDemoController.h
-//  LayZhangDemo
+//#import "ZLViewController.h"
 //
-//  Created by LayZhang on 2017/5/19.
-//  Copyright © 2017年 Zhanglei. All rights reserved.
+//@interface AFDemoController : ZLViewController
 //
-
-#import "ZLViewController.h"
-
-@interface AFDemoController : ZLViewController
-
-@end
+//@end

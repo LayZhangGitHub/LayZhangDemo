@@ -8,6 +8,10 @@
 
 #import "ZLViewController.h"
 
+/** 
+ 使用 dispatch_semaphore 实现 生产消费者
+ **/
+
 @interface SemaphoreDemoController : ZLViewController
 
 @end
