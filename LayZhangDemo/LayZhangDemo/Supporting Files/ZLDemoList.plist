@@ -5,6 +5,12 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>PollingViewController</string>
+			<key>title</key>
+			<string>PollingDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>MasonryViewController</string>
 			<key>title</key>
 			<string>MasonryDemo</string>
