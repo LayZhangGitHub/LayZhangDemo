@@ -7,6 +7,8 @@
 //
 
 #import "CookieViewController.h"
+#import "CountDownButton.h"
+#import "LoginInputView.h"
 
 @interface CookieViewController ()
 
@@ -17,6 +19,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self createNavBarWithTitle:@"CookieDemo"];
+//    CountDownButton *countDownButton = [[CountDownButton alloc] init];
+
+    CountDownButton *countDownButton = [CountDownButton instanceWithBegin:^(CountDownButton *countDownButton) {
+//        countDownButton.enabled = NO;
+        
+        [countDownButton startCountDownWithSecond:10];
+
+    } couting:^NSString *(CountDownButton *countDownButton, NSUInteger second) {
+        NSString *title = [NSString stringWithFormat:@"剩余%zd秒",second];
+        NSLog(@"%@", title);
+        return title;
+
+    } finished:^NSString *(CountDownButton *countDownButton, NSUInteger second) {
+        countDownButton.enabled = YES;
+        return @"点击重新获取";
+    }];
+    
+        [countDownButton setFrame:CGRectMake(100, 100, 200, 200)];
+        [self.view addSubview:countDownButton];
+
+    [countDownButton setBackgroundColor:[UIColor redColor]];
+    
+    
+    LoginInputView *login = [LoginInputView instanceWithImageName:@"icon_back"];
+    login.frame = CGRectMake(20 , 20, 200 , 30);
+    [self.view addSubview:login];
 }
 
 - (void)didReceiveMemoryWarning {
