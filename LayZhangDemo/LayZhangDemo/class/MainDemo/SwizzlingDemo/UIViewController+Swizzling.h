@@ -1,13 +1,13 @@
-////
-////  UIViewController+Swizzling.h
-////  LayZhangDemo
-////
-////  Created by LayZhang on 2017/5/18.
-////  Copyright © 2017年 Zhanglei. All rights reserved.
-////
 //
-//#import <UIKit/UIKit.h>
+//  UIViewController+Swizzling.h
+//  LayZhangDemo
 //
-//@interface UIViewController (Swizzling)
+//  Created by LayZhang on 2017/5/18.
+//  Copyright © 2017年 Zhanglei. All rights reserved.
 //
-//@end
+
+#import <UIKit/UIKit.h>
+
+@interface UIViewController (Swizzling)
+
+@end

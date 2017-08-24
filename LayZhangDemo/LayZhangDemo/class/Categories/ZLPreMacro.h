@@ -19,6 +19,7 @@
 #import "Masonry.h"
 #import "YYModel.h"
 #import "NSObject+Runtime.h"
+#import "NSArray+YYAdd.h"
 
 #pragma mark - screen
 #define Screen [UIScreen mainScreen]

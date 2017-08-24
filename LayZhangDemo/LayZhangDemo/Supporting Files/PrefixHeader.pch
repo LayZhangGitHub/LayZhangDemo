@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "ZLPreMacro.h"
+#import "SafeObjectMarco.h"
 
 #endif /* PrefixHeader_pch */

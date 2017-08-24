@@ -42,6 +42,17 @@
 		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
 		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
 		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
+		4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */; };
+		4847B6A31F4C1C4500F8A128 /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6A21F4C1C4500F8A128 /* CollectionController.m */; };
+		4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6A51F4C1DFA00F8A128 /* BaseCell.m */; };
+		4847B6A91F4C1E4A00F8A128 /* CCellA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6A81F4C1E4A00F8A128 /* CCellA.m */; };
+		4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6AB1F4C1E5500F8A128 /* CCellB.m */; };
+		4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6AE1F4C1E6100F8A128 /* CCellC.m */; };
+		4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6B11F4C315E00F8A128 /* ZLUIKit.m */; };
+		4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7071F4E71F500F8A128 /* SafeKitController.m */; };
+		4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B70B1F4E739400F8A128 /* NSArray+Safe.m */; };
+		4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */; };
+		4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
 		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
@@ -181,6 +192,29 @@
 		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
 		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
 		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
+		4847B6841F4A796A00F8A128 /* AsyncToSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncToSyncController.h; sourceTree = "<group>"; };
+		4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncToSyncController.m; sourceTree = "<group>"; };
+		4847B6A11F4C1C4500F8A128 /* CollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
+		4847B6A21F4C1C4500F8A128 /* CollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
+		4847B6A41F4C1DFA00F8A128 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		4847B6A51F4C1DFA00F8A128 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		4847B6A71F4C1E4A00F8A128 /* CCellA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCellA.h; sourceTree = "<group>"; };
+		4847B6A81F4C1E4A00F8A128 /* CCellA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCellA.m; sourceTree = "<group>"; };
+		4847B6AA1F4C1E5500F8A128 /* CCellB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCellB.h; sourceTree = "<group>"; };
+		4847B6AB1F4C1E5500F8A128 /* CCellB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCellB.m; sourceTree = "<group>"; };
+		4847B6AD1F4C1E6100F8A128 /* CCellC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCellC.h; sourceTree = "<group>"; };
+		4847B6AE1F4C1E6100F8A128 /* CCellC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCellC.m; sourceTree = "<group>"; };
+		4847B6B01F4C315E00F8A128 /* ZLUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUIKit.h; sourceTree = "<group>"; };
+		4847B6B11F4C315E00F8A128 /* ZLUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUIKit.m; sourceTree = "<group>"; };
+		4847B7061F4E71F500F8A128 /* SafeKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeKitController.h; sourceTree = "<group>"; };
+		4847B7071F4E71F500F8A128 /* SafeKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeKitController.m; sourceTree = "<group>"; };
+		4847B70A1F4E739400F8A128 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		4847B70B1F4E739400F8A128 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
+		4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
+		4847B7131F4EA8F900F8A128 /* SafeObjectMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMarco.h; sourceTree = "<group>"; };
+		4860F1FD1F4ED035006E1648 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
@@ -483,6 +517,55 @@
 			path = ProxyDemo;
 			sourceTree = "<group>";
 		};
+		4847B6831F4A792600F8A128 /* AsyTosy */ = {
+			isa = PBXGroup;
+			children = (
+				4847B6841F4A796A00F8A128 /* AsyncToSyncController.h */,
+				4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */,
+			);
+			path = AsyTosy;
+			sourceTree = "<group>";
+		};
+		4847B6A01F4C1C2F00F8A128 /* CollectionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4847B6A11F4C1C4500F8A128 /* CollectionController.h */,
+				4847B6A21F4C1C4500F8A128 /* CollectionController.m */,
+				4847B6A41F4C1DFA00F8A128 /* BaseCell.h */,
+				4847B6A51F4C1DFA00F8A128 /* BaseCell.m */,
+				4847B6A71F4C1E4A00F8A128 /* CCellA.h */,
+				4847B6A81F4C1E4A00F8A128 /* CCellA.m */,
+				4847B6AA1F4C1E5500F8A128 /* CCellB.h */,
+				4847B6AB1F4C1E5500F8A128 /* CCellB.m */,
+				4847B6AD1F4C1E6100F8A128 /* CCellC.h */,
+				4847B6AE1F4C1E6100F8A128 /* CCellC.m */,
+			);
+			path = CollectionDemo;
+			sourceTree = "<group>";
+		};
+		4847B7051F4E71D800F8A128 /* SafeKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4847B7061F4E71F500F8A128 /* SafeKitController.h */,
+				4847B7071F4E71F500F8A128 /* SafeKitController.m */,
+			);
+			path = SafeKitDemo;
+			sourceTree = "<group>";
+		};
+		4847B7091F4E738200F8A128 /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				4847B7131F4EA8F900F8A128 /* SafeObjectMarco.h */,
+				4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */,
+				4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */,
+				4847B70A1F4E739400F8A128 /* NSArray+Safe.h */,
+				4847B70B1F4E739400F8A128 /* NSArray+Safe.m */,
+				4860F1FD1F4ED035006E1648 /* NSMutableArray+Safe.h */,
+				4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */,
+			);
+			path = Safe;
+			sourceTree = "<group>";
+		};
 		48B8778C1EEA4F7C005FA03D /* PollingDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +748,7 @@
 		48E558661EC2F3C800FE30E0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4847B7091F4E738200F8A128 /* Safe */,
 				48E558C81EC31CD500FE30E0 /* ScreenAuotoSizeScale.h */,
 				48E558C91EC31CD500FE30E0 /* ScreenAuotoSizeScale.m */,
 				48E5586D1EC2F3C800FE30E0 /* ZLPreMacro.h */,
@@ -696,6 +780,9 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4847B7051F4E71D800F8A128 /* SafeKitDemo */,
+				4847B6A01F4C1C2F00F8A128 /* CollectionDemo */,
+				4847B6831F4A792600F8A128 /* AsyTosy */,
 				480AACB81F341BCA00D1BA51 /* CookieDemo */,
 				48B8778C1EEA4F7C005FA03D /* PollingDemo */,
 				48D813DC1EDE58C60080B5F3 /* MasonryDemo */,
@@ -784,6 +871,8 @@
 		48E558CB1EC31DC400FE30E0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4847B6B01F4C315E00F8A128 /* ZLUIKit.h */,
+				4847B6B11F4C315E00F8A128 /* ZLUIKit.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1008,6 +1097,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				480AACC11F34696400D1BA51 /* LoginInputView.m in Sources */,
@@ -1023,6 +1113,7 @@
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
+				4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
 				482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */,
 				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
@@ -1034,6 +1125,7 @@
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
+				4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */,
 				48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */,
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
 				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
@@ -1042,6 +1134,7 @@
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */,
 				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
+				4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */,
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
@@ -1053,27 +1146,34 @@
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48B877921EEA52E8005FA03D /* PollingModel.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
+				4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */,
 				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
 				48BA56CA1EC9BC0B009DB6D0 /* ZLKeyboardView.m in Sources */,
 				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
 				482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */,
 				480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */,
 				48F79A841ED59F2A00280CBB /* AnnoucementCell.m in Sources */,
+				4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */,
 				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
+				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
 				48D813D01ED96E190080B5F3 /* SignatureController.m in Sources */,
 				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
 				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
+				4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */,
+				4847B6A91F4C1E4A00F8A128 /* CCellA.m in Sources */,
 				48D813E51EDE5DBE0080B5F3 /* BaseViewA.m in Sources */,
 				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
+				4847B6A31F4C1C4500F8A128 /* CollectionController.m in Sources */,
 				480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */,
 				48D813CD1ED96E040080B5F3 /* ZLSignatureView.m in Sources */,
 				480ABB301ED3DB9900C6288E /* Animal.m in Sources */,
 				48D813D81ED970EA0080B5F3 /* KeyChainDemoController.m in Sources */,
 				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
+				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,
 				480AACBE1F344DDC00D1BA51 /* CountDownButton.m in Sources */,
 				48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */,
 				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,

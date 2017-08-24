@@ -5,6 +5,18 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>SafeKitController</string>
+			<key>title</key>
+			<string>SafeKitDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>CollectionController</string>
+			<key>title</key>
+			<string>CollectionDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>CookieViewController</string>
 			<key>title</key>
 			<string>CookieDemo</string>
