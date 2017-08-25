@@ -12,6 +12,8 @@
 #import "NSObject+Safe.h"
 #import "NSArray+Safe.h"
 #import "NSMutableArray+Safe.h"
+#import "NSDictionary+Safe.h"
+#import "NSMutableDictionary+Safe.h"
 
 
 #endif /* SafeObjectMarco_h */

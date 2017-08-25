@@ -14,15 +14,19 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // 2个及两个以上元素 数组
-        [NSClassFromString(@"__NSArrayI") exchangeInstanceMethodFromSel:@selector(objectAtIndex:) toSel:@selector(safeObjectAtIndexI:)];
+        [NSClassFromString(@"__NSArrayI") exchangeInstanceMethodFromSel:@selector(objectAtIndex:)
+                                                                  toSel:@selector(safeObjectAtIndexI:)];
         // 单个元素 数组
-        [NSClassFromString(@"__NSSingleObjectArrayI") exchangeInstanceMethodFromSel:@selector(objectAtIndex:) toSel:@selector(safeObjectAtIndexSingle:)];
+        [NSClassFromString(@"__NSSingleObjectArrayI") exchangeInstanceMethodFromSel:@selector(objectAtIndex:)
+                                                                              toSel:@selector(safeObjectAtIndexSingle:)];
         // 空数组 数组
-        [NSClassFromString(@"__NSArray0") exchangeInstanceMethodFromSel:@selector(objectAtIndex:) toSel:@selector(safeObjectAtIndex0:)];
+        [NSClassFromString(@"__NSArray0") exchangeInstanceMethodFromSel:@selector(objectAtIndex:)
+                                                                  toSel:@selector(safeObjectAtIndex0:)];
         // __NSPlaceHolderArray 没必要为 未初始化的数组做检查
         
         // 数组初始化方法 类方法
-        [NSArray exchangeClassMethodFromSel:@selector(arrayWithObjects:count:) toSel:@selector(safeArrayWithObjects:count:)];
+        [NSArray exchangeClassMethodFromSel:@selector(arrayWithObjects:count:)
+                                      toSel:@selector(safeArrayWithObjects:count:)];
     });
 }
 

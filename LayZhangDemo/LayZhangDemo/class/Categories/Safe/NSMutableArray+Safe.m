@@ -16,16 +16,20 @@
         
         Class arrayMClass = NSClassFromString(@"__NSArrayM");
         // 获取索引元素
-        [arrayMClass exchangeInstanceMethodFromSel:@selector(objectAtIndex:) toSel:@selector(safeObjectAtIndexM:)];
+        [arrayMClass exchangeInstanceMethodFromSel:@selector(objectAtIndex:)
+                                             toSel:@selector(safeObjectAtIndexM:)];
         
         // 索替换
-        [arrayMClass exchangeInstanceMethodFromSel:@selector(setObject:atIndexedSubscript:) toSel:@selector(setSafeObject:atIndexedSubscript:)];
+        [arrayMClass exchangeInstanceMethodFromSel:@selector(setObject:atIndexedSubscript:)
+                                             toSel:@selector(setSafeObject:atIndexedSubscript:)];
         
         // 索引移除
-        [arrayMClass exchangeInstanceMethodFromSel:@selector(removeObjectAtIndex:) toSel:@selector(safeRemoveObjectAtIndex:)];
+        [arrayMClass exchangeInstanceMethodFromSel:@selector(removeObjectAtIndex:)
+                                             toSel:@selector(safeRemoveObjectAtIndex:)];
         
         // 索引插入
-        [arrayMClass exchangeInstanceMethodFromSel:@selector(insertObject:atIndex:) toSel:@selector(insertSafeObject:atIndex:)];
+        [arrayMClass exchangeInstanceMethodFromSel:@selector(insertObject:atIndex:)
+                                             toSel:@selector(insertSafeObject:atIndex:)];
     });
 }
 

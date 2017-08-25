@@ -7,7 +7,7 @@
 //
 
 #import "SafeKitController.h"
-#import "SafeObjectMarco.h"
+//#import "SafeObjectMarco.h"
 //#import "NSArray+Safe.h"
 
 
@@ -20,28 +20,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self safeTest];
+    
+    UITextField *textField = [[UITextField alloc] init];
+    textField.backgroundColor = [UIColor redColor];
+    textField.frame = CGRectMake(10, 100, 300, 40);
+    [self.view addSubview:textField];
 }
 
 - (void)safeTest {
-    NSArray *array = @[@"1"];
-    NSString *value = array[2];
-    NSLog(@"%@", value);
-    
     NSString *nilString = nil;
-    NSArray *array1 = [[NSArray alloc] initWithObjects:nilString, nil];
-    NSString *value1 = array1[3];
-    NSLog(@"%@", value1);
+//    NSArray *array = @[@"1"];
+//    NSString *value = array[2];
+//    NSLog(@"%@", value);
+//    
     
-    NSArray *array2 = @[];
-    NSString *value2 = array2[0];
-    NSLog(@"%@", value2);
+//    NSArray *array1 = [[NSArray alloc] initWithObjects:nilString, nil];
+//    NSString *value1 = array1[3];
+//    NSLog(@"%@", value1);
+//    
+//    NSArray *array2 = @[];
+//    NSString *value2 = array2[0];
+//    NSLog(@"%@", value2);
     
-    NSMutableArray *array3 = [[NSMutableArray alloc] init];
-    NSString *value3 = array3[0];
-    [array3 setObject:nilString atIndexedSubscript:0];
-    NSLog(@"%@", value3);
+//    NSMutableArray *array3 = [[NSMutableArray alloc] init];
+//    NSString *value3 = array3[0];
+//    [array3 setObject:nilString atIndexedSubscript:0];
+//    [array3 addObject:nilString];
+//    [array3 removeObjectAtIndex:3];
+//    [array3 insertObject:@"123" atIndex:9];
+//    NSLog(@"%@", value3);
+//    
+//    [array3 insertObject:nilString atIndex:100];
     
-    [array3 insertObject:nilString atIndex:100];
+//    NSDictionary *dic = @{
+//                          };
+//    
+//    id obect =  [dic objectForKey:nilString];
+//    NSLog(@"%@", obect);
     
 //    array3 insertObject:<#(nonnull id)#> atIndex:<#(NSUInteger)#>
 //    array3 setObject:<#(nonnull id)#> atIndexedSubscript:<#(NSUInteger)#>
@@ -49,6 +64,10 @@
     
 //    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
 //    [dic setObject:nil forKey:@"key"];
+    NSMutableDictionary *mDic = [[NSMutableDictionary alloc] init];
+    [mDic setObject:nilString forKey:@"key"];
+    [mDic removeObjectForKey:nilString];
+//    NSLog(@"%@", mDic);
 }
 
 
