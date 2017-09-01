@@ -55,6 +55,11 @@
 		4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */; };
 		4860F2021F4FBD55006E1648 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F2011F4FBD55006E1648 /* NSDictionary+Safe.m */; };
 		4860F2051F4FD041006E1648 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F2041F4FD041006E1648 /* NSMutableDictionary+Safe.m */; };
+		4860F3B21F569603006E1648 /* BaseDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3B11F569603006E1648 /* BaseDemoController.m */; };
+		4860F3B51F569A87006E1648 /* AppInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3B41F569A87006E1648 /* AppInfoManager.m */; };
+		4860F3B81F56B3A3006E1648 /* MyWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3B71F56B3A3006E1648 /* MyWeakProxy.m */; };
+		4860F3BB1F57A9E7006E1648 /* MyFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */; };
+		4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
 		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
@@ -221,6 +226,16 @@
 		4860F2011F4FBD55006E1648 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
 		4860F2031F4FD040006E1648 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		4860F2041F4FD041006E1648 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		4860F3B01F569603006E1648 /* BaseDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDemoController.h; sourceTree = "<group>"; };
+		4860F3B11F569603006E1648 /* BaseDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDemoController.m; sourceTree = "<group>"; };
+		4860F3B31F569A87006E1648 /* AppInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoManager.h; sourceTree = "<group>"; };
+		4860F3B41F569A87006E1648 /* AppInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoManager.m; sourceTree = "<group>"; };
+		4860F3B61F56B3A3006E1648 /* MyWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWeakProxy.h; sourceTree = "<group>"; };
+		4860F3B71F56B3A3006E1648 /* MyWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWeakProxy.m; sourceTree = "<group>"; };
+		4860F3B91F57A9E7006E1648 /* MyFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFPSLabel.h; sourceTree = "<group>"; };
+		4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFPSLabel.m; sourceTree = "<group>"; };
+		4860F3BC1F57BC54006E1648 /* FloatNoticeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatNoticeWindow.h; sourceTree = "<group>"; };
+		4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatNoticeWindow.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
@@ -576,6 +591,23 @@
 			path = Safe;
 			sourceTree = "<group>";
 		};
+		4860F3AF1F5695EA006E1648 /* BaseDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4860F3B01F569603006E1648 /* BaseDemoController.h */,
+				4860F3B11F569603006E1648 /* BaseDemoController.m */,
+				4860F3B31F569A87006E1648 /* AppInfoManager.h */,
+				4860F3B41F569A87006E1648 /* AppInfoManager.m */,
+				4860F3B61F56B3A3006E1648 /* MyWeakProxy.h */,
+				4860F3B71F56B3A3006E1648 /* MyWeakProxy.m */,
+				4860F3B91F57A9E7006E1648 /* MyFPSLabel.h */,
+				4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */,
+				4860F3BC1F57BC54006E1648 /* FloatNoticeWindow.h */,
+				4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */,
+			);
+			path = BaseDemo;
+			sourceTree = "<group>";
+		};
 		48B8778C1EEA4F7C005FA03D /* PollingDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,6 +822,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4860F3AF1F5695EA006E1648 /* BaseDemo */,
 				4847B7051F4E71D800F8A128 /* SafeKitDemo */,
 				4847B6A01F4C1C2F00F8A128 /* CollectionDemo */,
 				4847B6831F4A792600F8A128 /* AsyTosy */,
@@ -1107,6 +1140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
@@ -1126,12 +1160,14 @@
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
+				4860F3B51F569A87006E1648 /* AppInfoManager.m in Sources */,
 				482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */,
 				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
 				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
 				482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */,
 				480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */,
 				482CE3501ED6EE0300409C04 /* JSONModel02.m in Sources */,
+				4860F3BB1F57A9E7006E1648 /* MyFPSLabel.m in Sources */,
 				48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */,
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
@@ -1139,6 +1175,7 @@
 				4860F2021F4FBD55006E1648 /* NSDictionary+Safe.m in Sources */,
 				4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */,
 				48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */,
+				4860F3B81F56B3A3006E1648 /* MyWeakProxy.m in Sources */,
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
 				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
@@ -1173,6 +1210,7 @@
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
 				48D813D01ED96E190080B5F3 /* SignatureController.m in Sources */,
 				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
+				4860F3B21F569603006E1648 /* BaseDemoController.m in Sources */,
 				48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */,
 				4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */,
 				4847B6A91F4C1E4A00F8A128 /* CCellA.m in Sources */,

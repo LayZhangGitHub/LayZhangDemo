@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FloatNoticeWindow.h"
 
 @interface AppDelegate ()
 
@@ -18,11 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self showNoticeWindow];
+    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (UIWindow *)showNoticeWindow {
+    FloatNoticeWindow *noticeWindow = [[FloatNoticeWindow alloc] initWithFrame:CGRectMake(10, 100, 400 * SCALE, 40 * SCALE)];
+    noticeWindow.layer.cornerRadius = 5.0f;
+    return noticeWindow;
 }
 
 

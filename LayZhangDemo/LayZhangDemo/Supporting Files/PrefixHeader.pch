@@ -12,4 +12,19 @@
 #import "ZLPreMacro.h"
 #import "SafeObjectMarco.h"
 
+
+//weakSelf & strongSelf
+#define weakSelf( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+__attribute__((objc_ownership(weak))) __typeof__(x) __weak_##x##__ = x; \
+_Pragma("clang diagnostic pop")
+
+#define strongSelf( x ) \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Wshadow\"") \
+__attribute__((objc_ownership(strong))) __typeof__(x) x = __weak_##x##__; \
+_Pragma("clang diagnostic pop")
+
+
 #endif /* PrefixHeader_pch */

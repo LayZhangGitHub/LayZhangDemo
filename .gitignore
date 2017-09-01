@@ -61,3 +61,12 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+
+
+{
+requestBody = {
+    result = "{\"alipay_trade_app_pay_response\":{\"code\":\"10000\",\"msg\":\"Success\",\"app_id\":\"2016111602877934\",\"auth_app_id\":\"2016111602877934\",\"charset\":\"utf-8\",\"timestamp\":\"2017-08-28 17:29:39\",\"total_amount\":\"0.01\",\"trade_no\":\"2017082821001004750256810162\",\"seller_id\":\"2088521151595329\",\"out_trade_no\":\"3f2a28d3f80f41909c790a139c8c60d2\"},\"sign\":\"g8cqKH4/Gxwzlb9levsI15sp+8Is/RJqHX/rL4tf1nENGbU5STuUca3LazhTwApeHzEeTpNEenGqHk3hxgSPjivVd2a/JdP+HkVt5HTEibCDC07DaJ27B+mLcVQf91EDgXOIhO2bQZbWWzo99GD8lmK72QPGjpb5sY9O3r5Bm8vBL8fGn0kzcTq8Xj92gYBQfugDFQ6bNmE1U4jE3I6KjiZi/9pdGr9dP24c05UHWtl0lC31o5EJp9nms3ZY831PmMi4Uj3L37MbavFjHsT2Cmn+fc0/7GfxsQF1ENWrnqLJJx1HPEK8piXVM+Uzt8Jd/FFIlEbY2Dzm4yr6dy2pEA==\",\"sign_type\":\"RSA2\"}";
+    resultStatus = 9000;
+}
+}
