@@ -30,6 +30,9 @@
 		480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB3D1ED3E79500C6288E /* JSONParseDemoController.m */; };
 		480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */; };
 		480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */ = {isa = PBXBuildFile; fileRef = 480ABB421ED3EB3600C6288E /* JSONModel01.m */; };
+		481AA2571F5FD0BC00641A74 /* HitTestDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 481AA2561F5FD0BC00641A74 /* HitTestDemoController.m */; };
+		481AA25A1F5FE35A00641A74 /* MyHitTestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 481AA2591F5FE35A00641A74 /* MyHitTestButton.m */; };
+		481AA25D1F6002AA00641A74 /* MyHitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 481AA25C1F6002AA00641A74 /* MyHitTestView.m */; };
 		482CE3501ED6EE0300409C04 /* JSONModel02.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE34F1ED6EE0300409C04 /* JSONModel02.m */; };
 		482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3521ED7044800409C04 /* YJSONModel01.m */; };
 		482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3551ED7045500409C04 /* YJSONModel02.m */; };
@@ -175,6 +178,12 @@
 		480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JSONDemo.plist; sourceTree = "<group>"; };
 		480ABB411ED3EB3600C6288E /* JSONModel01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel01.h; sourceTree = "<group>"; };
 		480ABB421ED3EB3600C6288E /* JSONModel01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel01.m; sourceTree = "<group>"; };
+		481AA2551F5FD0BC00641A74 /* HitTestDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HitTestDemoController.h; path = ../../../../../../../../HitTestDemoController.h; sourceTree = "<group>"; };
+		481AA2561F5FD0BC00641A74 /* HitTestDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HitTestDemoController.m; path = ../../../../../../../../HitTestDemoController.m; sourceTree = "<group>"; };
+		481AA2581F5FE35A00641A74 /* MyHitTestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHitTestButton.h; sourceTree = "<group>"; };
+		481AA2591F5FE35A00641A74 /* MyHitTestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHitTestButton.m; sourceTree = "<group>"; };
+		481AA25B1F6002AA00641A74 /* MyHitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHitTestView.h; sourceTree = "<group>"; };
+		481AA25C1F6002AA00641A74 /* MyHitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHitTestView.m; sourceTree = "<group>"; };
 		482CE34E1ED6EE0300409C04 /* JSONModel02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel02.h; sourceTree = "<group>"; };
 		482CE34F1ED6EE0300409C04 /* JSONModel02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel02.m; sourceTree = "<group>"; };
 		482CE3511ED7044800409C04 /* YJSONModel01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSONModel01.h; sourceTree = "<group>"; };
@@ -482,6 +491,19 @@
 				482CE3551ED7045500409C04 /* YJSONModel02.m */,
 			);
 			path = JSONParseDemo;
+			sourceTree = "<group>";
+		};
+		481AA2541F5FD09300641A74 /* HitTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				481AA2551F5FD0BC00641A74 /* HitTestDemoController.h */,
+				481AA2561F5FD0BC00641A74 /* HitTestDemoController.m */,
+				481AA2581F5FE35A00641A74 /* MyHitTestButton.h */,
+				481AA2591F5FE35A00641A74 /* MyHitTestButton.m */,
+				481AA25B1F6002AA00641A74 /* MyHitTestView.h */,
+				481AA25C1F6002AA00641A74 /* MyHitTestView.m */,
+			);
+			path = HitTestDemo;
 			sourceTree = "<group>";
 		};
 		482CE3571ED70D0200409C04 /* SemaphoreDemo */ = {
@@ -822,6 +844,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				481AA2541F5FD09300641A74 /* HitTestDemo */,
 				4860F3AF1F5695EA006E1648 /* BaseDemo */,
 				4847B7051F4E71D800F8A128 /* SafeKitDemo */,
 				4847B6A01F4C1C2F00F8A128 /* CollectionDemo */,
@@ -1140,6 +1163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481AA2571F5FD0BC00641A74 /* HitTestDemoController.m in Sources */,
 				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
@@ -1167,6 +1191,7 @@
 				482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */,
 				480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */,
 				482CE3501ED6EE0300409C04 /* JSONModel02.m in Sources */,
+				481AA25D1F6002AA00641A74 /* MyHitTestView.m in Sources */,
 				4860F3BB1F57A9E7006E1648 /* MyFPSLabel.m in Sources */,
 				48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */,
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
@@ -1181,6 +1206,7 @@
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
 				48D813DF1EDE58EE0080B5F3 /* MasonryViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
+				481AA25A1F5FE35A00641A74 /* MyHitTestButton.m in Sources */,
 				48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */,
 				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
 				4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */,

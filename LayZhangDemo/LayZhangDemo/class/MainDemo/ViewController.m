@@ -45,6 +45,7 @@
     if (_groups == nil) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"ZLDemoList" ofType:@"plist"];
         _groups = [NSArray arrayWithContentsOfFile:path];
+        NSLog(@"%@", _groups);
     }
     return _groups;
 }
