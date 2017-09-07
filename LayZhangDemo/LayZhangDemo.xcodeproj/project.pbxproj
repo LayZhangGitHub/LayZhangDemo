@@ -82,6 +82,7 @@
 		48D813E51EDE5DBE0080B5F3 /* BaseViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813E41EDE5DBE0080B5F3 /* BaseViewA.m */; };
 		48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813E71EDE5E800080B5F3 /* BaseViewB.m */; };
 		48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813EA1EDE5E890080B5F3 /* BaseViewC.m */; };
+		48E414221F61494700E59D65 /* NSMutableSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E414211F61494700E59D65 /* NSMutableSet+Safe.m */; };
 		48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E81EC0580000FE30E0 /* AppDelegate.m */; };
 		48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557ED1EC0580000FE30E0 /* Main.storyboard */; };
 		48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F01EC0580000FE30E0 /* Assets.xcassets */; };
@@ -284,6 +285,8 @@
 		48D813E71EDE5E800080B5F3 /* BaseViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewB.m; sourceTree = "<group>"; };
 		48D813E91EDE5E890080B5F3 /* BaseViewC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewC.h; sourceTree = "<group>"; };
 		48D813EA1EDE5E890080B5F3 /* BaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewC.m; sourceTree = "<group>"; };
+		48E414201F61494700E59D65 /* NSMutableSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+Safe.h"; sourceTree = "<group>"; };
+		48E414211F61494700E59D65 /* NSMutableSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Safe.m"; sourceTree = "<group>"; };
 		48E557E11EC0580000FE30E0 /* LayZhangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayZhangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E557E71EC0580000FE30E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E557E81EC0580000FE30E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -609,6 +612,8 @@
 				4860F2011F4FBD55006E1648 /* NSDictionary+Safe.m */,
 				4860F2031F4FD040006E1648 /* NSMutableDictionary+Safe.h */,
 				4860F2041F4FD041006E1648 /* NSMutableDictionary+Safe.m */,
+				48E414201F61494700E59D65 /* NSMutableSet+Safe.h */,
+				48E414211F61494700E59D65 /* NSMutableSet+Safe.m */,
 			);
 			path = Safe;
 			sourceTree = "<group>";
@@ -1200,6 +1205,7 @@
 				4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */,
 				48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */,
 				4860F3B81F56B3A3006E1648 /* MyWeakProxy.m in Sources */,
+				48E414221F61494700E59D65 /* NSMutableSet+Safe.m in Sources */,
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
 				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,

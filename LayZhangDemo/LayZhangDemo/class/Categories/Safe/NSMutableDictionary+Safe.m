@@ -25,7 +25,7 @@
         [self setSafeObject:anObject forKey:aKey];
     }
     @catch (NSException *exception) {
-        NSString *reason = @"set object or key is nil";
+        NSString *reason = @"__NSDictionaryM set object or key is nil";
         [NSObject noticeException:exception withReason:reason];
     }
     @finally {
@@ -38,7 +38,7 @@
         [self removeSafeObjectForKey:aKey];
     }
     @catch (NSException *exception) {
-        NSString *reason = @"remove key is nil";
+        NSString *reason = @"__NSDictionaryM remove key is nil";
         [NSObject noticeException:exception withReason:reason];
     }
     @finally {
