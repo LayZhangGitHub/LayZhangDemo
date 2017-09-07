@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item name="Default">操作失敗</item>
+    
+    <item name="LangA">信息A</item>
+    <item name="LangB">示例B</item>
+</resources>
