@@ -40,19 +40,19 @@
 @implementation RuntimeDemoClass
 
 + (void)metaMethodWithArgument:(NSString *)argument {
-    AllLog(@"%@", argument);
+    ZLAllLog(@"%@", argument);
 }
 
 - (void)publicTestMethod1 {
-    AllLog(@"publicTestMethod1");
+    ZLAllLog(@"publicTestMethod1");
 }
 
 - (void)publicTestMethod2 {
-    AllLog(@"publicTestMethod2");
+    ZLAllLog(@"publicTestMethod2");
 }
 
 - (void)privateMethod {
-    AllLog(@"privateMethod");
+    ZLAllLog(@"privateMethod");
 }
 
 //*1 #### 动态方法解析

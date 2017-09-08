@@ -23,5 +23,24 @@
     [alertView show];
 }
 
+- (NSString *)trim {
+    if( self == nil || [self isKindOfClass:[NSNull class]] ) {
+        return nil;
+    }
+    
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
+
+- (CGSize)sizeWithUIFont:(UIFont *)font forWidth:(CGFloat)width {
+    NSDictionary *attribute = @{NSFontAttributeName:font};
+    CGSize size = [self sizeWithUIAttribute:attribute forWidth:width];
+    return size;
+}
+
+- (CGSize)sizeWithUIAttribute:(NSDictionary *)attribute forWidth:(CGFloat)width {
+    CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+    
+    return size;
+}
 
 @end

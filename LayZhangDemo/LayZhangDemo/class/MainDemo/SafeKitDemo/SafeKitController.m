@@ -7,7 +7,7 @@
 //
 
 #import "SafeKitController.h"
-//#import "SafeObjectMarco.h"
+//#import "SafeObjectMacro.h"
 //#import "NSArray+Safe.h"
 
 

@@ -52,7 +52,7 @@
     UILabel *navTitleLabel = [[UILabel alloc] init];
     [self.navBarContainer addSubview:navTitleLabel];
     navTitleLabel.backgroundColor = ZLWhiteColor;
-    navTitleLabel.textColor = ZLColor(34, 34, 34);
+    navTitleLabel.textColor = ZLRGB(34, 34, 34);
     navTitleLabel.textAlignment = NSTextAlignmentCenter;
     navTitleLabel.font = ZLBoldFont(17);
     navTitleLabel.text = title;
@@ -81,7 +81,7 @@
     // bottomLine
     UIView *bottomLine = [[UIView alloc] init];
     [self.navBarContainer addSubview:bottomLine];
-    bottomLine.backgroundColor = ZLColor(240, 240, 240);
+    bottomLine.backgroundColor = ZLRGB(240, 240, 240);
     bottomLine.frame = CGRectMake(0, self.navBarContainer.height - 0.5, self.navBarContainer.width, 0.5);
     
 }

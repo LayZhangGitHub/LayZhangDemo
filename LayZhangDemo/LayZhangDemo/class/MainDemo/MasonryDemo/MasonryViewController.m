@@ -51,7 +51,7 @@
     
 //    UIButton *changeButton = [[UIButton alloc] init];
 //    changeButton.frame = CGRectMake(0, 0, 100, 100);
-//    changeButton.backgroundColor = ZLColor(100, 200, 10);
+//    changeButton.backgroundColor = ZLRGB(100, 200, 10);
 //    [self.view addSubview:changeButton];
 //    [changeButton addTarget:self action:@selector(changeFrame) forControlEvents:UIControlEventTouchUpInside];
     

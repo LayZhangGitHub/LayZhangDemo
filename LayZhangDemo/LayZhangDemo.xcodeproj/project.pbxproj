@@ -83,6 +83,9 @@
 		48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813E71EDE5E800080B5F3 /* BaseViewB.m */; };
 		48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813EA1EDE5E890080B5F3 /* BaseViewC.m */; };
 		48E414221F61494700E59D65 /* NSMutableSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E414211F61494700E59D65 /* NSMutableSet+Safe.m */; };
+		48E414251F62381F00E59D65 /* ZLThemeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E414241F62381F00E59D65 /* ZLThemeControl.m */; };
+		48E414291F62437900E59D65 /* ZLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E414281F62437900E59D65 /* ZLAlertView.m */; };
+		48E4142C1F62677200E59D65 /* ZLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4142B1F62677200E59D65 /* ZLDropDownMenu.m */; };
 		48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557E81EC0580000FE30E0 /* AppDelegate.m */; };
 		48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E557ED1EC0580000FE30E0 /* Main.storyboard */; };
 		48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E557F01EC0580000FE30E0 /* Assets.xcassets */; };
@@ -229,7 +232,7 @@
 		4847B70B1F4E739400F8A128 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
 		4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
-		4847B7131F4EA8F900F8A128 /* SafeObjectMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMarco.h; sourceTree = "<group>"; };
+		4847B7131F4EA8F900F8A128 /* SafeObjectMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMacro.h; sourceTree = "<group>"; };
 		4860F1FD1F4ED035006E1648 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
 		4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		4860F2001F4FBD55006E1648 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
@@ -287,6 +290,12 @@
 		48D813EA1EDE5E890080B5F3 /* BaseViewC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewC.m; sourceTree = "<group>"; };
 		48E414201F61494700E59D65 /* NSMutableSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+Safe.h"; sourceTree = "<group>"; };
 		48E414211F61494700E59D65 /* NSMutableSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+Safe.m"; sourceTree = "<group>"; };
+		48E414231F62381F00E59D65 /* ZLThemeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLThemeControl.h; sourceTree = "<group>"; };
+		48E414241F62381F00E59D65 /* ZLThemeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLThemeControl.m; sourceTree = "<group>"; };
+		48E414271F62437900E59D65 /* ZLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLAlertView.h; sourceTree = "<group>"; };
+		48E414281F62437900E59D65 /* ZLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAlertView.m; sourceTree = "<group>"; };
+		48E4142A1F62677100E59D65 /* ZLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDropDownMenu.h; sourceTree = "<group>"; };
+		48E4142B1F62677200E59D65 /* ZLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownMenu.m; sourceTree = "<group>"; };
 		48E557E11EC0580000FE30E0 /* LayZhangDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayZhangDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E557E71EC0580000FE30E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48E557E81EC0580000FE30E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -601,7 +610,7 @@
 		4847B7091F4E738200F8A128 /* Safe */ = {
 			isa = PBXGroup;
 			children = (
-				4847B7131F4EA8F900F8A128 /* SafeObjectMarco.h */,
+				4847B7131F4EA8F900F8A128 /* SafeObjectMacro.h */,
 				4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */,
 				4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */,
 				4847B70A1F4E739400F8A128 /* NSArray+Safe.h */,
@@ -631,6 +640,8 @@
 				4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */,
 				4860F3BC1F57BC54006E1648 /* FloatNoticeWindow.h */,
 				4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */,
+				48E414231F62381F00E59D65 /* ZLThemeControl.h */,
+				48E414241F62381F00E59D65 /* ZLThemeControl.m */,
 			);
 			path = BaseDemo;
 			sourceTree = "<group>";
@@ -731,6 +742,17 @@
 				48D813EA1EDE5E890080B5F3 /* BaseViewC.m */,
 			);
 			path = MasonryDemo;
+			sourceTree = "<group>";
+		};
+		48E414261F62435200E59D65 /* CommView */ = {
+			isa = PBXGroup;
+			children = (
+				48E414271F62437900E59D65 /* ZLAlertView.h */,
+				48E414281F62437900E59D65 /* ZLAlertView.m */,
+				48E4142A1F62677100E59D65 /* ZLDropDownMenu.h */,
+				48E4142B1F62677200E59D65 /* ZLDropDownMenu.m */,
+			);
+			path = CommView;
 			sourceTree = "<group>";
 		};
 		48E557D81EC0580000FE30E0 = {
@@ -886,6 +908,7 @@
 		48E558931EC30B7200FE30E0 /* CustomViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48E414261F62435200E59D65 /* CommView */,
 				48D813C91ED96E040080B5F3 /* SignatureView */,
 				48F79A7E1ED59E0800280CBB /* CacheTableView */,
 				48E5589F1EC3147F00FE30E0 /* KeyboardView */,
@@ -1173,6 +1196,7 @@
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				480AACC11F34696400D1BA51 /* LoginInputView.m in Sources */,
+				48E414251F62381F00E59D65 /* ZLThemeControl.m in Sources */,
 				48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
@@ -1235,10 +1259,12 @@
 				480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */,
 				48F79A841ED59F2A00280CBB /* AnnoucementCell.m in Sources */,
 				4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */,
+				48E414291F62437900E59D65 /* ZLAlertView.m in Sources */,
 				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
+				48E4142C1F62677200E59D65 /* ZLDropDownMenu.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
 				48D813D01ED96E190080B5F3 /* SignatureController.m in Sources */,
 				48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */,
@@ -1413,6 +1439,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VH7JGCM338;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myvpntest.vpntest;
@@ -1430,6 +1457,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = VH7JGCM338;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = myvpntest.vpntest;

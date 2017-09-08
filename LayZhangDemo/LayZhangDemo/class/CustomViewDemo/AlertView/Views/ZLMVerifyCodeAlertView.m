@@ -89,12 +89,12 @@ static ZLMVerifyCodeAlertView *_instance;
     [self addSubview:inputView];
     
     UIButton *sureButton = [UIButton buttonWithTitle:@"确定"
-                                          titleColor:ZLColor(70, 151, 251)
+                                          titleColor:ZLRGB(70, 151, 251)
                                            titleFont:26];
     sureButton.layer.cornerRadius = 40 * SCALE;
     sureButton.layer.borderWidth = 1.0f;
-    sureButton.layer.borderColor = ZLColor(70, 151, 251).CGColor;
-    sureButton.backgroundColor = ZLColor(70, 151, 251);
+    sureButton.layer.borderColor = ZLRGB(70, 151, 251).CGColor;
+    sureButton.backgroundColor = ZLRGB(70, 151, 251);
     [sureButton setTitleColor:ZLWhiteColor forState:UIControlStateNormal];
     sureButton.titleLabel.font = [UIFont systemFontOfSize:34 * SCALE];
     self.sureButton = sureButton;
@@ -102,11 +102,11 @@ static ZLMVerifyCodeAlertView *_instance;
     [sureButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *cancelButton = [UIButton buttonWithTitle:@"取消"
-                                            titleColor:ZLColor(70, 151, 251)
+                                            titleColor:ZLRGB(70, 151, 251)
                                              titleFont:26];
     cancelButton.layer.cornerRadius = 40 * SCALE;
     cancelButton.layer.borderWidth = 1.0f;
-    cancelButton.layer.borderColor = ZLColor(70, 151, 251).CGColor;
+    cancelButton.layer.borderColor = ZLRGB(70, 151, 251).CGColor;
     cancelButton.titleLabel.font = [UIFont systemFontOfSize:34 * SCALE];
     self.cancelButton = cancelButton;
     [cancelButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];

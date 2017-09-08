@@ -23,7 +23,7 @@
         
         cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithBgColor:[UIColor whiteColor]]];
         
-        cell.textLabel.textColor = ZLColor(39, 39, 39);
+        cell.textLabel.textColor = ZLRGB(39, 39, 39);
         cell.textLabel.font = [UIFont systemFontOfSize:28 * SCALE];
     }
     return cell;

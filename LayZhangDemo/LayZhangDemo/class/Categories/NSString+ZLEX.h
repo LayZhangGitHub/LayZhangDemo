@@ -12,4 +12,28 @@
 
 - (void)showNotice;
 
+- (NSString *)trim;
+
+
+/**
+ 计算 size
+
+ @param font 字体大小
+ @param width 限定宽度
+ @return 计算所得 size
+ */
+- (CGSize)sizeWithUIFont:(UIFont *)font forWidth:(CGFloat)width;
+
+
+/**
+ 计算 size
+
+ @param attribute 富文本 属性
+ @param width 限定宽度
+ @return 计算所得 size
+ */
+- (CGSize)sizeWithUIAttribute:(NSDictionary *)attribute forWidth:(CGFloat)width;
+
+
+
 @end

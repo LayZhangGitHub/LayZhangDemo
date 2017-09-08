@@ -18,7 +18,7 @@
     button.backgroundColor = [UIColor whiteColor];
     button.titleLabel.font = [UIFont systemFontOfSize:font];
     [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:ZLColor(color, color, color) forState:UIControlStateNormal];
+    [button setTitleColor:ZLRGB(color, color, color) forState:UIControlStateNormal];
     button.tag = tag;
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(tag * buttonWidth, 0, buttonWidth, buttonHeight);

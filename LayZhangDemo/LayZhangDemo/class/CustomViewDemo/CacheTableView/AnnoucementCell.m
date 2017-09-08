@@ -36,8 +36,8 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         /** background **/
-        self.backgroundColor = ZLColor(243, 245, 249);
-        self.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithBgColor:ZLColor(243, 245, 249)]];
+        self.backgroundColor = ZLRGB(243, 245, 249);
+        self.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithBgColor:ZLRGB(243, 245, 249)]];
         
         /** content1 **/
         UILabel *content1Label = [UILabel labelWithText:@""

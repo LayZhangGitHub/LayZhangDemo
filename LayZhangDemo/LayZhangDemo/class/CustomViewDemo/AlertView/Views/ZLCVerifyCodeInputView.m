@@ -54,14 +54,14 @@
     [self addSubview:textField];
     
     UIImageView *verticalLine = [[UIImageView alloc] init];
-    verticalLine.backgroundColor = ZLColor(211, 211, 211);
+    verticalLine.backgroundColor = ZLRGB(211, 211, 211);
     self.verticalLine = verticalLine;
     [self addSubview:verticalLine];
     
     UIButton *sendButton = [[UIButton alloc] init];
     [sendButton setTitle:@"发送验证码" forState:UIControlStateNormal];
     sendButton.titleLabel.font = [UIFont systemFontOfSize:20 * SCALE];
-    [sendButton setTitleColor:ZLColor(70, 151, 251) forState:UIControlStateNormal];
+    [sendButton setTitleColor:ZLRGB(70, 151, 251) forState:UIControlStateNormal];
     self.sendButton = sendButton;
     [self addSubview:sendButton];
 }

@@ -30,7 +30,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT - 64) style:UITableViewStylePlain];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView = tableView;
-    tableView.backgroundColor = ZLColor(240, 240, 240);
+    tableView.backgroundColor = ZLRGB(240, 240, 240);
     
     tableView.delegate = self;
     tableView.dataSource = self;

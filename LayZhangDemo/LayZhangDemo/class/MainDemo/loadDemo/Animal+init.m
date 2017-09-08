@@ -11,11 +11,11 @@
 @implementation Animal (init)
 
 + (void)load {
-    FuncLog();
+    ZLFuncLog();
 }
 
 + (void)initialize {
-    FuncLog();
+    ZLFuncLog();
 }
 
 @end

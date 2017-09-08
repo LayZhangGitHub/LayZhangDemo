@@ -32,7 +32,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT - 64) style:UITableViewStylePlain];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView = tableView;
-    tableView.backgroundColor = ZLColor(243, 245, 249);
+    tableView.backgroundColor = ZLRGB(243, 245, 249);
     
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -116,7 +116,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 20 * SCALE)];
-    view.backgroundColor = ZLColor(243, 245, 249);
+    view.backgroundColor = ZLRGB(243, 245, 249);
     
     return view;
 }

@@ -18,7 +18,7 @@
     button.backgroundColor = [UIColor whiteColor];
     button.titleLabel.font = [UIFont systemFontOfSize:font];
     [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:ZLColor(color, color, color) forState:UIControlStateNormal];
+    [button setTitleColor:ZLRGB(color, color, color) forState:UIControlStateNormal];
     button.tag = tag;
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     button.frame = CGRectMake(tag * buttonWidth, 0, buttonWidth, buttonHeight);
@@ -124,5 +124,18 @@
     button.titleLabel.font = [UIFont fontWithName:@"Avenir-Black" size:16.0f];
     return button;
 }
+
++ (UIButton *)buttonWithTitle:(NSString *)title frame:(CGRect)frame target:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIFont   *titleFont   = ZLNormalFont(15.f);
+    button.frame  = frame;
+    button.titleLabel.font = titleFont;
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:ZLRedColor forState:UIControlStateNormal];
+    [button addTarget:target action:action forControlEvents:controlEvents];
+    
+    return button;
+}
+
 
 @end

@@ -37,7 +37,7 @@
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT - 64) style:UITableViewStylePlain];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView = tableView;
-    tableView.backgroundColor = ZLColor(240, 240, 240);
+    tableView.backgroundColor = ZLRGB(240, 240, 240);
     
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -61,7 +61,7 @@
         
         cell.selectedBackgroundView = [[UIImageView alloc] initWithImage:[UIImage imageWithBgColor:[UIColor whiteColor]]];
         
-        cell.textLabel.textColor = ZLColor(39, 39, 39);
+        cell.textLabel.textColor = ZLRGB(39, 39, 39);
         cell.textLabel.font = [UIFont systemFontOfSize:28 * SCALE];
     }
     cell.textLabel.text = self.items[indexPath.row];

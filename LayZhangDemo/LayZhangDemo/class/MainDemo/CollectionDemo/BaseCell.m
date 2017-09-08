@@ -11,7 +11,7 @@
 @implementation BaseCell
 
 - (void)reloadData {
-    AllLog(@"basecell log");
+    ZLAllLog(@"basecell log");
 }
 
 - (void)cellAddSubview:(UIView *)view {
