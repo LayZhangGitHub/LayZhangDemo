@@ -14,6 +14,8 @@
 
 @interface BaseDemoController ()<ZLAlertViewDelegate, ZLDropdownMenuDelegate>
 @property (nonatomic, strong) MyFPSLabel *myFPSLabel;
+
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation BaseDemoController
@@ -29,6 +31,34 @@
     [dropdownMenu setMenuTitles:@[@"选项一",@"选项二",@"选项三",@"选项四"] rowHeight:30];
     dropdownMenu.delegate = self;
     [self.view addSubview:dropdownMenu];
+    
+    UIButton *click = [[UIButton alloc] init];
+    click.backgroundColor = ZLBlackColor;
+    click.frame = CGRectMake(200, 300, 200, 40);
+    [self.view addSubview:click];
+    [click addTarget:self action:@selector(showTest:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIImageView *imageView = [[UIImageView alloc] init];
+    [imageView setImage:[UIImage imageNamed:@"icon_test"]];
+    self.imageView = imageView;
+    self.imageView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
+    [self.view addSubview:imageView];
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                 action:@selector(showTest:)]];
+}
+
+- (void)showTest:(id)sender {
+    NSLog(@"cli");
+    DelayEnableButton(sender, 2);
+    
+    [UIView animateWithDuration:0.4f animations:^{
+        
+        _imageView.frame = CGRectMake(_imageView.left - 100, _imageView.top - 100, _imageView.width + 200, _imageView.height + 200);
+        _imageView.alpha = 0;
+        
+    }completion:^(BOOL finished) {
+    }];
 }
 
 

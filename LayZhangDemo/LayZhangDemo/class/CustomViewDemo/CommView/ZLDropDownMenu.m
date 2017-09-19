@@ -37,7 +37,7 @@
 - (void)initComponent {
     
     self.layer.borderColor  = [UIColor blackColor].CGColor;
-    self.layer.borderWidth  = LINE_WIDTH;
+    self.layer.borderWidth  = LINEWIDTH;
     
     UIButton *mainButton = [[UIButton alloc] init];
     [mainButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -48,7 +48,7 @@
     mainButton.selected           = NO;
     mainButton.backgroundColor    = [UIColor whiteColor];
 //    mainButton.layer.borderColor  = [UIColor blackColor].CGColor;
-//    mainButton.layer.borderWidth  = LINE_WIDTH;
+//    mainButton.layer.borderWidth  = LINEWIDTH;
     self.mainButton = mainButton;
     [self addSubview:mainButton];
 
@@ -70,7 +70,7 @@
     tableBackgroundView.clipsToBounds       = YES;
     tableBackgroundView.layer.masksToBounds = NO;
     tableBackgroundView.layer.borderColor   = [UIColor lightTextColor].CGColor;
-    tableBackgroundView.layer.borderWidth   = LINE_WIDTH;
+    tableBackgroundView.layer.borderWidth   = LINEWIDTH;
     self.tableBackgroundView = tableBackgroundView;
     [self.superview addSubview:tableBackgroundView];
     

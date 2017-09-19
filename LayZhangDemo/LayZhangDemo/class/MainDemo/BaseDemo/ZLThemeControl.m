@@ -42,18 +42,33 @@ static ZLThemeValue themeType = ThemeType;
 }
 
 - (void)initThemeType01 {
-    _backColor = ZLRedColor;
+    _backgroundColor = ZLRedColor;
+    _navigationBackgroundColor = ZLRedColor;
     _titleColor = ZLBlackColor;
+    _navigationButtonColor = ZLBlackColor;
+    _navigationBottomBorderColor = ZLBlackColor;
+    _tabBarBackgroundColor = ZLBlackColor;
+    _tabBarTopBorderColor = ZLBlackColor;
 }
 
 - (void)initThemeType02 {
-    _backColor = ZLRedColor;
+    _backgroundColor = ZLRedColor;
+    _navigationBackgroundColor = ZLRedColor;
     _titleColor = ZLBlackColor;
+    _navigationButtonColor = ZLBlackColor;
+    _navigationBottomBorderColor = ZLBlackColor;
+    _tabBarBackgroundColor = ZLBlackColor;
+    _tabBarTopBorderColor = ZLBlackColor;
 }
 
 - (void)initThemeType03 {
-    _backColor = ZLRedColor;
+    _backgroundColor = ZLRedColor;
+    _navigationBackgroundColor = ZLRedColor;
     _titleColor = ZLBlackColor;
+    _navigationButtonColor = ZLBlackColor;
+    _navigationBottomBorderColor = ZLBlackColor;
+    _tabBarBackgroundColor = ZLBlackColor;
+    _tabBarTopBorderColor = ZLBlackColor;
 }
 
 @end

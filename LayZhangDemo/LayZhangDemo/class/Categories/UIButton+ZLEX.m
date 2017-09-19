@@ -133,9 +133,15 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:ZLRedColor forState:UIControlStateNormal];
     [button addTarget:target action:action forControlEvents:controlEvents];
-    
     return button;
 }
+
++ (UIButton *)buttonWithTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:target action:action forControlEvents:controlEvents];
+    return button;
+}
+
 
 
 @end
