@@ -8,13 +8,10 @@
 
 #import "ScrollableController.h"
 
-@interface BaseTableController : ScrollableController
+@interface BaseTableController : ScrollableController<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView *contentTableView;
 
-- (void)addTableView;
-- (void)showNoMoreDataNotice:(NSString *)text;
-- (void)hideNoMoreDataNotice;
 - (void)reloadData;
 
 @end

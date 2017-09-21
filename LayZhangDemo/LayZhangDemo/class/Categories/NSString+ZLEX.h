@@ -34,6 +34,6 @@
  */
 - (CGSize)sizeWithUIAttribute:(NSDictionary *)attribute forWidth:(CGFloat)width;
 
-
+- (CGSize)sizeWithSize:(CGSize)size font:(NSInteger)font;
 
 @end

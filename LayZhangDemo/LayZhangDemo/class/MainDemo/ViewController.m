@@ -28,6 +28,11 @@
     [self createNavBarWithTitle:@"mainView"];
     [self initTableView];
     
+    NSURL *url = [NSURL URLWithString:@"http://baidu.com?test=1111"];
+    NSLog(@"%@", url.scheme);
+    NSLog(@"%@", url.host);
+    NSLog(@"%@", url.absoluteString);
+    
     
 //    NSMutableString *string = [NSMutableString stringWithString: @"origion"];
 //    NSString *stringCopy = [string copy];

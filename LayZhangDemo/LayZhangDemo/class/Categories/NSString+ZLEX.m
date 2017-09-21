@@ -43,4 +43,9 @@
     return size;
 }
 
+- (CGSize)sizeWithSize:(CGSize)size font:(NSInteger)font {
+    
+    return [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]} context:nil].size;
+}
+
 @end

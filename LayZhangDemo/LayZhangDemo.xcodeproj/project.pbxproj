@@ -82,6 +82,14 @@
 		48C152691F713B4800C577AB /* ZLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152681F713B4700C577AB /* ZLNavigationController.m */; };
 		48C1526C1F713CB500C577AB /* ScrollableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1526B1F713CB500C577AB /* ScrollableController.m */; };
 		48C1526F1F71400800C577AB /* BaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1526E1F71400800C577AB /* BaseTableController.m */; };
+		48C152721F71FF5500C577AB /* ShowToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152711F71FF5500C577AB /* ShowToast.m */; };
+		48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152781F725C5900C577AB /* ZLApplicationEntity.m */; };
+		48C1527D1F725E3200C577AB /* BaseApplicationEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1527C1F725E3200C577AB /* BaseApplicationEntity.m */; };
+		48C152801F72633B00C577AB /* ZLNavigationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1527F1F72633B00C577AB /* ZLNavigationService.m */; };
+		48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152821F72697500C577AB /* ZLModuleEntity.m */; };
+		48C1528C1F727E0E00C577AB /* UserInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1528B1F727E0E00C577AB /* UserInfoService.m */; };
+		48C1528F1F738B0600C577AB /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1528E1F738B0600C577AB /* UserInfo.m */; };
+		48C152971F739AC700C577AB /* NormalModuleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152961F739AC700C577AB /* NormalModuleEntity.m */; };
 		48D813CD1ED96E040080B5F3 /* ZLSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813CC1ED96E040080B5F3 /* ZLSignatureView.m */; };
 		48D813D01ED96E190080B5F3 /* SignatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813CF1ED96E190080B5F3 /* SignatureController.m */; };
 		48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D813D31ED96EB70080B5F3 /* NSTimerDemoController.m */; };
@@ -298,6 +306,23 @@
 		48C1526B1F713CB500C577AB /* ScrollableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollableController.m; sourceTree = "<group>"; };
 		48C1526D1F71400800C577AB /* BaseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableController.h; sourceTree = "<group>"; };
 		48C1526E1F71400800C577AB /* BaseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableController.m; sourceTree = "<group>"; };
+		48C152701F71FF5500C577AB /* ShowToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowToast.h; sourceTree = "<group>"; };
+		48C152711F71FF5500C577AB /* ShowToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowToast.m; sourceTree = "<group>"; };
+		48C152731F72005700C577AB /* ScreenMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenMacro.h; sourceTree = "<group>"; };
+		48C152771F725C5900C577AB /* ZLApplicationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLApplicationEntity.h; sourceTree = "<group>"; };
+		48C152781F725C5900C577AB /* ZLApplicationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLApplicationEntity.m; sourceTree = "<group>"; };
+		48C1527B1F725E3200C577AB /* BaseApplicationEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApplicationEntity.h; sourceTree = "<group>"; };
+		48C1527C1F725E3200C577AB /* BaseApplicationEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApplicationEntity.m; sourceTree = "<group>"; };
+		48C1527E1F72633B00C577AB /* ZLNavigationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNavigationService.h; sourceTree = "<group>"; };
+		48C1527F1F72633B00C577AB /* ZLNavigationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNavigationService.m; sourceTree = "<group>"; };
+		48C152811F72697500C577AB /* ZLModuleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLModuleEntity.h; sourceTree = "<group>"; };
+		48C152821F72697500C577AB /* ZLModuleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLModuleEntity.m; sourceTree = "<group>"; };
+		48C1528A1F727E0E00C577AB /* UserInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoService.h; sourceTree = "<group>"; };
+		48C1528B1F727E0E00C577AB /* UserInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoService.m; sourceTree = "<group>"; };
+		48C1528D1F738B0600C577AB /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		48C1528E1F738B0600C577AB /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		48C152951F739AC700C577AB /* NormalModuleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalModuleEntity.h; sourceTree = "<group>"; };
+		48C152961F739AC700C577AB /* NormalModuleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalModuleEntity.m; sourceTree = "<group>"; };
 		48CDDAF81EC5A4360000D92C /* ZLVerifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVerifyDelegate.h; sourceTree = "<group>"; };
 		48D813CB1ED96E040080B5F3 /* ZLSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSignatureView.h; sourceTree = "<group>"; };
 		48D813CC1ED96E040080B5F3 /* ZLSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSignatureView.m; sourceTree = "<group>"; };
@@ -660,6 +685,7 @@
 		4860F3AF1F5695EA006E1648 /* BaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48C152901F739A5E00C577AB /* AppComm */,
 				48C1524D1F711ED400C577AB /* Base */,
 				48C152531F711ED400C577AB /* Common */,
 				4860F3B01F569603006E1648 /* BaseDemoController.h */,
@@ -725,6 +751,7 @@
 		48C1524D1F711ED400C577AB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				48C1527A1F725E2000C577AB /* Service */,
 				48C1524E1F711ED400C577AB /* Controller */,
 				48C1524F1F711ED400C577AB /* Model */,
 				48C152501F711ED400C577AB /* View */,
@@ -764,6 +791,7 @@
 		48C152531F711ED400C577AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				48C152761F725C4300C577AB /* Service */,
 				48C152541F711ED400C577AB /* Controller */,
 				48C152551F711ED400C577AB /* Model */,
 				48C152561F711ED400C577AB /* View */,
@@ -798,6 +826,75 @@
 				48C1525A1F711ED400C577AB /* ZLTabbar.m */,
 				48C1525B1F711ED400C577AB /* ZLTabbarItem.h */,
 				48C1525C1F711ED400C577AB /* ZLTabbarItem.m */,
+				48C152701F71FF5500C577AB /* ShowToast.h */,
+				48C152711F71FF5500C577AB /* ShowToast.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48C152761F725C4300C577AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				48C152771F725C5900C577AB /* ZLApplicationEntity.h */,
+				48C152781F725C5900C577AB /* ZLApplicationEntity.m */,
+				48C1527E1F72633B00C577AB /* ZLNavigationService.h */,
+				48C1527F1F72633B00C577AB /* ZLNavigationService.m */,
+				48C152811F72697500C577AB /* ZLModuleEntity.h */,
+				48C152821F72697500C577AB /* ZLModuleEntity.m */,
+				48C1528A1F727E0E00C577AB /* UserInfoService.h */,
+				48C1528B1F727E0E00C577AB /* UserInfoService.m */,
+				48C1528D1F738B0600C577AB /* UserInfo.h */,
+				48C1528E1F738B0600C577AB /* UserInfo.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		48C1527A1F725E2000C577AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				48C1527B1F725E3200C577AB /* BaseApplicationEntity.h */,
+				48C1527C1F725E3200C577AB /* BaseApplicationEntity.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		48C152901F739A5E00C577AB /* AppComm */ = {
+			isa = PBXGroup;
+			children = (
+				48C152911F739AA400C577AB /* Controller */,
+				48C152921F739AA400C577AB /* Model */,
+				48C152931F739AA400C577AB /* Service */,
+				48C152941F739AA400C577AB /* View */,
+			);
+			path = AppComm;
+			sourceTree = "<group>";
+		};
+		48C152911F739AA400C577AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48C152921F739AA400C577AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48C152931F739AA400C577AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				48C152951F739AC700C577AB /* NormalModuleEntity.h */,
+				48C152961F739AC700C577AB /* NormalModuleEntity.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		48C152941F739AA400C577AB /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -970,6 +1067,7 @@
 				48F79A891ED6702B00280CBB /* UIView+QuickNew.m */,
 				48C1523C1F6FC62F00C577AB /* SystemMacro.h */,
 				48C152431F70EF9100C577AB /* AppMacro.h */,
+				48C152731F72005700C577AB /* ScreenMacro.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1308,10 +1406,12 @@
 			files = (
 				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
+				48C152721F71FF5500C577AB /* ShowToast.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				480AACC11F34696400D1BA51 /* LoginInputView.m in Sources */,
 				48E414251F62381F00E59D65 /* ZLThemeControl.m in Sources */,
+				48C1528C1F727E0E00C577AB /* UserInfoService.m in Sources */,
 				48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */,
 				48C152631F711F0600C577AB /* BaseController.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
@@ -1324,11 +1424,13 @@
 				480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */,
 				482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
+				48C1527D1F725E3200C577AB /* BaseApplicationEntity.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
 				4860F3B51F569A87006E1648 /* AppInfoManager.m in Sources */,
+				48C152971F739AC700C577AB /* NormalModuleEntity.m in Sources */,
 				482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */,
 				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
 				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
@@ -1370,7 +1472,9 @@
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
 				480AACBB1F341BEF00D1BA51 /* CookieViewController.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
+				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,
 				48B877921EEA52E8005FA03D /* PollingModel.m in Sources */,
+				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */,
 				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
@@ -1401,8 +1505,10 @@
 				48D813CD1ED96E040080B5F3 /* ZLSignatureView.m in Sources */,
 				480ABB301ED3DB9900C6288E /* Animal.m in Sources */,
 				48D813D81ED970EA0080B5F3 /* KeyChainDemoController.m in Sources */,
+				48C1528F1F738B0600C577AB /* UserInfo.m in Sources */,
 				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
+				48C152801F72633B00C577AB /* ZLNavigationService.m in Sources */,
 				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,
 				480AACBE1F344DDC00D1BA51 /* CountDownButton.m in Sources */,
 				48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */,
