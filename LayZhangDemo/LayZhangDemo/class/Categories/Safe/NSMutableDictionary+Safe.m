@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableDictionary+Safe.h"
+#import "NSObject+Safe.h"
 
 @implementation NSMutableDictionary (Safe)
 

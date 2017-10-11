@@ -10,6 +10,7 @@
 #import "UIView+ZLEX.h"
 #import "ZLPreMacro.h"
 #import "MainViewCell.h"
+#import "Test01.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,10 +29,23 @@
     [self createNavBarWithTitle:@"mainView"];
     [self initTableView];
     
-    NSURL *url = [NSURL URLWithString:@"http://baidu.com?test=1111"];
-    NSLog(@"%@", url.scheme);
-    NSLog(@"%@", url.host);
-    NSLog(@"%@", url.absoluteString);
+    
+    CGRect rectA = CGRectMake(0, 0, 100, 100);
+    CGRect rectB = CGRectMake(100, 100, 10, 10);
+    BOOL isRect = CGRectIntersectsRect(rectB, rectA); // 包含 或者 交叉
+    if (isRect) {
+        NSLog(@"YES");
+    } else {
+        NSLog(@"NO");
+    }
+    
+    [Test testMethod];
+    [Test01 testMethod];
+    
+//    NSURL *url = [NSURL URLWithString:@"http://baidu.com?test=1111"];
+//    NSLog(@"%@", url.scheme);
+//    NSLog(@"%@", url.host);
+//    NSLog(@"%@", url.absoluteString);
     
     
 //    NSMutableString *string = [NSMutableString stringWithString: @"origion"];

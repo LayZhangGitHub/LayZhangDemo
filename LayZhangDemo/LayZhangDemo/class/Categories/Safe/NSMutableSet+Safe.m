@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableSet+Safe.h"
+#import "NSObject+Safe.h"
 
 @implementation NSMutableSet (Safe)
 

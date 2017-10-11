@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48089B2F1F7C9F8600DAF1B6 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48089B2E1F7C9F8600DAF1B6 /* SliderViewController.m */; };
 		480AACBB1F341BEF00D1BA51 /* CookieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480AACBA1F341BEF00D1BA51 /* CookieViewController.m */; };
 		480AACBE1F344DDC00D1BA51 /* CountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 480AACBD1F344DDC00D1BA51 /* CountDownButton.m */; };
 		480AACC11F34696400D1BA51 /* LoginInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 480AACC01F34696400D1BA51 /* LoginInputView.m */; };
@@ -45,6 +46,8 @@
 		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
 		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
 		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
+		4845D3081F7A51BE004D884B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845D3071F7A51BE004D884B /* Test.m */; };
+		4845D30B1F7A51CF004D884B /* Test01.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845D30A1F7A51CF004D884B /* Test01.m */; };
 		4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */; };
 		4847B6A31F4C1C4500F8A128 /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6A21F4C1C4500F8A128 /* CollectionController.m */; };
 		4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6A51F4C1DFA00F8A128 /* BaseCell.m */; };
@@ -55,6 +58,7 @@
 		4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7071F4E71F500F8A128 /* SafeKitController.m */; };
 		4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B70B1F4E739400F8A128 /* NSArray+Safe.m */; };
 		4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */; };
+		485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D21181F78A5070033DD20 /* ZLTestViweLayout.m */; };
 		4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */; };
 		4860F2021F4FBD55006E1648 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F2011F4FBD55006E1648 /* NSDictionary+Safe.m */; };
 		4860F2051F4FD041006E1648 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F2041F4FD041006E1648 /* NSMutableDictionary+Safe.m */; };
@@ -154,6 +158,8 @@
 
 /* Begin PBXFileReference section */
 		17D9B2066DB61E161FE09D1C /* Pods-LayZhangDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		48089B2D1F7C9F8600DAF1B6 /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		48089B2E1F7C9F8600DAF1B6 /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		480AACB91F341BEF00D1BA51 /* CookieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookieViewController.h; sourceTree = "<group>"; };
 		480AACBA1F341BEF00D1BA51 /* CookieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookieViewController.m; sourceTree = "<group>"; };
 		480AACBC1F344DDC00D1BA51 /* CountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownButton.h; sourceTree = "<group>"; };
@@ -229,6 +235,10 @@
 		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
 		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
 		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
+		4845D3061F7A51BE004D884B /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		4845D3071F7A51BE004D884B /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		4845D3091F7A51CF004D884B /* Test01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test01.h; sourceTree = "<group>"; };
+		4845D30A1F7A51CF004D884B /* Test01.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test01.m; sourceTree = "<group>"; };
 		4847B6841F4A796A00F8A128 /* AsyncToSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncToSyncController.h; sourceTree = "<group>"; };
 		4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncToSyncController.m; sourceTree = "<group>"; };
 		4847B6A11F4C1C4500F8A128 /* CollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
@@ -250,6 +260,8 @@
 		4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
 		4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
 		4847B7131F4EA8F900F8A128 /* SafeObjectMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMacro.h; sourceTree = "<group>"; };
+		485D21171F78A5070033DD20 /* ZLTestViweLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLTestViweLayout.h; sourceTree = "<group>"; };
+		485D21181F78A5070033DD20 /* ZLTestViweLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLTestViweLayout.m; sourceTree = "<group>"; };
 		4860F1FD1F4ED035006E1648 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
 		4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 		4860F2001F4FBD55006E1648 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
@@ -446,6 +458,15 @@
 				FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		48089B2C1F7C9F4A00DAF1B6 /* SliderViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48089B2D1F7C9F8600DAF1B6 /* SliderViewController.h */,
+				48089B2E1F7C9F8600DAF1B6 /* SliderViewController.m */,
+			);
+			path = SliderViewDemo;
 			sourceTree = "<group>";
 		};
 		480AACB81F341BCA00D1BA51 /* CookieDemo */ = {
@@ -649,6 +670,8 @@
 				4847B6AB1F4C1E5500F8A128 /* CCellB.m */,
 				4847B6AD1F4C1E6100F8A128 /* CCellC.h */,
 				4847B6AE1F4C1E6100F8A128 /* CCellC.m */,
+				485D21171F78A5070033DD20 /* ZLTestViweLayout.h */,
+				485D21181F78A5070033DD20 /* ZLTestViweLayout.m */,
 			);
 			path = CollectionDemo;
 			sourceTree = "<group>";
@@ -1084,6 +1107,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48089B2C1F7C9F4A00DAF1B6 /* SliderViewDemo */,
 				481AA2541F5FD09300641A74 /* HitTestDemo */,
 				4860F3AF1F5695EA006E1648 /* BaseDemo */,
 				4847B7051F4E71D800F8A128 /* SafeKitDemo */,
@@ -1114,6 +1138,10 @@
 				48E558731EC2F3C800FE30E0 /* MainViewCell.m */,
 				48E558741EC2F3C800FE30E0 /* ViewController.h */,
 				48E558751EC2F3C800FE30E0 /* ViewController.m */,
+				4845D3091F7A51CF004D884B /* Test01.h */,
+				4845D30A1F7A51CF004D884B /* Test01.m */,
+				4845D3061F7A51BE004D884B /* Test.h */,
+				4845D3071F7A51BE004D884B /* Test.m */,
 			);
 			path = MainDemo;
 			sourceTree = "<group>";
@@ -1432,6 +1460,7 @@
 				4860F3B51F569A87006E1648 /* AppInfoManager.m in Sources */,
 				48C152971F739AC700C577AB /* NormalModuleEntity.m in Sources */,
 				482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */,
+				4845D30B1F7A51CF004D884B /* Test01.m in Sources */,
 				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
 				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
 				482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */,
@@ -1443,6 +1472,7 @@
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
+				4845D3081F7A51BE004D884B /* Test.m in Sources */,
 				4860F2021F4FBD55006E1648 /* NSDictionary+Safe.m in Sources */,
 				4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */,
 				48C1525D1F711ED400C577AB /* BaseTableCell.m in Sources */,
@@ -1484,8 +1514,10 @@
 				480ABB391ED3DD4600C6288E /* Animal+init.m in Sources */,
 				48F79A841ED59F2A00280CBB /* AnnoucementCell.m in Sources */,
 				4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */,
+				485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */,
 				48E414291F62437900E59D65 /* ZLAlertView.m in Sources */,
 				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
+				48089B2F1F7C9F8600DAF1B6 /* SliderViewController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,

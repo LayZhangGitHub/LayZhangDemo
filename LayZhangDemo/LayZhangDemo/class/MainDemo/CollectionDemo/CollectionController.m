@@ -12,6 +12,8 @@
 #import "CCellB.h"
 #import "CCellC.h"
 
+#import "ZLTestViweLayout.h"
+
 @interface CollectionController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic,strong)UICollectionView *collectionView;
@@ -30,6 +32,7 @@
 
 - (void)initComponent {
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+//    ZLTestViweLayout *layout=[[ZLTestViweLayout alloc]init];
     //同一行相邻两个cell的最小间距
     layout.minimumInteritemSpacing = 5;
     //最小两行之间的间距
@@ -54,18 +57,18 @@
 #pragma mark - collection delegate
 //一共有多少个组
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return 1;
+    return 2;
 }
 //每一组有多少个cell
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return 16;
 }
 //每一个cell是什么
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     CCellA *cell=[collectionView dequeueReusableCellWithReuseIdentifier:[CCellA cellIdentifier] forIndexPath:indexPath];
     cell.cellData = [NSString stringWithFormat:@"%ld",indexPath.section*100+indexPath.row];
     cell.backgroundColor=[UIColor groupTableViewBackgroundColor];
-//    [cell reloadData];
+    [cell reloadData];
     return cell;
 }
 //头部和脚部的加载

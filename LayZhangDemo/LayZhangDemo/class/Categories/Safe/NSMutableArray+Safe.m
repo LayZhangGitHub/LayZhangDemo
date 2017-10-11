@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableArray+Safe.h"
+#import "NSObject+Safe.h"
 
 @implementation NSMutableArray (Safe)
 
@@ -18,6 +19,9 @@
         // 获取索引元素
         [arrayMClass exchangeInstanceMethodFromSel:@selector(objectAtIndex:)
                                              toSel:@selector(safeObjectAtIndexM:)];
+        
+        [arrayMClass exchangeInstanceMethodFromSel:@selector(objectAtIndexedSubscript:)
+                                             toSel:@selector(safeObjectAtIndexedSubscriptM:)];
         
         // 索替换
         [arrayMClass exchangeInstanceMethodFromSel:@selector(setObject:atIndexedSubscript:)
@@ -42,6 +46,21 @@
     }
     @catch (NSException *exception) {
         NSString *reason = @"__NSArrayM objectAtIndex return nil.";
+        [NSObject noticeException:exception withReason:reason];
+    }
+    @finally {
+        return object;
+    }
+}
+
+- (id)safeObjectAtIndexedSubscriptM:(NSUInteger)index {
+    
+    id object = nil;
+    @try {
+        object = [self safeObjectAtIndexedSubscriptM:index];
+    }
+    @catch (NSException *exception) {
+        NSString *reason = @"__NSArrayM objectAtIndexedSubscript return nil.";
         [NSObject noticeException:exception withReason:reason];
     }
     @finally {
