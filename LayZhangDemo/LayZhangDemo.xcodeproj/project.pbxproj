@@ -46,6 +46,8 @@
 		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
 		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
 		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
+		484162641F9D9E13002B10AB /* JSBridgeDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484162631F9D9E13002B10AB /* JSBridgeDemoController.m */; };
+		484162661F9D9E71002B10AB /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 484162651F9D9E71002B10AB /* ExampleApp.html */; };
 		4845D3081F7A51BE004D884B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845D3071F7A51BE004D884B /* Test.m */; };
 		4845D30B1F7A51CF004D884B /* Test01.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845D30A1F7A51CF004D884B /* Test01.m */; };
 		4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B6851F4A796A00F8A128 /* AsyncToSyncController.m */; };
@@ -235,6 +237,9 @@
 		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
 		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
 		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
+		484162621F9D9E13002B10AB /* JSBridgeDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBridgeDemoController.h; sourceTree = "<group>"; };
+		484162631F9D9E13002B10AB /* JSBridgeDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBridgeDemoController.m; sourceTree = "<group>"; };
+		484162651F9D9E71002B10AB /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
 		4845D3061F7A51BE004D884B /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		4845D3071F7A51BE004D884B /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		4845D3091F7A51CF004D884B /* Test01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test01.h; sourceTree = "<group>"; };
@@ -646,6 +651,16 @@
 				482CE3731ED9292F00409C04 /* ProductBProvider.m */,
 			);
 			path = ProxyDemo;
+			sourceTree = "<group>";
+		};
+		484162611F9D9E03002B10AB /* JSBridgeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				484162651F9D9E71002B10AB /* ExampleApp.html */,
+				484162621F9D9E13002B10AB /* JSBridgeDemoController.h */,
+				484162631F9D9E13002B10AB /* JSBridgeDemoController.m */,
+			);
+			path = JSBridgeDemo;
 			sourceTree = "<group>";
 		};
 		4847B6831F4A792600F8A128 /* AsyTosy */ = {
@@ -1107,6 +1122,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				484162611F9D9E03002B10AB /* JSBridgeDemo */,
 				48089B2C1F7C9F4A00DAF1B6 /* SliderViewDemo */,
 				481AA2541F5FD09300641A74 /* HitTestDemo */,
 				4860F3AF1F5695EA006E1648 /* BaseDemo */,
@@ -1360,6 +1376,7 @@
 				48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */,
 				48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */,
 				48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */,
+				484162661F9D9E71002B10AB /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1438,6 +1455,7 @@
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				480AACC11F34696400D1BA51 /* LoginInputView.m in Sources */,
+				484162641F9D9E13002B10AB /* JSBridgeDemoController.m in Sources */,
 				48E414251F62381F00E59D65 /* ZLThemeControl.m in Sources */,
 				48C1528C1F727E0E00C577AB /* UserInfoService.m in Sources */,
 				48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */,

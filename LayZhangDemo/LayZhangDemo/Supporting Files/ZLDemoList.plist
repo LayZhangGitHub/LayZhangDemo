@@ -5,6 +5,12 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>JSBridgeDemoController</string>
+			<key>title</key>
+			<string>JSBridgeDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>SliderViewController</string>
 			<key>title</key>
 			<string>SliderDemo</string>

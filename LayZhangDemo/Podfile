@@ -53,6 +53,8 @@ target 'LayZhangDemo' do
     
     pod 'MJRefresh', '~> 3.1.12'
     
+    pod 'WebViewJavascriptBridge'
+    
 
     
 end

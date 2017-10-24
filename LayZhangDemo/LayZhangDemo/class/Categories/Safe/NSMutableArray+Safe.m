@@ -57,7 +57,8 @@
     
     id object = nil;
     @try {
-        object = [self safeObjectAtIndexedSubscriptM:index];
+        // iOS 11
+        object = [self safeObjectAtIndexM:index];
     }
     @catch (NSException *exception) {
         NSString *reason = @"__NSArrayM objectAtIndexedSubscript return nil.";
