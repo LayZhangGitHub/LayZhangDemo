@@ -38,6 +38,5 @@
 //        [_name release];
         _name = [name copy];
     }
-    _name = name;
 }
 @end

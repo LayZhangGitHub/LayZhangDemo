@@ -8,20 +8,20 @@
 使用的是 pod 'GDataXML-HTML','~> 1.3.0'
 ```
 - (void)parseLangConfig{
-    //获取工程目录的xml文件
-    NSString *path = [NSString stringWithFormat:@"MessageLang"];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:path ofType:@"xml"];
-    NSData *xmlData = [[NSData alloc] initWithContentsOfFile:filePath];
-    
-    //使用NSData对象初始化
-    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:xmlData error:nil];
-    
-    //获取根节点（resources）
-    GDataXMLElement *rootElement = [doc rootElement];
-    
-    //获取根节点下的节点（Item）
-    NSArray * items = [rootElement elementsForName:@"item"];
-    [self parseElements:items atDictionary:_langMap];
+//获取工程目录的xml文件
+NSString *path = [NSString stringWithFormat:@"MessageLang"];
+NSString *filePath = [[NSBundle mainBundle] pathForResource:path ofType:@"xml"];
+NSData *xmlData = [[NSData alloc] initWithContentsOfFile:filePath];
+
+//使用NSData对象初始化
+GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:xmlData error:nil];
+
+//获取根节点（resources）
+GDataXMLElement *rootElement = [doc rootElement];
+
+//获取根节点下的节点（Item）
+NSArray * items = [rootElement elementsForName:@"item"];
+[self parseElements:items atDictionary:_langMap];
 }
 ```
 ---
@@ -36,15 +36,15 @@
 @property (nonatomic, strong) NSMutableSet<NSTimer *> *timerSet;
 
 - (void)dealloc {
-    for (NSTimer * timer in self.timerSet) {
-        [timer invalidate];
-    }
+for (NSTimer * timer in self.timerSet) {
+[timer invalidate];
+}
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // other code here
-    [self.timerSet addObject:cell.timer];
-    return cell;
+// other code here
+[self.timerSet addObject:cell.timer];
+return cell;
 }
 ```
 但是这样写有点问题，1,作为cell，没有必要将Timer暴露出来。2,ViewController要持有Timer，不好以后维护，而且增加了一定的耦合性。
@@ -53,26 +53,26 @@
 ```
 // viewController.m
 - (void)dealloc {
-    [DefaultNotificationCenter postNotificationName:TimerCellDeallocNotification object:nil];
+[DefaultNotificationCenter postNotificationName:TimerCellDeallocNotification object:nil];
 }
 
 // cell.m
 - (void)addNotification {
-    [DefaultNotificationCenter addObserver:self
-                                  selector:@selector(invalidTime)
-                                      name:TimerCellDeallocNotification
-                                    object:nil];
+[DefaultNotificationCenter addObserver:self
+selector:@selector(invalidTime)
+name:TimerCellDeallocNotification
+object:nil];
 }
 
 - (void)invalidTime {
-    [self.timer invalidate];
+[self.timer invalidate];
 }
 
 - (void)addTimer {
-    self.time = 0;
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeNew) userInfo:nil repeats:YES];
-    [[NSRunLoop mainRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
-    self.timer = timer;
+self.time = 0;
+NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeNew) userInfo:nil repeats:YES];
+[[NSRunLoop mainRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
+self.timer = timer;
 }
 
 ```
@@ -87,9 +87,9 @@
 ```
 //订阅操作
 - (void)observeValueForKeyPath:(NSString *)keyPath
-                      ofObject:(id)object
-                        change:(NSDictionary *)change
-                       context:(void *)context；
+ofObject:(id)object
+change:(NSDictionary *)change
+context:(void *)context；
 //发送操作
 - (void)addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
 ```
@@ -152,11 +152,11 @@ __unsafe_unretain 当释放指针指向的对象时， 指针还是继续指向�
 当 Runtime 系统在 Cache 和类的方法列表(包括父类)中找不到要执行的方法时，Runtime 会调用 resolveInstanceMethod: 或 resolveClassMethod: 来给我们一次动态添加方法实现的机会。我们需要用 class_addMethod 函数完成向特定类添加特定方法实现的操作：
 ```
 + (BOOL)resolveInstanceMethod:(SEL)aSEL {
-    if (aSEL == @selector(resolveThisMethodDynamically)) {
-          class_addMethod([self class], aSEL, (IMP) dynamicMethodIMP, "v@:");
-          return YES;
-    }
-    return [super resolveInstanceMethod:aSEL];
+if (aSEL == @selector(resolveThisMethodDynamically)) {
+class_addMethod([self class], aSEL, (IMP) dynamicMethodIMP, "v@:");
+return YES;
+}
+return [super resolveInstanceMethod:aSEL];
 }
 ```
 * #### 消息重定向
@@ -164,10 +164,10 @@ __unsafe_unretain 当释放指针指向的对象时， 指针还是继续指向�
 
 ```
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if(aSelector == @selector(mysteriousMethod:)){
-        return alternateObject;
-    }
-    return [super forwardingTargetForSelector:aSelector];
+if(aSelector == @selector(mysteriousMethod:)){
+return alternateObject;
+}
+return [super forwardingTargetForSelector:aSelector];
 }
 ```
 
@@ -176,23 +176,23 @@ __unsafe_unretain 当释放指针指向的对象时， 指针还是继续指向�
 
 ```
 - (void)forwardInvocation:(NSInvocation *)invocation {
-    TempClass * forwardClass = [TempClass new];
-    SEL sel = invocation.selector;
-    if ([forwardClass respondsToSelector:sel]) {
-        [invocation invokeWithTarget:forwardClass];
-    } else {
-        [self doesNotRecognizeSelector:sel];
-    }
+TempClass * forwardClass = [TempClass new];
+SEL sel = invocation.selector;
+if ([forwardClass respondsToSelector:sel]) {
+[invocation invokeWithTarget:forwardClass];
+} else {
+[self doesNotRecognizeSelector:sel];
+}
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)selector {
-    //查找父类的方法签名
-    NSMethodSignature *signature = [super methodSignatureForSelector:selector];
-    if(signature == nil) {
-        signature = [NSMethodSignature signatureWithObjCTypes:"@@:"];
-        
-    }
-    return signature;
+//查找父类的方法签名
+NSMethodSignature *signature = [super methodSignatureForSelector:selector];
+if(signature == nil) {
+signature = [NSMethodSignature signatureWithObjCTypes:"@@:"];
+
+}
+return signature;
 }
 ```
 
@@ -230,3 +230,42 @@ class_setVersion                         // 设置版本号
 
 ### 10.现有一个网络请求需要向服务器进行轮询，直到服务器返回成功为止，尝试次数为10次，每次请求的时间间隔为3秒。设计代码。
 
+### 11.变量存储区
+局部变量
+作用域: 从定义的那一行开始,直到大括号结束或者遇到break return为止
+存储位置: 栈
+
+全局变量:
+作用域:从定义变量的那一行直到文件结束
+存储位置:静态区
+
+成员变量:
+作用域：创建对象时候有效,对象销毁(释放)结束
+存储位置:存储在对象所在的堆内存中
+
+### 12.block类型
+arc 下
+global block
+```
+int temp = 0;
+void (^stackBlock)(void) = ^ {
+//        NSLog(@"%d", temp);
+};
+```
+
+stack block
+```
+int temp = 0;
+NSLog(@"statck block %@", ^ {
+NSLog(@"%d", temp);
+});
+```
+
+有个 = 赋值操作， 系统会把block copy 到堆区
+malloc stack
+```
+int temp = 0;
+void (^stackBlock)(void) = ^ {
+NSLog(@"%d", temp);
+};
+```

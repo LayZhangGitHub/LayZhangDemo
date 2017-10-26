@@ -7,8 +7,12 @@
 //
 
 #import "NSTimerDemoController.h"
+#import "MyWeakProxy.h"
 
 @interface NSTimerDemoController ()
+
+@property (nonatomic, strong) NSString *message;
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
@@ -19,18 +23,37 @@
     //    [self timerDemo];
     //    [self observer];
     [self createNavBarWithTitle:@"timerDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
-    [[self class] newThread];
-    
-    for (int i = 0; i < 100; i ++) {
-        
-        
-        [self performSelector:@selector(myRun)
-                     onThread:[[self class] newThread]
-                   withObject:nil
-                waitUntilDone:NO];
-    }
+//    [[self class] newThread];
+    self.message = @"1";
+//
+//    for (int i = 0; i < 100; i ++) {
+//
+//
+//        [self performSelector:@selector(myRun)
+//                     onThread:[[self class] newThread]
+//                   withObject:nil
+//                waitUntilDone:NO];
+//    }
     //            [self performSelector:@selector(operationDidStart) onThread:[[self class] networkRequestThread] withObject:nil waitUntilDone:NO modes:[self.runLoopModes allObjects]];
-    
+//    weakSelf(self);
+////    __weak typeof(self) weakSelf = self;
+//    [NSTimer scheduledTimerWithTimeInterval:1.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
+////        strongSelf(self);
+//        NSLog(@"%@", __weak_self__.message);
+//    }];
+
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                     target:[MyWeakProxy proxyWithTarget:self]
+                                   selector:@selector(myRun)
+                                   userInfo:nil
+                                    repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    self.timer = timer;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+//    [self.timer invalidate];
 }
 
 - (void)myRun {
@@ -39,39 +62,39 @@
     NSLog(@"myrun");
 }
 
-+ (void)runThread {
-    [[NSThread currentThread] setName:@"MyThread"];
-    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
-    [runLoop addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-    [runLoop run];
-}
+//+ (void)runThread {
+//    [[NSThread currentThread] setName:@"MyThread"];
+//    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+//    [runLoop addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+//    [runLoop run];
+//}
 
-+ (NSThread *)newThread {
-    static NSThread *_myThread = nil;
-    static dispatch_once_t oncePredicate;
-    dispatch_once(&oncePredicate, ^{
-        _myThread = [[NSThread alloc] initWithTarget:self selector:@selector(runThread) object:nil];
-        [_myThread start];
-    });
-    return _myThread;
-}
+//+ (NSThread *)newThread {
+//    static NSThread *_myThread = nil;
+//    static dispatch_once_t oncePredicate;
+//    dispatch_once(&oncePredicate, ^{
+//        _myThread = [[NSThread alloc] initWithTarget:self selector:@selector(runThread) object:nil];
+//        [_myThread start];
+//    });
+//    return _myThread;
+//}
 
 
 - (void)timerDemo {
     // 申明 并定义 timer
-    NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
-    
-    // NSDefaultRunLoopMode
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    
-    // UITrackingRunLoopMode
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
-    
-    // NSRunLoopCommonModes  Common Modes的模式
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    
-    // 自动被加入到了RunLoop的NSDefaultRunLoopMode模式
-    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
+//    NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
+//
+//    // NSDefaultRunLoopMode
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+//
+//    // UITrackingRunLoopMode
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+//
+//    // NSRunLoopCommonModes  Common Modes的模式
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//
+//    // 自动被加入到了RunLoop的NSDefaultRunLoopMode模式
+//    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
     
 }
 
@@ -114,6 +137,11 @@
     //cancelPreviousPerformRequestsWithTarget:selector:object:
 }
 
+- (void)dealloc {
+    NSLog(@"nstimer controller dealloc");
+//  self和timer并不是相互引用导致都没有释放，而是timer强引用了self，而currentRunloop强引用了timer，currentRunloop是不会销毁的，所以timer也会一直持有self的，不管self有没有强引用timer，所以导致了self没有释放。
+    [self.timer invalidate];
+}
 
 
 @end

@@ -46,6 +46,7 @@
 		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
 		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
 		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
+		48302DAB1FA0424300C1B84B /* MyBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48302DAA1FA0424300C1B84B /* MyBlockObject.m */; };
 		484162641F9D9E13002B10AB /* JSBridgeDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484162631F9D9E13002B10AB /* JSBridgeDemoController.m */; };
 		484162661F9D9E71002B10AB /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 484162651F9D9E71002B10AB /* ExampleApp.html */; };
 		4845D3081F7A51BE004D884B /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845D3071F7A51BE004D884B /* Test.m */; };
@@ -237,6 +238,8 @@
 		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
 		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
 		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
+		48302DA91FA0424300C1B84B /* MyBlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlockObject.h; sourceTree = "<group>"; };
+		48302DAA1FA0424300C1B84B /* MyBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlockObject.m; sourceTree = "<group>"; };
 		484162621F9D9E13002B10AB /* JSBridgeDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBridgeDemoController.h; sourceTree = "<group>"; };
 		484162631F9D9E13002B10AB /* JSBridgeDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBridgeDemoController.m; sourceTree = "<group>"; };
 		484162651F9D9E71002B10AB /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
@@ -527,6 +530,8 @@
 			children = (
 				480ABB131ECE954100C6288E /* BlockDemoController.h */,
 				480ABB141ECE954100C6288E /* BlockDemoController.m */,
+				48302DA91FA0424300C1B84B /* MyBlockObject.h */,
+				48302DAA1FA0424300C1B84B /* MyBlockObject.m */,
 			);
 			path = BlockDemo;
 			sourceTree = "<group>";
@@ -1481,6 +1486,7 @@
 				4845D30B1F7A51CF004D884B /* Test01.m in Sources */,
 				480ABB3E1ED3E79500C6288E /* JSONParseDemoController.m in Sources */,
 				480ABB361ED3DBF500C6288E /* Cat.m in Sources */,
+				48302DAB1FA0424300C1B84B /* MyBlockObject.m in Sources */,
 				482CE3531ED7044800409C04 /* YJSONModel01.m in Sources */,
 				480ABB0B1ECD9D5C00C6288E /* SwizzlingController.m in Sources */,
 				482CE3501ED6EE0300409C04 /* JSONModel02.m in Sources */,

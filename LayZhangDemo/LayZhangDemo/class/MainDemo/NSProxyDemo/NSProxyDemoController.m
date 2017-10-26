@@ -9,7 +9,6 @@
 #import "NSProxyDemoController.h"
 #import "MiddleProxy.h"
 
-
 @interface NSProxyDemoController ()
 
 @end
