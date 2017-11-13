@@ -11,6 +11,9 @@
 @interface NSObject (Runtime)
 
 // 类和 对象 都可以获取，目前只写一份
++ (BOOL)isMetaClass;
+
+- (BOOL)isMetaClass;
 
 // 获取类名
 + (NSString *)getClassName;

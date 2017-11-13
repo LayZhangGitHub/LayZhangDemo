@@ -10,9 +10,9 @@
 
 @implementation NSObject (Runtime)
 
-//+ (BOOL)isMetaClass {
-//    return class_isMetaClass(object_getClass(self));
-//}
++ (BOOL)isMetaClass {
+    return class_isMetaClass(object_getClass(self));
+}
 
 - (BOOL)isMetaClass {
     return class_isMetaClass(object_getClass(self));

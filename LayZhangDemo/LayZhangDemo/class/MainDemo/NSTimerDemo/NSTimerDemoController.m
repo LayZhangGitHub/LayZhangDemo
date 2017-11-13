@@ -25,6 +25,32 @@
     [self createNavBarWithTitle:@"timerDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
 //    [[self class] newThread];
     self.message = @"1";
+    
+    
+//    NSArray * a = @[@"1",@"2",@"3",@"11",@"12",@"13",@"21",@"22",@"23",@"31",@"32",@"33"];
+    NSMutableArray *a = [NSMutableArray new];
+    for (int i = 0; i < 1000; i++) {
+        [a addObject:@(i)];
+    }
+//    for (NSString *string in a) {
+//        NSLog(@"%@", string);
+//        NSLog(@"%p", &string);
+//        NSLog(@"%p", string);
+//
+//    }
+    
+//    [a enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        sleep(idx % 2);
+//        NSLog(@"%@", obj);
+//    }];
+    
+    NSLog(@"--------");
+    
+    [a enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        sleep(idx % 2);
+        NSLog(@"%@", obj);
+    }];
+    
 //
 //    for (int i = 0; i < 100; i ++) {
 //

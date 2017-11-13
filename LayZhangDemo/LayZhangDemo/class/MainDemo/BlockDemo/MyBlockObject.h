@@ -10,6 +10,7 @@
 
 @interface MyBlockObject : NSObject
 
+@property (nonatomic, strong) void(^mmBlock)(void);
 
 - (void)doSome:(void(^)(void))mBlock;
 

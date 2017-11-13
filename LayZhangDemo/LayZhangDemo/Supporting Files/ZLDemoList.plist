@@ -5,6 +5,30 @@
 	<array>
 		<dict>
 			<key>controllerName</key>
+			<string>TodoTableViewController</string>
+			<key>title</key>
+			<string>TodoTableView</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>AsyncToSyncController</string>
+			<key>title</key>
+			<string>AsyncToSyncDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>SubclassDemoController</string>
+			<key>title</key>
+			<string>SubclassDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
+			<string>RunloopDemoController</string>
+			<key>title</key>
+			<string>RunloopDemo</string>
+		</dict>
+		<dict>
+			<key>controllerName</key>
 			<string>JSBridgeDemoController</string>
 			<key>title</key>
 			<string>JSBridgeDemo</string>

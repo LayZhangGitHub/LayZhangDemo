@@ -20,8 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self createNavBarWithTitle:@"runtimeDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
     [self getClassDemo];
+    
+    BOOL res1 = [(id)[NSObject class] isKindOfClass:[NSObject class]];
+    BOOL res2 = [(id)[NSObject class] isMemberOfClass:[NSObject class]];
+    
+    BOOL res3 = [(id)[RuntimeDemoController class] isKindOfClass:[RuntimeDemoController class]];
+    BOOL res4 = [(id)[RuntimeDemoController class] isMemberOfClass:[RuntimeDemoController class]];
+    
+      NSLog(@"%d %d %d %d", res1, res2, res3, res4);
 }
 
 - (void)methodDemo {
@@ -82,8 +91,8 @@
 - (void)getClassDemo {
     RuntimeDemoClass *runtimeclass = [[RuntimeDemoClass alloc] init];
     
-//     [RuntimeDemoClass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
-//     [runtimeclass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
+     [RuntimeDemoClass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
+     [runtimeclass isMetaClass] ? NSLog(@"true") : NSLog(@"false");
     
     
     

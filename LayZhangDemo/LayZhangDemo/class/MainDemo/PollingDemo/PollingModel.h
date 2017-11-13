@@ -18,4 +18,6 @@ typedef void(^FailuredBlock)(id object);
 
 + (void)requestFinishedBlock:(FinishedBlock)finishedBlock failuredBlock:(FailuredBlock)failuredBlock;
 
+- (void)testA;
++ (void)testB;
 @end

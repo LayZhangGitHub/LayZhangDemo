@@ -11,6 +11,7 @@
 #import "ZLPreMacro.h"
 #import "MainViewCell.h"
 #import "Test01.h"
+#import "NSObject+ZLEX.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -62,8 +63,30 @@
 
 - (NSArray *)groups {
     if (_groups == nil) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"ZLDemoList" ofType:@"plist"];
-        _groups = [NSArray arrayWithContentsOfFile:path];
+        NSMutableArray *tempDic = [NSMutableArray new];
+        _groups = @[tempDic];
+        
+        NSArray *classes = [ZLViewController zl_subclasses];
+        
+        classes = [classes sortedArrayUsingComparator:^(Class obj1, Class obj2){
+            
+            NSString *class1 = NSStringFromClass(obj1);
+            NSString *class2 = NSStringFromClass(obj2);
+            
+            return (NSComparisonResult)[class1 compare:class2 options:NSNumericSearch];
+        }];
+        
+        for (Class subclass in classes) {
+            NSString *className = NSStringFromClass(subclass);
+            if (![className isEqualToString:@"ViewController"]) {
+                NSString *title = [className stringByReplacingOccurrencesOfString:@"Controller" withString:@""];
+                [tempDic addObject:@{@"controllerName": className,
+                                     @"title": title}];
+            }
+        }
+        
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"ZLDemoList" ofType:@"plist"];
+//        _groups = [NSArray arrayWithContentsOfFile:path];
         NSLog(@"%@", _groups);
     }
     return _groups;

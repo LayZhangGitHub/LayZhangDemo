@@ -269,3 +269,25 @@ void (^stackBlock)(void) = ^ {
 NSLog(@"%d", temp);
 };
 ```
+
+### 13.object_getClass(obj)与[obj class] 区别
+```
+@interface Obj
+@end
+
+@imp
+- (Class)class {}
++ (Class)class {}
+@end
+```
+
+object_getClass(obj)返回的是obj中的isa指针；
+
+而[obj class]则分两种情况：
+一是当obj为实例对象时，[obj class]中class是实例方法：- (Class)class，返回的obj对象中的isa指针；
+二是当obj为类对象（包括元类和根类以及根元类）时，调用的是类方法：+ (Class)class，返回的结果为其本身。
+
+
+
+
+
