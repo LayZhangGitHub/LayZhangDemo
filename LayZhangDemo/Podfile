@@ -34,8 +34,8 @@ target 'LayZhangDemo' do
     pod 'JSONModel', '~> 1.7.0'
     pod 'YYModel'
 #    
-#    pod 'SDWebImage', '~> 4.0.0'
-#    
+    pod 'SDWebImage', '~> 4.0.0'
+#
 #    pod 'TTTAttributedLabel', '~>2.0.0'
 #    
 #    pod 'SCLAlertView-Objective-C'
@@ -47,7 +47,7 @@ target 'LayZhangDemo' do
 
 #    pod 'SVProgressHUD'
 #    
-#    pod 'YYWebImage'
+    pod 'YYWebImage'
 
     pod 'CocoaLumberjack'
     

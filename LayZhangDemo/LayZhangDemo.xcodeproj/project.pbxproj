@@ -150,6 +150,7 @@
 		48F79A8A1ED6702B00280CBB /* UIView+QuickNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F79A891ED6702B00280CBB /* UIView+QuickNew.m */; };
 		48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F79A8D1ED67E2C00280CBB /* VPNDemoController.m */; };
 		48F79A901ED67F2E00280CBB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F79A8F1ED67F2E00280CBB /* NetworkExtension.framework */; };
+		48FD7B0D1FBEDC1B00143911 /* LockDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -462,6 +463,8 @@
 		48F79A8D1ED67E2C00280CBB /* VPNDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNDemoController.m; sourceTree = "<group>"; };
 		48F79A8F1ED67F2E00280CBB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		48F79AD31ED6A66A00280CBB /* LayZhangDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LayZhangDemo copy-Info.plist"; path = "/Users/zhanglei/Desktop/zhanglei/myGitRepository/LayZhangDemo/LayZhangDemo/LayZhangDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		48FD7B0B1FBEDC1B00143911 /* LockDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockDemoController.h; sourceTree = "<group>"; };
+		48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockDemoController.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1191,6 +1194,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48FD7B0A1FBEDC0400143911 /* LockDemo */,
 				48F45AC21FB5A1030074A275 /* DispatchSource */,
 				48F45AAD1FB5745A0074A275 /* ReflowDemo */,
 				48D1A7491FB14E86009FDBAE /* SubclassDemo */,
@@ -1358,6 +1362,15 @@
 				48F79A8D1ED67E2C00280CBB /* VPNDemoController.m */,
 			);
 			path = VPNDemo;
+			sourceTree = "<group>";
+		};
+		48FD7B0A1FBEDC0400143911 /* LockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48FD7B0B1FBEDC1B00143911 /* LockDemoController.h */,
+				48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */,
+			);
+			path = LockDemo;
 			sourceTree = "<group>";
 		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
@@ -1656,6 +1669,7 @@
 				48089B2F1F7C9F8600DAF1B6 /* SliderViewController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
+				48FD7B0D1FBEDC1B00143911 /* LockDemoController.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E4142C1F62677200E59D65 /* ZLDropDownMenu.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,

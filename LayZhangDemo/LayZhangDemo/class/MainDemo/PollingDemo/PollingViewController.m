@@ -13,7 +13,8 @@
 @interface PollingViewController ()
 
 @property (nonatomic, assign) NSUInteger requestTime;
-@property (atomic, strong) NSArray *mArray;
+@property (nonatomic, strong) NSMutableDictionary *mDic;
+@property (nonatomic, strong) NSArray *mArray;
 
 @end
 
@@ -28,28 +29,67 @@
 }
 
 - (void)doSometing {
-    _mArray = @[];
     
-    while (true) {
-        sleep(0.9);
-        for (int i = 0; i < 100; i++) {
-//            @autoreleasepool {
-//                NSObject *a = [NSObject new];
-//                NSLog(@"%d log, %@", i, a);
-//            }
-        }
-    }
+//    [[NSThread currentThread] setName:@"mMMMM"];
+//    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+//    [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+//    [runLoop run];
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//    _mArray = @[];
+    
+//    while (true) {
+//        sleep(0.9);
+//        for (int i = 0; i < 100; i++) {
+////            @autoreleasepool {
+////                NSObject *a = [NSObject new];
+////                NSLog(@"%d log, %@", i, a);
+////            }
+//        }
+//    }
+    
+//    NSLog(@" thread3 %@", [NSThread currentThread]);
+//    NSLog(@" thread3 %@", [NSThread currentThread]);
+//
+//    dispatch_queue_t queue = dispatch_queue_create("mTestQueueuu", DISPATCH_QUEUE_SERIAL);
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//
+//        dispatch_async(queue, ^{
+//            NSLog(@" thread3 %@", [NSThread currentThread]);
+//        });
+//
+//
+//    });
+////
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        sleep(3);
+//        dispatch_async(queue, ^{
+//            NSLog(@" thread2 %@", [NSThread currentThread]);
+//        });
+//
+//    });
+//
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        sleep(10);
+//        dispatch_async(queue, ^{
+//            NSLog(@" thread1 %@", [NSThread currentThread]);
+//        });
+//
+//    });
+    
+//
+    
+    dispatch_queue_t queue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_async(queue, ^{
         while (1) {
-//            self.mArray = [[NSArray alloc] initWithObjects:@1, @2, @3, nil];
-             objc_setAssociatedObject(self, _cmd, @[@1, @2, @3], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            self.mArray = [[NSArray alloc] initWithObjects:@1, @2, @3, nil];
+//             objc_setAssociatedObject(self, _cmd, @[@1, @2, @3], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         }
     });
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+
+    dispatch_async(queue, ^{
         while (1) {
-//            NSLog(@"%@", self.mArray);
+            NSLog(@"%@", self.mArray);
 //            NSLog(@"%@", objc_getAssociatedObject(self, _cmd));
         }
     });
