@@ -40,8 +40,8 @@ static const void * const kListernersKey = &kListernersKey;
             if (!hasHooked) {
                 NSArray *subclasses = [RFStore subclassesOfClass:class];
                 for (Class subclass in subclasses) {
-                    [RFStore hookActionMethodsIfNeededForClass:subclass];// 实例方法
-                    [RFStore hookActionMethodsIfNeededForClass:object_getClass(subclass)]; //类方法
+                    [RFStore hookActionMethodsIfNeededForClass:subclass];// 类
+                    [RFStore hookActionMethodsIfNeededForClass:object_getClass(subclass)]; // 元类
                 }
                 objc_setAssociatedObject(class, kHasHookedKey, @YES, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             }
@@ -78,6 +78,7 @@ static const void * const kListernersKey = &kListernersKey;
 
 #pragma mark - Private
 
+// 查找所有的 rfstore子类
 + (NSArray *)subclassesOfClass:(Class)parentClass {
     int numClasses = objc_getClassList(NULL, 0);
     Class *classes = NULL;

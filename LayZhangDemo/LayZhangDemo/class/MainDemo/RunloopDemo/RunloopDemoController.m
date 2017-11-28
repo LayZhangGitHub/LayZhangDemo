@@ -32,6 +32,16 @@ static NSPort *machPort;
     [stopButton addTarget:self action:@selector(stopRunloop) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopButton];
     
+    
+    for (int i = 0; i < 100; i++) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            [[NSThread currentThread] setName:@"12312"];
+            NSLog(@"%@", [NSThread currentThread]);
+            NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+            [runLoop run];
+        });
+    }
+    
 }
 
 

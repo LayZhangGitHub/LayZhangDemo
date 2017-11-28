@@ -18,10 +18,10 @@
     [super viewDidLoad];
     //    [self urlConnectionDemo];
     [self createNavBarWithTitle:@"urlSessionDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
-//    [self urlSessionDemo];
+    //    [self urlSessionDemo];
     
-//    [self sessionDelegate];
-//    [self downloadTask];
+    //    [self sessionDelegate];
+    //    [self downloadTask];
     [self downloadTaskDelegate];
     
 }
@@ -47,6 +47,8 @@
                                    NSLog(@"%@:%@", str, dictionary[str]);
                                }
                            }];
+    
+    
 }
 
 
@@ -105,12 +107,12 @@
                                                      delegateQueue:[[NSOperationQueue alloc] init]];
     
     // 创建任务(因为要使用代理方法,就不需要block方式的初始化了)
-//    NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.daka.com/login?userName=daka&pwd=123"]]];
+    //    NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.daka.com/login?userName=daka&pwd=123"]]];
     NSURL *url = [NSURL URLWithString:@"http://www.daka.com/login"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPMethod = @"POST";
     request.HTTPBody = [@"username=daka&pwd=123" dataUsingEncoding:NSUTF8StringEncoding];
-
+    
     NSURLSessionTask *task =
     [session dataTaskWithRequest:request];
     
@@ -166,18 +168,18 @@
     
     NSURLSessionTask *task =
     [session downloadTaskWithURL:[NSURL URLWithString:@"http://www.daka.com/resources/image/icon.png"]];
-//    [session downloadTaskWithURL:<#(nonnull NSURL *)#>];
+    //    [session downloadTaskWithURL:<#(nonnull NSURL *)#>];
     
-//    NSURLSession *session = [NSURLSession sharedSession];
-//    NSURL *url = [NSURL URLWithString:@"http://www.daka.com/resources/image/icon.png"] ;
-//    NSURLSessionDownloadTask *task =
-//    [session downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
-//        // location是沙盒中tmp文件夹下的一个临时url,文件下载后会存到这个位置,由于tmp中的文件随时可能被删除,所以我们需要自己需要把下载的文件挪到需要的地方
-//        NSLog(@"%@", location.absoluteString);
-//        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
-//        // 剪切文件
-//        [[NSFileManager defaultManager] moveItemAtURL:location toURL:[NSURL fileURLWithPath:path] error:nil];
-//    }];
+    //    NSURLSession *session = [NSURLSession sharedSession];
+    //    NSURL *url = [NSURL URLWithString:@"http://www.daka.com/resources/image/icon.png"] ;
+    //    NSURLSessionDownloadTask *task =
+    //    [session downloadTaskWithURL:url completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+    //        // location是沙盒中tmp文件夹下的一个临时url,文件下载后会存到这个位置,由于tmp中的文件随时可能被删除,所以我们需要自己需要把下载的文件挪到需要的地方
+    //        NSLog(@"%@", location.absoluteString);
+    //        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:response.suggestedFilename];
+    //        // 剪切文件
+    //        [[NSFileManager defaultManager] moveItemAtURL:location toURL:[NSURL fileURLWithPath:path] error:nil];
+    //    }];
     // 启动任务
     [task resume];
 }

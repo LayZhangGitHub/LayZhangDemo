@@ -55,6 +55,12 @@ target 'LayZhangDemo' do
     
     pod 'WebViewJavascriptBridge'
     
+    pod 'ReactiveObjC'
+    
+    # DB
+    pod 'GYDataCenter'
+    pod 'FMDB', '~> 2.6.2'
+    
 
     
 end

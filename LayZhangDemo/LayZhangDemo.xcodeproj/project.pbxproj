@@ -71,6 +71,11 @@
 		4860F3B81F56B3A3006E1648 /* MyWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3B71F56B3A3006E1648 /* MyWeakProxy.m */; };
 		4860F3BB1F57A9E7006E1648 /* MyFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */; };
 		4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */; };
+		4887B0FB1FCD412900FCA433 /* ReactiveDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B0FA1FCD412900FCA433 /* ReactiveDemoController.m */; };
+		4887B0FE1FCD416600FCA433 /* ReactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B0FD1FCD416600FCA433 /* ReactModel.m */; };
+		4887B1021FCD515300FCA433 /* GYDBDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1011FCD515300FCA433 /* GYDBDemoController.m */; };
+		4887B1051FCD51BE00FCA433 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1041FCD51BE00FCA433 /* Department.m */; };
+		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
 		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
@@ -121,7 +126,6 @@
 		48E557FF1EC0580000FE30E0 /* LayZhangDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E557FE1EC0580000FE30E0 /* LayZhangDemoTests.m */; };
 		48E5580A1EC0580000FE30E0 /* LayZhangDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558091EC0580000FE30E0 /* LayZhangDemoUITests.m */; };
 		48E5585B1EC2EFE400FE30E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E5585A1EC2EFE400FE30E0 /* main.m */; };
-		48E5585D1EC2F00200FE30E0 /* ZLDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */; };
 		48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48E558611EC2F33800FE30E0 /* MessageErr.xml */; };
 		48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */ = {isa = PBXBuildFile; fileRef = 48E558621EC2F33900FE30E0 /* MessageLang.xml */; };
 		48E558791EC2F3C800FE30E0 /* CALayer+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E558681EC2F3C800FE30E0 /* CALayer+ZLEX.m */; };
@@ -151,6 +155,8 @@
 		48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F79A8D1ED67E2C00280CBB /* VPNDemoController.m */; };
 		48F79A901ED67F2E00280CBB /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F79A8F1ED67F2E00280CBB /* NetworkExtension.framework */; };
 		48FD7B0D1FBEDC1B00143911 /* LockDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */; };
+		48FD7B141FC40BBA00143911 /* NSStreamDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B131FC40BBA00143911 /* NSStreamDemoController.m */; };
+		48FD7B1C1FC6CAD200143911 /* MyBlockProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -300,6 +306,16 @@
 		4860F3BA1F57A9E7006E1648 /* MyFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFPSLabel.m; sourceTree = "<group>"; };
 		4860F3BC1F57BC54006E1648 /* FloatNoticeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatNoticeWindow.h; sourceTree = "<group>"; };
 		4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatNoticeWindow.m; sourceTree = "<group>"; };
+		4887B0F91FCD412900FCA433 /* ReactiveDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveDemoController.h; sourceTree = "<group>"; };
+		4887B0FA1FCD412900FCA433 /* ReactiveDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveDemoController.m; sourceTree = "<group>"; };
+		4887B0FC1FCD416600FCA433 /* ReactModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactModel.h; sourceTree = "<group>"; };
+		4887B0FD1FCD416600FCA433 /* ReactModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactModel.m; sourceTree = "<group>"; };
+		4887B1001FCD515300FCA433 /* GYDBDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GYDBDemoController.h; sourceTree = "<group>"; };
+		4887B1011FCD515300FCA433 /* GYDBDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GYDBDemoController.m; sourceTree = "<group>"; };
+		4887B1031FCD51BE00FCA433 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		4887B1041FCD51BE00FCA433 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		4887B1061FCD59DB00FCA433 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		4887B1071FCD59DB00FCA433 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
@@ -405,7 +421,6 @@
 		48E558091EC0580000FE30E0 /* LayZhangDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayZhangDemoUITests.m; sourceTree = "<group>"; };
 		48E5580B1EC0580000FE30E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E5585A1EC2EFE400FE30E0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZLDemoList.plist; sourceTree = "<group>"; };
 		48E558611EC2F33800FE30E0 /* MessageErr.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MessageErr.xml; sourceTree = "<group>"; };
 		48E558621EC2F33900FE30E0 /* MessageLang.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MessageLang.xml; sourceTree = "<group>"; };
 		48E558671EC2F3C800FE30E0 /* CALayer+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+ZLEX.h"; sourceTree = "<group>"; };
@@ -465,6 +480,10 @@
 		48F79AD31ED6A66A00280CBB /* LayZhangDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LayZhangDemo copy-Info.plist"; path = "/Users/zhanglei/Desktop/zhanglei/myGitRepository/LayZhangDemo/LayZhangDemo/LayZhangDemo copy-Info.plist"; sourceTree = "<absolute>"; };
 		48FD7B0B1FBEDC1B00143911 /* LockDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockDemoController.h; sourceTree = "<group>"; };
 		48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockDemoController.m; sourceTree = "<group>"; };
+		48FD7B121FC40BBA00143911 /* NSStreamDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStreamDemoController.h; sourceTree = "<group>"; };
+		48FD7B131FC40BBA00143911 /* NSStreamDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStreamDemoController.m; sourceTree = "<group>"; };
+		48FD7B1A1FC6CACD00143911 /* MyBlockProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlockProxy.h; sourceTree = "<group>"; };
+		48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlockProxy.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -789,8 +808,34 @@
 				4860F3BD1F57BC54006E1648 /* FloatNoticeWindow.m */,
 				48E414231F62381F00E59D65 /* ZLThemeControl.h */,
 				48E414241F62381F00E59D65 /* ZLThemeControl.m */,
+				48FD7B1A1FC6CACD00143911 /* MyBlockProxy.h */,
+				48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */,
 			);
 			path = BaseDemo;
+			sourceTree = "<group>";
+		};
+		4887B0F81FCD411100FCA433 /* ReactiveCocoaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4887B0F91FCD412900FCA433 /* ReactiveDemoController.h */,
+				4887B0FA1FCD412900FCA433 /* ReactiveDemoController.m */,
+				4887B0FC1FCD416600FCA433 /* ReactModel.h */,
+				4887B0FD1FCD416600FCA433 /* ReactModel.m */,
+			);
+			path = ReactiveCocoaDemo;
+			sourceTree = "<group>";
+		};
+		4887B0FF1FCD514300FCA433 /* GYDBDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4887B1001FCD515300FCA433 /* GYDBDemoController.h */,
+				4887B1011FCD515300FCA433 /* GYDBDemoController.m */,
+				4887B1031FCD51BE00FCA433 /* Department.h */,
+				4887B1041FCD51BE00FCA433 /* Department.m */,
+				4887B1061FCD59DB00FCA433 /* Car.h */,
+				4887B1071FCD59DB00FCA433 /* Car.m */,
+			);
+			path = GYDBDemo;
 			sourceTree = "<group>";
 		};
 		48B8778C1EEA4F7C005FA03D /* PollingDemo */ = {
@@ -1133,7 +1178,6 @@
 				48E558611EC2F33800FE30E0 /* MessageErr.xml */,
 				48E558621EC2F33900FE30E0 /* MessageLang.xml */,
 				48E5585A1EC2EFE400FE30E0 /* main.m */,
-				48E5585C1EC2F00200FE30E0 /* ZLDemoList.plist */,
 				48E5588F1EC3057C00FE30E0 /* PrefixHeader.pch */,
 				480ABB3F1ED3E9C800C6288E /* JSONDemo.plist */,
 			);
@@ -1194,6 +1238,9 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4887B0FF1FCD514300FCA433 /* GYDBDemo */,
+				4887B0F81FCD411100FCA433 /* ReactiveCocoaDemo */,
+				48FD7B111FC40BAD00143911 /* NSStreamDemo */,
 				48FD7B0A1FBEDC0400143911 /* LockDemo */,
 				48F45AC21FB5A1030074A275 /* DispatchSource */,
 				48F45AAD1FB5745A0074A275 /* ReflowDemo */,
@@ -1373,6 +1420,15 @@
 			path = LockDemo;
 			sourceTree = "<group>";
 		};
+		48FD7B111FC40BAD00143911 /* NSStreamDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48FD7B121FC40BBA00143911 /* NSStreamDemoController.h */,
+				48FD7B131FC40BBA00143911 /* NSStreamDemoController.m */,
+			);
+			path = NSStreamDemo;
+			sourceTree = "<group>";
+		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1493,7 +1549,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
-				48E5585D1EC2F00200FE30E0 /* ZLDemoList.plist in Resources */,
 				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
 				480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */,
 				48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */,
@@ -1595,14 +1650,18 @@
 				48BA56B91EC9A5C9009DB6D0 /* NSOperationQueueViewController.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
 				480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */,
+				4887B0FE1FCD416600FCA433 /* ReactModel.m in Sources */,
 				482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				48C1527D1F725E3200C577AB /* BaseApplicationEntity.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				48D1A74C1FB14E98009FDBAE /* SubclassDemoController.m in Sources */,
+				48FD7B141FC40BBA00143911 /* NSStreamDemoController.m in Sources */,
 				4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */,
+				48FD7B1C1FC6CAD200143911 /* MyBlockProxy.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
+				4887B1021FCD515300FCA433 /* GYDBDemoController.m in Sources */,
 				4860F3B51F569A87006E1648 /* AppInfoManager.m in Sources */,
 				48C152971F739AC700C577AB /* NormalModuleEntity.m in Sources */,
 				482CE3561ED7045500409C04 /* YJSONModel02.m in Sources */,
@@ -1633,6 +1692,7 @@
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				481AA25A1F5FE35A00641A74 /* MyHitTestButton.m in Sources */,
 				48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */,
+				4887B0FB1FCD412900FCA433 /* ReactiveDemoController.m in Sources */,
 				48C1525E1F711ED400C577AB /* ZLNavigationBar.m in Sources */,
 				481AA2601F6117E300641A74 /* HitTestDemoController.m in Sources */,
 				48F45ABF1FB574AD0074A275 /* NSArray+Functional.m in Sources */,
@@ -1666,6 +1726,7 @@
 				485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */,
 				48E414291F62437900E59D65 /* ZLAlertView.m in Sources */,
 				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
+				4887B1051FCD51BE00FCA433 /* Department.m in Sources */,
 				48089B2F1F7C9F8600DAF1B6 /* SliderViewController.m in Sources */,
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
@@ -1696,6 +1757,7 @@
 				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,
 				480AACBE1F344DDC00D1BA51 /* CountDownButton.m in Sources */,
 				48F45ABE1FB574AD0074A275 /* Todo.m in Sources */,
+				4887B1081FCD59DB00FCA433 /* Car.m in Sources */,
 				48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */,
 				48C1525F1F711ED400C577AB /* ZLTabbar.m in Sources */,
 				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,

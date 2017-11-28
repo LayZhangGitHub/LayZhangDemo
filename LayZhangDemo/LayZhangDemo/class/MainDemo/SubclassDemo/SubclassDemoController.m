@@ -10,6 +10,55 @@
 #import "NSObject+ZLEX.h"
 #import "MFObject.h"
 
+
+typedef NS_OPTIONS(int, AspectBlockFlags) {
+    AspectBlockFlagsHasCopyDisposeHelpers = (1 << 25),
+    AspectBlockFlagsHasSignature          = (1 << 30)
+};
+
+typedef struct _AspectBlock {
+    __unused Class isa;
+    AspectBlockFlags flags;
+    __unused int reserved;
+    void (__unused *invoke)(struct _AspectBlock *block, ...);
+    struct {
+        unsigned long int reserved;
+        unsigned long int size;
+        // requires AspectBlockFlagsHasCopyDisposeHelpers
+        void (*copy)(void *dst, const void *src);
+        void (*dispose)(const void *);
+        // requires AspectBlockFlagsHasSignature
+        const char *signature;
+        const char *layout;
+    } *descriptor;
+    // imported variables
+} *AspectBlockRef;
+
+
+static NSMethodSignature *aspect_blockMethodSignature(id block, NSError **error) {
+    AspectBlockRef layout = (__bridge void *)block;
+    if (!(layout->flags & AspectBlockFlagsHasSignature)) {
+        NSString *description = [NSString stringWithFormat:@"The block %@ doesn't contain a type signature.", block];
+        NSLog(@"=====%@", description);
+        //        AspectError(AspectErrorMissingBlockSignature, description);
+        return nil;
+    }
+    void *desc = layout->descriptor;
+    desc += 2 * sizeof(unsigned long int);
+    if (layout->flags & AspectBlockFlagsHasCopyDisposeHelpers) {
+        desc += 2 * sizeof(void *);
+    }
+    if (!desc) {
+        NSString *description = [NSString stringWithFormat:@"The block %@ doesn't has a type signature.", block];
+        NSLog(@"=====%@", description);
+        //        AspectError(AspectErrorMissingBlockSignature, description);
+        return nil;
+    }
+    const char *signature = (*(const char **)desc);
+    return [NSMethodSignature signatureWithObjCTypes:signature];
+}
+
+
 @interface SubclassDemoController ()
 
 @end
@@ -66,33 +115,54 @@ static char kExtendVarKey;
 
 - (void)signature {
     // 设定方法的样子
-    SEL myMethod = @selector(run:);
+    SEL myMethod = @selector(classssss);
     // 预备方法
 //    SEL myMethod2 = @selector(run:);
     // 返回一个方法 如果那个方法找不到则返回nil
     NSMethodSignature *signature = [[self class] instanceMethodSignatureForSelector:myMethod];
+    void (^block)(void) = ^{
+        NSLog(@".llll...");
+    };
+    
+    void (^test)(int) = ^(int a){
+        NSLog(@"...lllll");
+    };
+    NSError *err = NULL;
+//    NSMethodSignature *signature=  aspect_blockMethodSignature(block, &err);
     // 通过签名初始化
     NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
     // 设置target
-//    [invocation setSelector:myMethod];
+    
+    [invocation invokeWithTarget:test];
+//    SEL select  = @selector(block);
+//    IMP imple = imp_implementationWithBlock(block);
+//    [invocation setSelector:block];
+    
+//    [invocation setArgument:&block atIndex:0];
+//    [invocation setArgument:&select atIndex:0];
+    
     // 设置selectro
-    NSString *name1 = @"小明";
-    NSString *name2 = @"小张";
-    NSArray *arr3 = @[@"1",@"32",@"12334"];
+//    NSString *name1 = @"小明";
+//    NSString *name2 = @"小张";
+//    NSArray *arr3 = @[@"1",@"32",@"12334"];
     //注意：1、这里设置参数的Index 需要从2开始，因为前两个被selector和target占用。下面这样写也没有任何
     
-    id mySelf = self;
-    [invocation setArgument:&mySelf atIndex:0];
-    [invocation setArgument:&myMethod atIndex:1];
-    [invocation setArgument:&name1 atIndex:2];
+//    id mySelf = self;
+//    [invocation setArgument:&mySelf atIndex:0];
+//    [invocation setArgument:&myMethod atIndex:1];
+//    [invocation setArgument:&name1 atIndex:2];
 //    [invocation setArgument:&name2 atIndex:3];
 //    [invocation setArgument:&arr3 atIndex:4];
 //    invocation.target = self;
-    NSInteger returnValue = 0;
-    
-    [invocation invoke];
-    [invocation getReturnValue:&returnValue];
-    NSLog(@"%ld", (long)returnValue);
+//    NSInteger returnValue = 0;
+//
+//    [invocation invoke];
+////    [invocation getReturnValue:&returnValue];
+//    NSLog(@"%ld", (long)returnValue);
+}
+
+- (void)classssss {
+    NSLog(@"llll");
 }
 
 - (NSInteger)run:(NSString *)aName {

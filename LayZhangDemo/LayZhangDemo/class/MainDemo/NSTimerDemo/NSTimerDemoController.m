@@ -9,6 +9,8 @@
 #import "NSTimerDemoController.h"
 #import "MyWeakProxy.h"
 
+#import "MyBlockProxy.h"
+
 @interface NSTimerDemoController ()
 
 @property (nonatomic, strong) NSString *message;
@@ -26,12 +28,37 @@
 //    [[self class] newThread];
     self.message = @"1";
     
+    if ((self.message = @"1")) {
+        NSLog(@"1");
+    } else {
+        NSLog(@"0");
+    }
+    
+    if ((self.message = nil)) {
+        NSLog(@"1");
+    } else {
+        NSLog(@"0");
+    }
+    
+
+    
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                                      target:[MyBlockProxy proxyWithBlock:^{
+        NSLog(@"/././././.");
+    }]
+                                                    selector:@selector(myRun)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    self.timer = timer;
+    
     
 //    NSArray * a = @[@"1",@"2",@"3",@"11",@"12",@"13",@"21",@"22",@"23",@"31",@"32",@"33"];
-    NSMutableArray *a = [NSMutableArray new];
-    for (int i = 0; i < 1000; i++) {
-        [a addObject:@(i)];
-    }
+//    NSMutableArray *a = [NSMutableArray new];
+//    for (int i = 0; i < 1000; i++) {
+//        [a addObject:@(i)];
+//    }
 //    for (NSString *string in a) {
 //        NSLog(@"%@", string);
 //        NSLog(@"%p", &string);
@@ -44,12 +71,12 @@
 //        NSLog(@"%@", obj);
 //    }];
     
-    NSLog(@"--------");
-    
-    [a enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        sleep(idx % 2);
-        NSLog(@"%@", obj);
-    }];
+//    NSLog(@"--------");
+//
+//    [a enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        sleep(idx % 2);
+//        NSLog(@"%@", obj);
+//    }];
     
 //
 //    for (int i = 0; i < 100; i ++) {
@@ -68,13 +95,13 @@
 //        NSLog(@"%@", __weak_self__.message);
 //    }];
 
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
-                                     target:[MyWeakProxy proxyWithTarget:self]
-                                   selector:@selector(myRun)
-                                   userInfo:nil
-                                    repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    self.timer = timer;
+//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+//                                     target:[MyWeakProxy proxyWithTarget:self]
+//                                   selector:@selector(myRun)
+//                                   userInfo:nil
+//                                    repeats:YES];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//    self.timer = timer;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
