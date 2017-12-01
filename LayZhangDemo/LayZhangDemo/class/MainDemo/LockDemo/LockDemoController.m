@@ -12,7 +12,7 @@
 @interface LockDemoController (){
     pthread_mutex_t _mutex;
 }
-@property (nonatomic, copy) NSArray *mArray;
+@property (nonatomic, strong) NSArray *mArray;
 
 @end
 
@@ -23,31 +23,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // nslock demo
-    [self sampleNSLockDemo];
+        [self sampleNSLockDemo];
     
     
     // semaphore demo
-    //    [self sampleSemaphoreDemo];
+//    [self sampleSemaphoreDemo];
 }
 
 - (void)sampleNSLockDemo {
     self.mArray = @[@"1",@"2", @"3"];
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
         while (true) {
             @autoreleasepool {
-                self.mArray = @[@"1",@"2", @"3",@"2", @"3",@"2", @"3",@"2", @"3",@"2", @"3",@"2", @"3"];
+                self.mArray = @[@"1",@"2", @"3"];
             }
         }
     });
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         while (true) {
-            @autoreleasepool {
             NSLog(@"%@", self.mArray);
-            }
         }
     });
+    
 }
 
 - (void)sampleSemaphoreDemo {
@@ -69,17 +67,17 @@
 - (void)samplePthreadMutexDemo {
     
     pthread_mutex_init(&_mutex, NULL);
-    //    pthread_mutex_init(&mutex, NULL);
-    
+//    pthread_mutex_init(&mutex, NULL);
+
     for (int i= 0; i < 10; i++) {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            
+
             pthread_mutex_lock(&_mutex);
-            
+
             NSLog(@"run task 1");
             sleep(4);
             NSLog(@"complete task 1");
-            
+
             pthread_mutex_unlock(&_mutex);
         });
     }

@@ -76,6 +76,8 @@
 		4887B1021FCD515300FCA433 /* GYDBDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1011FCD515300FCA433 /* GYDBDemoController.m */; };
 		4887B1051FCD51BE00FCA433 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1041FCD51BE00FCA433 /* Department.m */; };
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
+		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
+		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
 		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
@@ -316,6 +318,10 @@
 		4887B1041FCD51BE00FCA433 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 		4887B1061FCD59DB00FCA433 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		4887B1071FCD59DB00FCA433 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		4887B10D1FCE675800FCA433 /* IMDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMDemoController.h; sourceTree = "<group>"; };
+		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
+		48A549341FD103BC00FDBD18 /* GCDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoController.h; sourceTree = "<group>"; };
+		48A549351FD103BC00FDBD18 /* GCDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoController.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
@@ -838,6 +844,24 @@
 			path = GYDBDemo;
 			sourceTree = "<group>";
 		};
+		4887B10C1FCE674C00FCA433 /* IMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4887B10D1FCE675800FCA433 /* IMDemoController.h */,
+				4887B10E1FCE675800FCA433 /* IMDemoController.m */,
+			);
+			path = IMDemo;
+			sourceTree = "<group>";
+		};
+		48A549331FD103AF00FDBD18 /* GCDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48A549341FD103BC00FDBD18 /* GCDDemoController.h */,
+				48A549351FD103BC00FDBD18 /* GCDDemoController.m */,
+			);
+			path = GCDDemo;
+			sourceTree = "<group>";
+		};
 		48B8778C1EEA4F7C005FA03D /* PollingDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1238,6 +1262,8 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48A549331FD103AF00FDBD18 /* GCDDemo */,
+				4887B10C1FCE674C00FCA433 /* IMDemo */,
 				4887B0FF1FCD514300FCA433 /* GYDBDemo */,
 				4887B0F81FCD411100FCA433 /* ReactiveCocoaDemo */,
 				48FD7B111FC40BAD00143911 /* NSStreamDemo */,
@@ -1712,6 +1738,7 @@
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48F45ABC1FB574AD0074A275 /* TodoStore.m in Sources */,
 				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,
+				4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */,
 				48B877921EEA52E8005FA03D /* PollingModel.m in Sources */,
 				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
@@ -1725,6 +1752,7 @@
 				4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */,
 				485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */,
 				48E414291F62437900E59D65 /* ZLAlertView.m in Sources */,
+				48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */,
 				482CE3681ED8253100409C04 /* PropertyDemoController.m in Sources */,
 				4887B1051FCD51BE00FCA433 /* Department.m in Sources */,
 				48089B2F1F7C9F8600DAF1B6 /* SliderViewController.m in Sources */,

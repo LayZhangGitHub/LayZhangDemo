@@ -61,6 +61,10 @@ target 'LayZhangDemo' do
     pod 'GYDataCenter'
     pod 'FMDB', '~> 2.6.2'
     
+    
+    pod 'NIMSDK_LITE'
+    pod 'HJDanmaku', :git => 'https://github.com/panghaijiao/HJDanmakuDemo.git'
+    
 
     
 end
