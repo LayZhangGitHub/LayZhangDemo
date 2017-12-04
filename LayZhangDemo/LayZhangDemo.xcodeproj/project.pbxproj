@@ -78,6 +78,7 @@
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
 		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
+		48A549411FD53B4E00FDBD18 /* PollingTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549401FD53B4E00FDBD18 /* PollingTask.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
 		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
@@ -322,6 +323,8 @@
 		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
 		48A549341FD103BC00FDBD18 /* GCDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoController.h; sourceTree = "<group>"; };
 		48A549351FD103BC00FDBD18 /* GCDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoController.m; sourceTree = "<group>"; };
+		48A5493F1FD53B4E00FDBD18 /* PollingTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PollingTask.h; sourceTree = "<group>"; };
+		48A549401FD53B4E00FDBD18 /* PollingTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PollingTask.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
@@ -871,6 +874,8 @@
 				48B877911EEA52E8005FA03D /* PollingModel.m */,
 				48B877931EEE2F1D005FA03D /* PollingManager.h */,
 				48B877941EEE2F1D005FA03D /* PollingManager.m */,
+				48A5493F1FD53B4E00FDBD18 /* PollingTask.h */,
+				48A549401FD53B4E00FDBD18 /* PollingTask.m */,
 			);
 			path = PollingDemo;
 			sourceTree = "<group>";
@@ -1780,6 +1785,7 @@
 				48C1528F1F738B0600C577AB /* UserInfo.m in Sources */,
 				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
 				48D1A74F1FB151E3009FDBAE /* MFObject.m in Sources */,
+				48A549411FD53B4E00FDBD18 /* PollingTask.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
 				48C152801F72633B00C577AB /* ZLNavigationService.m in Sources */,
 				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,

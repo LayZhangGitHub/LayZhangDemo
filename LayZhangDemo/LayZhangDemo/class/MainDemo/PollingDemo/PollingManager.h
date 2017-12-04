@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PollingTask.h"
 
 @interface PollingManager : NSObject
 
-+ (instancetype)getInstance;
-
-- (void)doPolling;
+- (void)commitPollingTask:(PollingTask *)pollingTask;
 
 @end

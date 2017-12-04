@@ -8,13 +8,13 @@
 
 #import "PollingModel.h"
 
-#define requestInterval 2.0
+//#define requestInterval 2.0
 
 @implementation PollingModel
 
 + (void)requestFinishedBlock:(FinishedBlock)finishedBlock
                failuredBlock:(FailuredBlock)failuredBlock {
-    [NSThread sleepForTimeInterval:requestInterval];
+//    [NSThread sleepForTimeInterval:requestInterval];
     if (finishedBlock) {
         finishedBlock(@"timeout");
     }
