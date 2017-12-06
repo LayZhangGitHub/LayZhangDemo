@@ -13,6 +13,11 @@
 
 #import "AFHTTPRequestOperationManager.h"
 
+#import "PollingOperation.h"
+
+#import "PoolingQueue.h"
+//#import "AFHTTPRequestOperationManager.h"
+
 @interface PollingViewController ()
 
 @property (nonatomic, assign) NSUInteger requestTime;
@@ -32,36 +37,59 @@
     //    [self doSometing];
     
     AFHTTPRequestOperationManager *manager01 = [AFHTTPRequestOperationManager manager];
-    AFHTTPRequestOperationManager *manager02 = [AFHTTPRequestOperationManager manager];
-    AFHTTPRequestOperationManager *manager03 = [AFHTTPRequestOperationManager manager];
-    
-    NSLog(@"%@", manager01);
-    NSLog(@"%@", manager02);
-    NSLog(@"%@", manager03);
+    for (int i = 0; i < 1; i++) {
+        [manager01 GET:@"www.baidu.com" parameters:@""
+               success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+
+               } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+
+               }];
+    }
+   
+//    AFHTTPRequestOperationManager *manager02 = [AFHTTPRequestOperationManager manager];
+//    AFHTTPRequestOperationManager *manager03 = [AFHTTPRequestOperationManager manager];
+//
+//    NSLog(@"%@", manager01);
+//    NSLog(@"%@", manager02);
+//    NSLog(@"%@", manager03);
     
     
 }
 
 - (void)doPolling {
     
-    PollingManager *manager = [[PollingManager alloc] init];
+    @autoreleasepool {
+        PollingOperation *o = [[PollingOperation alloc] init];
+        [o start];
+        PoolingQueue *queue = [[PoolingQueue alloc] init];
+        [queue addOperation:[[PollingOperation alloc] init]];
+        [queue addOperation:[[PollingOperation alloc] init]];
+        [queue addOperation:[[PollingOperation alloc] init]];
+
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [queue addOperation:[[PollingOperation alloc] init]];
+//            [queue addOperation:[[PollingOperation alloc] init]];
+//        });
+    }
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//                [[PollingManager getInstance] commit];
-//        PollingTask *task = [PollingTask taskWithTarget:self selector:@selector(doReq)];
-//        task.timeInteval = 4;
-//        task.maxPollingTimes = 6;
-//        task.pollingName = @"thread.polling.demo";
-//        [manager commitPollingTask:task];
-    });
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(9.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //        [[PollingManager getInstance] commit];
-    });
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(12.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        //        [[PollingManager getInstance] commit];
-    });
+//    PollingManager *manager = [[PollingManager alloc] init];
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+////                [[PollingManager getInstance] commit];
+////        PollingTask *task = [PollingTask taskWithTarget:self selector:@selector(doReq)];
+////        task.timeInteval = 4;
+////        task.maxPollingTimes = 6;
+////        task.pollingName = @"thread.polling.demo";
+////        [manager commitPollingTask:task];
+//    });
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(9.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        //        [[PollingManager getInstance] commit];
+//    });
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(12.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        //        [[PollingManager getInstance] commit];
+//    });
     //    [NSThread detachNewThreadSelector:@selector(newThreadFun) toTarget:self withObject:nil];
 }
 
