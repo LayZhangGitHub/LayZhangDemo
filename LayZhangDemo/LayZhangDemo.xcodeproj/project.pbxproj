@@ -78,12 +78,9 @@
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
 		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
-		48A549411FD53B4E00FDBD18 /* PollingTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549401FD53B4E00FDBD18 /* PollingTask.m */; };
-		48A549691FD7D63800FDBD18 /* PollingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549681FD7D63800FDBD18 /* PollingOperation.m */; };
-		48A5496C1FD7E9BD00FDBD18 /* PoolingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A5496B1FD7E9BD00FDBD18 /* PoolingQueue.m */; };
+		48A549AD1FD8EE6700FDBD18 /* AbstractPollingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */; };
+		48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
-		48B877921EEA52E8005FA03D /* PollingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877911EEA52E8005FA03D /* PollingModel.m */; };
-		48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B877941EEE2F1D005FA03D /* PollingManager.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
 		48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A91EC98097009DB6D0 /* XMLParseController.m */; };
@@ -325,18 +322,12 @@
 		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
 		48A549341FD103BC00FDBD18 /* GCDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoController.h; sourceTree = "<group>"; };
 		48A549351FD103BC00FDBD18 /* GCDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoController.m; sourceTree = "<group>"; };
-		48A5493F1FD53B4E00FDBD18 /* PollingTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PollingTask.h; sourceTree = "<group>"; };
-		48A549401FD53B4E00FDBD18 /* PollingTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PollingTask.m; sourceTree = "<group>"; };
-		48A549671FD7D63800FDBD18 /* PollingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PollingOperation.h; sourceTree = "<group>"; };
-		48A549681FD7D63800FDBD18 /* PollingOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PollingOperation.m; sourceTree = "<group>"; };
-		48A5496A1FD7E9BD00FDBD18 /* PoolingQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoolingQueue.h; sourceTree = "<group>"; };
-		48A5496B1FD7E9BD00FDBD18 /* PoolingQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoolingQueue.m; sourceTree = "<group>"; };
+		48A549AB1FD8EE6700FDBD18 /* AbstractPollingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractPollingOperation.h; sourceTree = "<group>"; };
+		48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractPollingOperation.m; sourceTree = "<group>"; };
+		48A549AE1FD92F6600FDBD18 /* PollingAOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PollingAOperation.h; sourceTree = "<group>"; };
+		48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PollingAOperation.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
-		48B877901EEA52E8005FA03D /* PollingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingModel.h; sourceTree = "<group>"; };
-		48B877911EEA52E8005FA03D /* PollingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingModel.m; sourceTree = "<group>"; };
-		48B877931EEE2F1D005FA03D /* PollingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingManager.h; sourceTree = "<group>"; };
-		48B877941EEE2F1D005FA03D /* PollingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingManager.m; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
 		48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZLEX.m"; sourceTree = "<group>"; };
 		48BA56A61EC98097009DB6D0 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
@@ -876,16 +867,10 @@
 			children = (
 				48B8778D1EEA4FA3005FA03D /* PollingViewController.h */,
 				48B8778E1EEA4FA3005FA03D /* PollingViewController.m */,
-				48B877901EEA52E8005FA03D /* PollingModel.h */,
-				48B877911EEA52E8005FA03D /* PollingModel.m */,
-				48B877931EEE2F1D005FA03D /* PollingManager.h */,
-				48B877941EEE2F1D005FA03D /* PollingManager.m */,
-				48A5493F1FD53B4E00FDBD18 /* PollingTask.h */,
-				48A549401FD53B4E00FDBD18 /* PollingTask.m */,
-				48A549671FD7D63800FDBD18 /* PollingOperation.h */,
-				48A549681FD7D63800FDBD18 /* PollingOperation.m */,
-				48A5496A1FD7E9BD00FDBD18 /* PoolingQueue.h */,
-				48A5496B1FD7E9BD00FDBD18 /* PoolingQueue.m */,
+				48A549AB1FD8EE6700FDBD18 /* AbstractPollingOperation.h */,
+				48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */,
+				48A549AE1FD92F6600FDBD18 /* PollingAOperation.h */,
+				48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */,
 			);
 			path = PollingDemo;
 			sourceTree = "<group>";
@@ -1671,7 +1656,6 @@
 				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				48C152721F71FF5500C577AB /* ShowToast.m in Sources */,
-				48A549691FD7D63800FDBD18 /* PollingOperation.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
 				48F45ABD1FB574AD0074A275 /* TodoTableViewController.m in Sources */,
@@ -1685,7 +1669,6 @@
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
 				48D1A7531FB1565C009FDBAE /* NSObject+ZLEX.m in Sources */,
 				480ABAB51ECC2B9600C6288E /* TableTimerTableViewCell.m in Sources */,
-				48A5496C1FD7E9BD00FDBD18 /* PoolingQueue.m in Sources */,
 				48F45AC11FB574AD0074A275 /* RFStore.m in Sources */,
 				485DAE091FA6F8B500770226 /* RunloopDemoController.m in Sources */,
 				4860F2051F4FD041006E1648 /* NSMutableDictionary+Safe.m in Sources */,
@@ -1717,6 +1700,7 @@
 				482CE3501ED6EE0300409C04 /* JSONModel02.m in Sources */,
 				481AA25D1F6002AA00641A74 /* MyHitTestView.m in Sources */,
 				4860F3BB1F57A9E7006E1648 /* MyFPSLabel.m in Sources */,
+				48A549AD1FD8EE6700FDBD18 /* AbstractPollingOperation.m in Sources */,
 				48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */,
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
@@ -1734,7 +1718,6 @@
 				48D813DF1EDE58EE0080B5F3 /* MasonryViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				481AA25A1F5FE35A00641A74 /* MyHitTestButton.m in Sources */,
-				48B877951EEE2F1D005FA03D /* PollingManager.m in Sources */,
 				4887B0FB1FCD412900FCA433 /* ReactiveDemoController.m in Sources */,
 				48C1525E1F711ED400C577AB /* ZLNavigationBar.m in Sources */,
 				481AA2601F6117E300641A74 /* HitTestDemoController.m in Sources */,
@@ -1750,13 +1733,13 @@
 				48C1526F1F71400800C577AB /* BaseTableController.m in Sources */,
 				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
 				482CE3641ED8063A00409C04 /* NSObject+Runtime.m in Sources */,
+				48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */,
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
 				480AACBB1F341BEF00D1BA51 /* CookieViewController.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48F45ABC1FB574AD0074A275 /* TodoStore.m in Sources */,
 				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,
 				4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */,
-				48B877921EEA52E8005FA03D /* PollingModel.m in Sources */,
 				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */,
@@ -1797,7 +1780,6 @@
 				48C1528F1F738B0600C577AB /* UserInfo.m in Sources */,
 				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
 				48D1A74F1FB151E3009FDBAE /* MFObject.m in Sources */,
-				48A549411FD53B4E00FDBD18 /* PollingTask.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
 				48C152801F72633B00C577AB /* ZLNavigationService.m in Sources */,
 				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,
