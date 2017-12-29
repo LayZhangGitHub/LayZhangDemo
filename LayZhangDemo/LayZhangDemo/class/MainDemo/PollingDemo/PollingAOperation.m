@@ -19,7 +19,6 @@
 - (instancetype)init {
     if (self = [super init]) {
         _currentTimes = 0;
-        self.completionBlock = ^{};
     }
     return self;
 }
@@ -37,7 +36,7 @@
 - (void)polling {
     self.currentTimes++;
     NSLog(@"polling ...");
-    if (self.currentTimes == 4) {        
+    if (self.currentTimes == 4) {
         [self cancel];
     }
 //    [netrequest success: [cancel]

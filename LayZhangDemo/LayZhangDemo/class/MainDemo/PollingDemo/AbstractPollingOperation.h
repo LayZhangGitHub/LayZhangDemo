@@ -10,12 +10,6 @@
 
 @interface AbstractPollingOperation : NSOperation
 
-//@property (nonatomic, strong) NSTimer *pollingTimer;
-//@property (nonatomic, assign) NSTimeInterval timeInterval;// 间隔时间
-//@property (nonatomic, assign) NSInteger maxTimes;// 最大次数
-
-//- (void)finish;
-
 @property (nonatomic, strong) NSTimer *pollingTimer;
 
 @end

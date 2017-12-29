@@ -46,6 +46,7 @@
 		482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE36F1ED9292F00409C04 /* MiddleProxy.m */; };
 		482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3711ED9292F00409C04 /* ProductAProvider.m */; };
 		482CE3761ED9292F00409C04 /* ProductBProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 482CE3731ED9292F00409C04 /* ProductBProvider.m */; };
+		482E490D1FECB0D800D4BD5B /* MockServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482E490C1FECB0D800D4BD5B /* MockServerController.m */; };
 		48302DAB1FA0424300C1B84B /* MyBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48302DAA1FA0424300C1B84B /* MyBlockObject.m */; };
 		484162641F9D9E13002B10AB /* JSBridgeDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484162631F9D9E13002B10AB /* JSBridgeDemoController.m */; };
 		484162661F9D9E71002B10AB /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 484162651F9D9E71002B10AB /* ExampleApp.html */; };
@@ -61,6 +62,7 @@
 		4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7071F4E71F500F8A128 /* SafeKitController.m */; };
 		4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B70B1F4E739400F8A128 /* NSArray+Safe.m */; };
 		4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */; };
+		484EB0741FF612AD004D0A50 /* GLDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB0731FF612AD004D0A50 /* GLDrawController.m */; };
 		485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D21181F78A5070033DD20 /* ZLTestViweLayout.m */; };
 		485DAE091FA6F8B500770226 /* RunloopDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485DAE081FA6F8B500770226 /* RunloopDemoController.m */; };
 		4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */; };
@@ -80,6 +82,8 @@
 		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
 		48A549AD1FD8EE6700FDBD18 /* AbstractPollingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */; };
 		48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */; };
+		48A549B31FD9431400FDBD18 /* ObjectA.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549B21FD9431400FDBD18 /* ObjectA.m */; };
+		48A549B61FD9438700FDBD18 /* SubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549B51FD9438700FDBD18 /* SubObject.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
@@ -159,6 +163,8 @@
 		48FD7B0D1FBEDC1B00143911 /* LockDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */; };
 		48FD7B141FC40BBA00143911 /* NSStreamDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B131FC40BBA00143911 /* NSStreamDemoController.m */; };
 		48FD7B1C1FC6CAD200143911 /* MyBlockProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */; };
+		48FD93041FECB68800EE4C0A /* google.json in Resources */ = {isa = PBXBuildFile; fileRef = 48FD93031FECB68700EE4C0A /* google.json */; };
+		48FD93081FF0AAD400EE4C0A /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD93071FF0AAD400EE4C0A /* URLSessionViewController.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -258,6 +264,8 @@
 		482CE3711ED9292F00409C04 /* ProductAProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductAProvider.m; sourceTree = "<group>"; };
 		482CE3721ED9292F00409C04 /* ProductBProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBProvider.h; sourceTree = "<group>"; };
 		482CE3731ED9292F00409C04 /* ProductBProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBProvider.m; sourceTree = "<group>"; };
+		482E490B1FECB0D800D4BD5B /* MockServerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockServerController.h; sourceTree = "<group>"; };
+		482E490C1FECB0D800D4BD5B /* MockServerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockServerController.m; sourceTree = "<group>"; };
 		48302DA91FA0424300C1B84B /* MyBlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlockObject.h; sourceTree = "<group>"; };
 		48302DAA1FA0424300C1B84B /* MyBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlockObject.m; sourceTree = "<group>"; };
 		484162621F9D9E13002B10AB /* JSBridgeDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBridgeDemoController.h; sourceTree = "<group>"; };
@@ -288,6 +296,8 @@
 		4847B7101F4E9DE100F8A128 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
 		4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
 		4847B7131F4EA8F900F8A128 /* SafeObjectMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMacro.h; sourceTree = "<group>"; };
+		484EB0721FF612AD004D0A50 /* GLDrawController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDrawController.h; sourceTree = "<group>"; };
+		484EB0731FF612AD004D0A50 /* GLDrawController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLDrawController.m; sourceTree = "<group>"; };
 		485D21171F78A5070033DD20 /* ZLTestViweLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLTestViweLayout.h; sourceTree = "<group>"; };
 		485D21181F78A5070033DD20 /* ZLTestViweLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLTestViweLayout.m; sourceTree = "<group>"; };
 		485DAE071FA6F8B500770226 /* RunloopDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopDemoController.h; sourceTree = "<group>"; };
@@ -326,6 +336,10 @@
 		48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractPollingOperation.m; sourceTree = "<group>"; };
 		48A549AE1FD92F6600FDBD18 /* PollingAOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PollingAOperation.h; sourceTree = "<group>"; };
 		48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PollingAOperation.m; sourceTree = "<group>"; };
+		48A549B11FD9431400FDBD18 /* ObjectA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectA.h; sourceTree = "<group>"; };
+		48A549B21FD9431400FDBD18 /* ObjectA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectA.m; sourceTree = "<group>"; };
+		48A549B41FD9438700FDBD18 /* SubObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubObject.h; sourceTree = "<group>"; };
+		48A549B51FD9438700FDBD18 /* SubObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubObject.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
@@ -490,6 +504,9 @@
 		48FD7B131FC40BBA00143911 /* NSStreamDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStreamDemoController.m; sourceTree = "<group>"; };
 		48FD7B1A1FC6CACD00143911 /* MyBlockProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlockProxy.h; sourceTree = "<group>"; };
 		48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlockProxy.m; sourceTree = "<group>"; };
+		48FD93031FECB68700EE4C0A /* google.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = google.json; sourceTree = "<group>"; };
+		48FD93061FF0AAD400EE4C0A /* URLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
+		48FD93071FF0AAD400EE4C0A /* URLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -720,6 +737,15 @@
 			path = ProxyDemo;
 			sourceTree = "<group>";
 		};
+		482E490A1FECB0B800D4BD5B /* MockServerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				482E490B1FECB0D800D4BD5B /* MockServerController.h */,
+				482E490C1FECB0D800D4BD5B /* MockServerController.m */,
+			);
+			path = MockServerDemo;
+			sourceTree = "<group>";
+		};
 		484162611F9D9E03002B10AB /* JSBridgeDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,6 +811,15 @@
 				48E414211F61494700E59D65 /* NSMutableSet+Safe.m */,
 			);
 			path = Safe;
+			sourceTree = "<group>";
+		};
+		484EB0711FF6128B004D0A50 /* GLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				484EB0721FF612AD004D0A50 /* GLDrawController.h */,
+				484EB0731FF612AD004D0A50 /* GLDrawController.m */,
+			);
+			path = GLDemo;
 			sourceTree = "<group>";
 		};
 		485DAE061FA6F8A100770226 /* RunloopDemo */ = {
@@ -871,6 +906,10 @@
 				48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */,
 				48A549AE1FD92F6600FDBD18 /* PollingAOperation.h */,
 				48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */,
+				48A549B11FD9431400FDBD18 /* ObjectA.h */,
+				48A549B21FD9431400FDBD18 /* ObjectA.m */,
+				48A549B41FD9438700FDBD18 /* SubObject.h */,
+				48A549B51FD9438700FDBD18 /* SubObject.m */,
 			);
 			path = PollingDemo;
 			sourceTree = "<group>";
@@ -1199,6 +1238,7 @@
 		48E558591EC2EFE400FE30E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48FD93031FECB68700EE4C0A /* google.json */,
 				48E558611EC2F33800FE30E0 /* MessageErr.xml */,
 				48E558621EC2F33900FE30E0 /* MessageLang.xml */,
 				48E5585A1EC2EFE400FE30E0 /* main.m */,
@@ -1262,6 +1302,9 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				484EB0711FF6128B004D0A50 /* GLDemo */,
+				48FD93051FF0AABB00EE4C0A /* NSURLSessionDemo */,
+				482E490A1FECB0B800D4BD5B /* MockServerDemo */,
 				48A549331FD103AF00FDBD18 /* GCDDemo */,
 				4887B10C1FCE674C00FCA433 /* IMDemo */,
 				4887B0FF1FCD514300FCA433 /* GYDBDemo */,
@@ -1455,6 +1498,15 @@
 			path = NSStreamDemo;
 			sourceTree = "<group>";
 		};
+		48FD93051FF0AABB00EE4C0A /* NSURLSessionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				48FD93061FF0AAD400EE4C0A /* URLSessionViewController.h */,
+				48FD93071FF0AAD400EE4C0A /* URLSessionViewController.m */,
+			);
+			path = NSURLSessionDemo;
+			sourceTree = "<group>";
+		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1574,6 +1626,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FD93041FECB68800EE4C0A /* google.json in Resources */,
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
 				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
 				480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */,
@@ -1667,8 +1720,10 @@
 				48C152631F711F0600C577AB /* BaseController.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
+				482E490D1FECB0D800D4BD5B /* MockServerController.m in Sources */,
 				48D1A7531FB1565C009FDBAE /* NSObject+ZLEX.m in Sources */,
 				480ABAB51ECC2B9600C6288E /* TableTimerTableViewCell.m in Sources */,
+				48A549B31FD9431400FDBD18 /* ObjectA.m in Sources */,
 				48F45AC11FB574AD0074A275 /* RFStore.m in Sources */,
 				485DAE091FA6F8B500770226 /* RunloopDemoController.m in Sources */,
 				4860F2051F4FD041006E1648 /* NSMutableDictionary+Safe.m in Sources */,
@@ -1787,7 +1842,10 @@
 				48F45ABE1FB574AD0074A275 /* Todo.m in Sources */,
 				4887B1081FCD59DB00FCA433 /* Car.m in Sources */,
 				48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */,
+				48A549B61FD9438700FDBD18 /* SubObject.m in Sources */,
+				48FD93081FF0AAD400EE4C0A /* URLSessionViewController.m in Sources */,
 				48C1525F1F711ED400C577AB /* ZLTabbar.m in Sources */,
+				484EB0741FF612AD004D0A50 /* GLDrawController.m in Sources */,
 				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,
 				48F79A8A1ED6702B00280CBB /* UIView+QuickNew.m in Sources */,
 				48F45AC51FB5AB410074A275 /* DispatchSourceDemoController.m in Sources */,

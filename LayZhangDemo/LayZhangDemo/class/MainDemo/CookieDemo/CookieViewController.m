@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self createNavBarWithTitle:@"CookieDemo"];
+    [self createNavBarWithTitle:@"CookieDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
 //    CountDownButton *countDownButton = [[CountDownButton alloc] init];
 
     CountDownButton *countDownButton = [CountDownButton instanceWithBegin:^(CountDownButton *countDownButton) {
@@ -51,6 +51,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    
 }
 
 /*

@@ -58,8 +58,6 @@ static NSString * const kPollingLockName = @"polling.operation.lock";
 @property (nonatomic, assign) PollingOperationState state;
 @property (nonatomic, strong) NSRecursiveLock *lock; // 递归锁， 可以在同个线程中加锁
 
-
-
 - (void)pollingDidStart;
 - (void)pollingFinish;
 - (void)pollingCancel;

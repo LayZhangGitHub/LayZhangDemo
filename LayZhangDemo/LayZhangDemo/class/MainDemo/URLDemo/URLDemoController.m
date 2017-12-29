@@ -22,83 +22,83 @@
     
     //    [self sessionDelegate];
     //    [self downloadTask];
-    [self downloadTaskDelegate];
+//    [self downloadTaskDelegate];
     
 }
 
-- (void)urlConnectionDemo {
-    NSString *londonWeatherUrl =
-    @"http://api.openweathermap.org/data/2.5/weather?q=London,uk";
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:londonWeatherUrl]];
-    
-    [NSURLConnection sendAsynchronousRequest:request
-                                       queue:[NSOperationQueue mainQueue]
-                           completionHandler:^(NSURLResponse *response,
-                                               NSData *data,
-                                               NSError *error){
-                               //处理返回的数据data
-                               //1. 将data转换为JSON
-                               //2. 打印内容
-                               NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
-                                                                                          options:NSJSONReadingMutableContainers
-                                                                                            error:nil];
-                               
-                               for (NSString *str in dictionary.allKeys) {
-                                   NSLog(@"%@:%@", str, dictionary[str]);
-                               }
-                           }];
-    
-    
-}
+//- (void)urlConnectionDemo {
+//    NSString *londonWeatherUrl =
+//    @"http://api.openweathermap.org/data/2.5/weather?q=London,uk";
+//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:londonWeatherUrl]];
+//
+//    [NSURLConnection sendAsynchronousRequest:request
+//                                       queue:[NSOperationQueue mainQueue]
+//                           completionHandler:^(NSURLResponse *response,
+//                                               NSData *data,
+//                                               NSError *error){
+//                               //处理返回的数据data
+//                               //1. 将data转换为JSON
+//                               //2. 打印内容
+//                               NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
+//                                                                                          options:NSJSONReadingMutableContainers
+//                                                                                            error:nil];
+//
+//                               for (NSString *str in dictionary.allKeys) {
+//                                   NSLog(@"%@:%@", str, dictionary[str]);
+//                               }
+//                           }];
+//
+//
+//}
 
-
-- (void)urlSessionDemo {
-    [self sessionGet];
-    [self sessionPost];
-}
-
-- (void)sessionGet {
-    // GET
-    NSURL *londonWeatherUrl = [NSURL URLWithString:@"http://www.daka.com/login?username=daka&pwd=123"];
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task =
-    [session dataTaskWithURL:londonWeatherUrl
-           completionHandler:^(NSData *data,
-                               NSURLResponse *response,
-                               NSError *error){
-               //处理数据
-               NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
-                                                                          options:NSJSONReadingMutableContainers
-                                                                            error:nil];
-               
-               for (NSString *str in dictionary.allKeys) {
-                   NSLog(@"%@:%@", str, dictionary[str]);
-               }
-           }];
-    
-    [task resume];
-    //    [task cancel];
-}
-
-- (void)sessionPost {
-    // POST
-    NSURL *url = [NSURL URLWithString:@"http://www.daka.com/login"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod = @"POST";
-    request.HTTPBody = [@"username=daka&pwd=123" dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    // 由于要先对request先行处理,我们通过request初始化task
-    NSURLSessionTask *task =
-    [session dataTaskWithRequest:request
-               completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                   NSLog(@"%@", [NSJSONSerialization JSONObjectWithData:data
-                                                                options:kNilOptions
-                                                                  error:nil]);
-               }];
-    [task resume];
-}
+//
+//- (void)urlSessionDemo {
+//    [self sessionGet];
+//    [self sessionPost];
+//}
+//
+//- (void)sessionGet {
+//    // GET
+//    NSURL *londonWeatherUrl = [NSURL URLWithString:@"http://www.daka.com/login?username=daka&pwd=123"];
+//
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    NSURLSessionDataTask *task =
+//    [session dataTaskWithURL:londonWeatherUrl
+//           completionHandler:^(NSData *data,
+//                               NSURLResponse *response,
+//                               NSError *error){
+//               //处理数据
+//               NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data
+//                                                                          options:NSJSONReadingMutableContainers
+//                                                                            error:nil];
+//
+//               for (NSString *str in dictionary.allKeys) {
+//                   NSLog(@"%@:%@", str, dictionary[str]);
+//               }
+//           }];
+//
+//    [task resume];
+//    //    [task cancel];
+//}
+//
+//- (void)sessionPost {
+//    // POST
+//    NSURL *url = [NSURL URLWithString:@"http://www.daka.com/login"];
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    request.HTTPMethod = @"POST";
+//    request.HTTPBody = [@"username=daka&pwd=123" dataUsingEncoding:NSUTF8StringEncoding];
+//
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    // 由于要先对request先行处理,我们通过request初始化task
+//    NSURLSessionTask *task =
+//    [session dataTaskWithRequest:request
+//               completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//                   NSLog(@"%@", [NSJSONSerialization JSONObjectWithData:data
+//                                                                options:kNilOptions
+//                                                                  error:nil]);
+//               }];
+//    [task resume];
+//}
 
 
 - (void)sessionDelegate {

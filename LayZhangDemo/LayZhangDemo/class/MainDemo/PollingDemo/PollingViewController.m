@@ -8,9 +8,9 @@
 
 #import "PollingViewController.h"
 
-#import "AFHTTPRequestOperationManager.h"
+//#import "AFHTTPRequestOperationManager.h"
 
-
+#import "SubObject.h"
 
 #import "PollingAOperation.h"
 //#import "AFHTTPRequestOperationManager.h"
@@ -34,6 +34,7 @@
     [self createNavBarWithTitle:@"PollingDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
     [self doPolling];
     
+    [[SubObject alloc] init];
 }
 
 - (void)doPolling {
@@ -44,6 +45,7 @@
         [queue addOperation:operation];
         
     }
+
 }
 
 - (void)dealloc {

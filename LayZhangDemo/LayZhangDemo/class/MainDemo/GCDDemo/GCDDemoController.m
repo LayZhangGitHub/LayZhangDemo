@@ -19,7 +19,7 @@
 //    [self mainthreadDeadLockDemo];
     [self threadAsyncDemo];
     
-    [self groupDemo];
+//    [self groupDemo];
 }
 
 - (void)groupDemo {
@@ -106,11 +106,16 @@
 }
 
 - (void)threadAsyncDemo {
+    
+    dispatch_queue_t queue = dispatch_queue_create("myQ", DISPATCH_QUEUE_SERIAL);
     NSLog(@"1");
-    dispatch_sync(dispatch_get_global_queue(0, 0), ^{
-        sleep(1);
-        NSLog(@"2");
-    });
+    for (int i = 0; i < 10; i++) {
+        
+        dispatch_async(queue, ^{
+            sleep(1);
+            NSLog(@"%@,2", [NSThread currentThread]);
+        });
+    }
     NSLog(@"3");
 }
 

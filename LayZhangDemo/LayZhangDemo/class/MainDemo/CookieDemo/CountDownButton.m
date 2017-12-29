@@ -67,11 +67,16 @@
         [self stopCountDown];
     }
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                                  target:self
-                                                selector:@selector(timerStart:)
-                                                userInfo:nil
-                                                 repeats:YES];
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+//                                                  target:self
+//                                                selector:@selector(timerStart:)
+//                                                userInfo:nil
+//                                                 repeats:YES];
+    self.timer = [NSTimer timerWithTimeInterval:1.0
+                                         target:self
+                                       selector:@selector(timerStart:)
+                                       userInfo:nil
+                                        repeats:YES];
     self.startDate = [NSDate date];
     self.timer.fireDate = [NSDate distantPast];
     [[NSRunLoop currentRunLoop]addTimer:_timer forMode:NSRunLoopCommonModes];

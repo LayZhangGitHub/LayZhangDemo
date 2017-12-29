@@ -1,24 +1,18 @@
 PODS:
-  - AFNetworking (2.6.3):
-    - AFNetworking/NSURLConnection (= 2.6.3)
-    - AFNetworking/NSURLSession (= 2.6.3)
-    - AFNetworking/Reachability (= 2.6.3)
-    - AFNetworking/Security (= 2.6.3)
-    - AFNetworking/Serialization (= 2.6.3)
-    - AFNetworking/UIKit (= 2.6.3)
-  - AFNetworking/NSURLConnection (2.6.3):
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.3):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.3)
-  - AFNetworking/Security (2.6.3)
-  - AFNetworking/Serialization (2.6.3)
-  - AFNetworking/UIKit (2.6.3):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CocoaLumberjack (3.3.0):
     - CocoaLumberjack/Default (= 3.3.0)
@@ -32,15 +26,51 @@ PODS:
   - GDataXML-HTML (1.3.0)
   - GYDataCenter (0.1.1):
     - FMDB
+  - GYHttpMock (1.0.1)
   - HJDanmaku (2.0.1)
   - JSONModel (1.7.0)
   - Masonry (1.0.2)
   - MJRefresh (3.1.15.1)
   - NIMSDK_LITE (4.5.0)
+  - OHHTTPStubs (6.1.0):
+    - OHHTTPStubs/Default (= 6.1.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - PINCache (3.0.1-beta.5):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
+    - PINCache/Core (= 3.0.1-beta.5)
+  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.5):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.12):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.12):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.12):
+    - PINCache (= 3.0.1-beta.5)
+    - PINRemoteImage/Core
   - ReactiveObjC (3.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - Texture (2.5.1):
+    - Texture/PINRemoteImage (= 2.5.1)
+  - Texture/Core (2.5.1)
+  - Texture/PINRemoteImage (2.5.1):
+    - PINRemoteImage/iOS (= 3.0.0-beta.12)
+    - PINRemoteImage/PINCache
+    - Texture/Core
   - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.3)
   - YYCache (1.0.4)
@@ -56,18 +86,21 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
-  - AFNetworking (~> 2.0)
+  - AFNetworking (~> 3.0)
   - CocoaLumberjack
   - FMDB (~> 2.6.2)
   - GDataXML-HTML (~> 1.3.0)
   - GYDataCenter
+  - GYHttpMock
   - HJDanmaku (from `https://github.com/panghaijiao/HJDanmakuDemo.git`)
   - JSONModel (~> 1.7.0)
   - Masonry (~> 1.0.2)
   - MJRefresh (~> 3.1.12)
   - NIMSDK_LITE
+  - OHHTTPStubs
   - ReactiveObjC
   - SDWebImage (~> 4.0.0)
+  - Texture
   - UITableView+FDTemplateLayoutCell
   - WebViewJavascriptBridge
   - YYCategories
@@ -84,18 +117,24 @@ CHECKOUT OPTIONS:
     :git: https://github.com/panghaijiao/HJDanmakuDemo.git
 
 SPEC CHECKSUMS:
-  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   GDataXML-HTML: 7adc03668cab35c288f1dbb8929a179f0fece898
   GYDataCenter: 620dc2564589f50d2370a691303e0d7215f7c0af
+  GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
   HJDanmaku: d36112c97b085b0b1b518590eeb0d5fcef0c93b4
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   NIMSDK_LITE: 2e66bd3dc53fbe68d92ccb8632ffa78f118ed1ac
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
+  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  Texture: c3f06e344aa091667b7a56002e525cde674d021a
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
@@ -104,6 +143,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 3d7d9d3ceea0bd9fc4488d7d5ecb65e9eefc0f11
+PODFILE CHECKSUM: 62819648cb7f2024ddd251500419807b595d3cb3
 
 COCOAPODS: 1.2.0
