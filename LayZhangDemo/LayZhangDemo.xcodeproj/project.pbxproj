@@ -63,6 +63,16 @@
 		4847B70C1F4E739400F8A128 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B70B1F4E739400F8A128 /* NSArray+Safe.m */; };
 		4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4847B7111F4E9DE100F8A128 /* NSObject+Safe.m */; };
 		484EB0741FF612AD004D0A50 /* GLDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB0731FF612AD004D0A50 /* GLDrawController.m */; };
+		484EB1291FF61C32004D0A50 /* GLDrawImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB1281FF61C32004D0A50 /* GLDrawImageController.m */; };
+		484EB12C1FF629B8004D0A50 /* icon_test.png in Resources */ = {isa = PBXBuildFile; fileRef = 484EB12B1FF629B8004D0A50 /* icon_test.png */; };
+		484EB16520046ADC004D0A50 /* AVFoundationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB16420046ADC004D0A50 /* AVFoundationController.m */; };
+		484EB16B2005BA2C004D0A50 /* AVFoundation01Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB16A2005BA2B004D0A50 /* AVFoundation01Controller.m */; };
+		484EB16E2005C21F004D0A50 /* AVFoundation02Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB16D2005C21F004D0A50 /* AVFoundation02Controller.m */; };
+		484EB1712005E84F004D0A50 /* AVFoundation03Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB1702005E84F004D0A50 /* AVFoundation03Controller.m */; };
+		484EB1762005F112004D0A50 /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 484EB1732005F112004D0A50 /* shaderf.fsh */; };
+		484EB1772005F112004D0A50 /* Demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 484EB1742005F112004D0A50 /* Demo.png */; };
+		484EB1782005F112004D0A50 /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 484EB1752005F112004D0A50 /* shaderv.vsh */; };
+		484EB17E2005F821004D0A50 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 484EB17D2005F821004D0A50 /* MyView.m */; };
 		485D21191F78A5070033DD20 /* ZLTestViweLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 485D21181F78A5070033DD20 /* ZLTestViweLayout.m */; };
 		485DAE091FA6F8B500770226 /* RunloopDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485DAE081FA6F8B500770226 /* RunloopDemoController.m */; };
 		4860F1FF1F4ED035006E1648 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860F1FE1F4ED035006E1648 /* NSMutableArray+Safe.m */; };
@@ -84,6 +94,7 @@
 		48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */; };
 		48A549B31FD9431400FDBD18 /* ObjectA.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549B21FD9431400FDBD18 /* ObjectA.m */; };
 		48A549B61FD9438700FDBD18 /* SubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549B51FD9438700FDBD18 /* SubObject.m */; };
+		48B388212032D7A6003EEA67 /* AVFoundation04Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B388202032D7A6003EEA67 /* AVFoundation04Controller.m */; };
 		48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B8778E1EEA4FA3005FA03D /* PollingViewController.m */; };
 		48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A01EC5AF68009DB6D0 /* NSString+ZLEX.m */; };
 		48BA56AA1EC98097009DB6D0 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA56A71EC98097009DB6D0 /* LangCaptain.m */; };
@@ -109,6 +120,7 @@
 		48C1528C1F727E0E00C577AB /* UserInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1528B1F727E0E00C577AB /* UserInfoService.m */; };
 		48C1528F1F738B0600C577AB /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1528E1F738B0600C577AB /* UserInfo.m */; };
 		48C152971F739AC700C577AB /* NormalModuleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C152961F739AC700C577AB /* NormalModuleEntity.m */; };
+		48CB6103200754D400B665CC /* CaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CB6102200754D400B665CC /* CaptureView.m */; };
 		48D1A74C1FB14E98009FDBAE /* SubclassDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D1A74B1FB14E97009FDBAE /* SubclassDemoController.m */; };
 		48D1A74F1FB151E3009FDBAE /* MFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D1A74E1FB151E3009FDBAE /* MFObject.m */; };
 		48D1A7531FB1565C009FDBAE /* NSObject+ZLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D1A7521FB1565C009FDBAE /* NSObject+ZLEX.m */; };
@@ -298,6 +310,22 @@
 		4847B7131F4EA8F900F8A128 /* SafeObjectMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeObjectMacro.h; sourceTree = "<group>"; };
 		484EB0721FF612AD004D0A50 /* GLDrawController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDrawController.h; sourceTree = "<group>"; };
 		484EB0731FF612AD004D0A50 /* GLDrawController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLDrawController.m; sourceTree = "<group>"; };
+		484EB1271FF61C32004D0A50 /* GLDrawImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDrawImageController.h; sourceTree = "<group>"; };
+		484EB1281FF61C32004D0A50 /* GLDrawImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLDrawImageController.m; sourceTree = "<group>"; };
+		484EB12B1FF629B8004D0A50 /* icon_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_test.png; sourceTree = "<group>"; };
+		484EB16320046ADC004D0A50 /* AVFoundationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationController.h; sourceTree = "<group>"; };
+		484EB16420046ADC004D0A50 /* AVFoundationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationController.m; sourceTree = "<group>"; };
+		484EB1692005BA2B004D0A50 /* AVFoundation01Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundation01Controller.h; sourceTree = "<group>"; };
+		484EB16A2005BA2B004D0A50 /* AVFoundation01Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundation01Controller.m; sourceTree = "<group>"; };
+		484EB16C2005C21F004D0A50 /* AVFoundation02Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundation02Controller.h; sourceTree = "<group>"; };
+		484EB16D2005C21F004D0A50 /* AVFoundation02Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundation02Controller.m; sourceTree = "<group>"; };
+		484EB16F2005E84F004D0A50 /* AVFoundation03Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundation03Controller.h; sourceTree = "<group>"; };
+		484EB1702005E84F004D0A50 /* AVFoundation03Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundation03Controller.m; sourceTree = "<group>"; };
+		484EB1732005F112004D0A50 /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		484EB1742005F112004D0A50 /* Demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Demo.png; sourceTree = "<group>"; };
+		484EB1752005F112004D0A50 /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		484EB17C2005F821004D0A50 /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		484EB17D2005F821004D0A50 /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		485D21171F78A5070033DD20 /* ZLTestViweLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLTestViweLayout.h; sourceTree = "<group>"; };
 		485D21181F78A5070033DD20 /* ZLTestViweLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLTestViweLayout.m; sourceTree = "<group>"; };
 		485DAE071FA6F8B500770226 /* RunloopDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopDemoController.h; sourceTree = "<group>"; };
@@ -340,6 +368,8 @@
 		48A549B21FD9431400FDBD18 /* ObjectA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectA.m; sourceTree = "<group>"; };
 		48A549B41FD9438700FDBD18 /* SubObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubObject.h; sourceTree = "<group>"; };
 		48A549B51FD9438700FDBD18 /* SubObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubObject.m; sourceTree = "<group>"; };
+		48B3881F2032D7A6003EEA67 /* AVFoundation04Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundation04Controller.h; sourceTree = "<group>"; };
+		48B388202032D7A6003EEA67 /* AVFoundation04Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundation04Controller.m; sourceTree = "<group>"; };
 		48B8778D1EEA4FA3005FA03D /* PollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingViewController.h; sourceTree = "<group>"; };
 		48B8778E1EEA4FA3005FA03D /* PollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingViewController.m; sourceTree = "<group>"; };
 		48BA569F1EC5AF68009DB6D0 /* NSString+ZLEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZLEX.h"; sourceTree = "<group>"; };
@@ -393,6 +423,8 @@
 		48C1528E1F738B0600C577AB /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		48C152951F739AC700C577AB /* NormalModuleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalModuleEntity.h; sourceTree = "<group>"; };
 		48C152961F739AC700C577AB /* NormalModuleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalModuleEntity.m; sourceTree = "<group>"; };
+		48CB6101200754D400B665CC /* CaptureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptureView.h; sourceTree = "<group>"; };
+		48CB6102200754D400B665CC /* CaptureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureView.m; sourceTree = "<group>"; };
 		48CDDAF81EC5A4360000D92C /* ZLVerifyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLVerifyDelegate.h; sourceTree = "<group>"; };
 		48D1A74A1FB14E97009FDBAE /* SubclassDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubclassDemoController.h; sourceTree = "<group>"; };
 		48D1A74B1FB14E97009FDBAE /* SubclassDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubclassDemoController.m; sourceTree = "<group>"; };
@@ -818,8 +850,50 @@
 			children = (
 				484EB0721FF612AD004D0A50 /* GLDrawController.h */,
 				484EB0731FF612AD004D0A50 /* GLDrawController.m */,
+				484EB1271FF61C32004D0A50 /* GLDrawImageController.h */,
+				484EB1281FF61C32004D0A50 /* GLDrawImageController.m */,
 			);
 			path = GLDemo;
+			sourceTree = "<group>";
+		};
+		484EB12A1FF62994004D0A50 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				484EB12B1FF629B8004D0A50 /* icon_test.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		484EB16220046AB5004D0A50 /* AVFoundationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				484EB1692005BA2B004D0A50 /* AVFoundation01Controller.h */,
+				484EB16A2005BA2B004D0A50 /* AVFoundation01Controller.m */,
+				484EB16C2005C21F004D0A50 /* AVFoundation02Controller.h */,
+				484EB16D2005C21F004D0A50 /* AVFoundation02Controller.m */,
+				484EB16F2005E84F004D0A50 /* AVFoundation03Controller.h */,
+				484EB1702005E84F004D0A50 /* AVFoundation03Controller.m */,
+				48B3881F2032D7A6003EEA67 /* AVFoundation04Controller.h */,
+				48B388202032D7A6003EEA67 /* AVFoundation04Controller.m */,
+				484EB16320046ADC004D0A50 /* AVFoundationController.h */,
+				484EB16420046ADC004D0A50 /* AVFoundationController.m */,
+				48CB6101200754D400B665CC /* CaptureView.h */,
+				48CB6102200754D400B665CC /* CaptureView.m */,
+				484EB17C2005F821004D0A50 /* MyView.h */,
+				484EB17D2005F821004D0A50 /* MyView.m */,
+				484EB1722005F112004D0A50 /* Resource */,
+			);
+			path = AVFoundationDemo;
+			sourceTree = "<group>";
+		};
+		484EB1722005F112004D0A50 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				484EB1732005F112004D0A50 /* shaderf.fsh */,
+				484EB1742005F112004D0A50 /* Demo.png */,
+				484EB1752005F112004D0A50 /* shaderv.vsh */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		485DAE061FA6F8A100770226 /* RunloopDemo */ = {
@@ -1251,6 +1325,7 @@
 		48E558651EC2F3C800FE30E0 /* class */ = {
 			isa = PBXGroup;
 			children = (
+				484EB12A1FF62994004D0A50 /* Resource */,
 				48E558661EC2F3C800FE30E0 /* Categories */,
 				48E558CB1EC31DC400FE30E0 /* Utils */,
 				48E558931EC30B7200FE30E0 /* CustomViewDemo */,
@@ -1302,6 +1377,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				484EB16220046AB5004D0A50 /* AVFoundationDemo */,
 				484EB0711FF6128B004D0A50 /* GLDemo */,
 				48FD93051FF0AABB00EE4C0A /* NSURLSessionDemo */,
 				482E490A1FECB0B800D4BD5B /* MockServerDemo */,
@@ -1626,10 +1702,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484EB1772005F112004D0A50 /* Demo.png in Resources */,
 				48FD93041FECB68800EE4C0A /* google.json in Resources */,
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
+				484EB1782005F112004D0A50 /* shaderv.vsh in Resources */,
 				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
+				484EB12C1FF629B8004D0A50 /* icon_test.png in Resources */,
 				480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */,
+				484EB1762005F112004D0A50 /* shaderf.fsh in Resources */,
 				48E558641EC2F33900FE30E0 /* MessageLang.xml in Resources */,
 				48E557F11EC0580000FE30E0 /* Assets.xcassets in Resources */,
 				48E557EF1EC0580000FE30E0 /* Main.storyboard in Resources */,
@@ -1736,6 +1816,7 @@
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
 				48C1527D1F725E3200C577AB /* BaseApplicationEntity.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
+				484EB16E2005C21F004D0A50 /* AVFoundation02Controller.m in Sources */,
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				48D1A74C1FB14E98009FDBAE /* SubclassDemoController.m in Sources */,
 				48FD7B141FC40BBA00143911 /* NSStreamDemoController.m in Sources */,
@@ -1770,6 +1851,7 @@
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
 				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
+				48CB6103200754D400B665CC /* CaptureView.m in Sources */,
 				48D813DF1EDE58EE0080B5F3 /* MasonryViewController.m in Sources */,
 				48E557E91EC0580000FE30E0 /* AppDelegate.m in Sources */,
 				481AA25A1F5FE35A00641A74 /* MyHitTestButton.m in Sources */,
@@ -1784,20 +1866,25 @@
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
 				48C1526C1F713CB500C577AB /* ScrollableController.m in Sources */,
+				484EB1291FF61C32004D0A50 /* GLDrawImageController.m in Sources */,
 				482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */,
 				48C1526F1F71400800C577AB /* BaseTableController.m in Sources */,
+				484EB1712005E84F004D0A50 /* AVFoundation03Controller.m in Sources */,
 				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
 				482CE3641ED8063A00409C04 /* NSObject+Runtime.m in Sources */,
 				48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */,
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
+				484EB16520046ADC004D0A50 /* AVFoundationController.m in Sources */,
 				480AACBB1F341BEF00D1BA51 /* CookieViewController.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48F45ABC1FB574AD0074A275 /* TodoStore.m in Sources */,
 				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,
+				484EB17E2005F821004D0A50 /* MyView.m in Sources */,
 				4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */,
 				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */,
+				48B388212032D7A6003EEA67 /* AVFoundation04Controller.m in Sources */,
 				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
 				48BA56CA1EC9BC0B009DB6D0 /* ZLKeyboardView.m in Sources */,
 				48E5587D1EC2F3C800FE30E0 /* MainViewCell.m in Sources */,
@@ -1846,6 +1933,7 @@
 				48FD93081FF0AAD400EE4C0A /* URLSessionViewController.m in Sources */,
 				48C1525F1F711ED400C577AB /* ZLTabbar.m in Sources */,
 				484EB0741FF612AD004D0A50 /* GLDrawController.m in Sources */,
+				484EB16B2005BA2C004D0A50 /* AVFoundation01Controller.m in Sources */,
 				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,
 				48F79A8A1ED6702B00280CBB /* UIView+QuickNew.m in Sources */,
 				48F45AC51FB5AB410074A275 /* DispatchSourceDemoController.m in Sources */,

@@ -14,4 +14,10 @@
 //    NSLog(@"test01");
 //}
 
+- (void)once {
+//    test();
+}
+
+
+
 @end

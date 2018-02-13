@@ -71,6 +71,9 @@ target 'LayZhangDemo' do
     pod 'OHHTTPStubs'
     
     pod 'Texture'
+    
+    # m
+    pod 'GPUImage'
 
     
 end

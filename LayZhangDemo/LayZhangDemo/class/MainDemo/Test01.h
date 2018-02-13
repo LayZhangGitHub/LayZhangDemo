@@ -10,4 +10,6 @@
 
 @interface Test01 : Test
 
+- (void)once;
+
 @end
