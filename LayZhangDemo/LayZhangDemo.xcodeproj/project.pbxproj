@@ -89,6 +89,7 @@
 		4887B1051FCD51BE00FCA433 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1041FCD51BE00FCA433 /* Department.m */; };
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
+		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
 		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
 		48A549AD1FD8EE6700FDBD18 /* AbstractPollingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */; };
 		48A549B01FD92F6600FDBD18 /* PollingAOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AF1FD92F6600FDBD18 /* PollingAOperation.m */; };
@@ -358,6 +359,7 @@
 		4887B1071FCD59DB00FCA433 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		4887B10D1FCE675800FCA433 /* IMDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMDemoController.h; sourceTree = "<group>"; };
 		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
+		489FF2A320DA50D000543CC8 /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HTML; sourceTree = "<group>"; };
 		48A549341FD103BC00FDBD18 /* GCDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoController.h; sourceTree = "<group>"; };
 		48A549351FD103BC00FDBD18 /* GCDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoController.m; sourceTree = "<group>"; };
 		48A549AB1FD8EE6700FDBD18 /* AbstractPollingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractPollingOperation.h; sourceTree = "<group>"; };
@@ -1279,6 +1281,7 @@
 		48E557E31EC0580000FE30E0 /* LayZhangDemo */ = {
 			isa = PBXGroup;
 			children = (
+				489FF2A320DA50D000543CC8 /* HTML */,
 				48E558651EC2F3C800FE30E0 /* class */,
 				48E557E71EC0580000FE30E0 /* AppDelegate.h */,
 				48E557E81EC0580000FE30E0 /* AppDelegate.m */,
@@ -1662,7 +1665,7 @@
 				TargetAttributes = {
 					48E557E01EC0580000FE30E0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VH7JGCM338;
+						DevelopmentTeam = AK4N3GQYUV;
 						ProvisioningStyle = Automatic;
 					};
 					48E557F91EC0580000FE30E0 = {
@@ -1707,6 +1710,7 @@
 				48E557F41EC0580000FE30E0 /* LaunchScreen.storyboard in Resources */,
 				484EB1782005F112004D0A50 /* shaderv.vsh in Resources */,
 				48E558631EC2F33900FE30E0 /* MessageErr.xml in Resources */,
+				489FF2A420DA50D000543CC8 /* HTML in Resources */,
 				484EB12C1FF629B8004D0A50 /* icon_test.png in Resources */,
 				480ABB401ED3E9C800C6288E /* JSONDemo.plist in Resources */,
 				484EB1762005F112004D0A50 /* shaderf.fsh in Resources */,
@@ -2089,12 +2093,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VH7JGCM338;
+				DEVELOPMENT_TEAM = AK4N3GQYUV;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myvpntest.vpntest;
+				PRODUCT_BUNDLE_IDENTIFIER = Layzhang.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2107,12 +2111,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = VH7JGCM338;
+				DEVELOPMENT_TEAM = AK4N3GQYUV;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = myvpntest.vpntest;
+				PRODUCT_BUNDLE_IDENTIFIER = Layzhang.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

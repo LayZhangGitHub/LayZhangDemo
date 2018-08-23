@@ -25,11 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createNavBarWithTitle:@"AVFoundation" withLeft:[UIImage imageNamed:@"icon_back"]];
-//    [self setupConfig];
-    NSNumber *n;
-    NSInteger i = [n integerValue];
-    NSLog(@"%ld", (long)i);
-    
     
     self.imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:self.imageView];

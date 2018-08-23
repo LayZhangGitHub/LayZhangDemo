@@ -19,8 +19,8 @@
     [super viewDidLoad];
     [self createNavBarWithTitle:@"SemaphoreDemo" withLeft:[UIImage imageNamed:@"icon_back"]];
 //    [self semaphoreDemo01];
-//    [self semaphoreDemo02];
-    [self semaphoreDemo03];
+    [self semaphoreDemo02];
+//    [self semaphoreDemo03];
 }
 
 - (void)semaphoreDemo01 {
@@ -69,7 +69,7 @@
     dispatch_group_t group = dispatch_group_create();
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < 6; i++)
     {
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         //注意这里信号量从10开始递减,并不会阻塞循环.循环10次,递减到0的时候,开始阻塞.
@@ -83,6 +83,7 @@
         });//创建一个新线程,并在线程结束后,发送信号量,通知阻塞的循环继续创建新线程.
     }
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    NSLog(@"end......");
 //    如此循环就形成了对并发的控制，如上就是一个并发数为10的一个线程队列。
 }
 

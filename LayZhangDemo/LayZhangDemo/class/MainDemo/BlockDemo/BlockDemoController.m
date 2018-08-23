@@ -17,6 +17,8 @@
 @property (nonatomic,strong) void(^myBlock)();
 @property (nonatomic, strong) MyBlockObject *mObject;
 
+@property (nonatomic, weak) UIWebView *webView;
+
 @end
 
 void (^block)(void);
@@ -27,6 +29,23 @@ static int staticValue = 100;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createNavBarWithTitle:@"BlockDemoController" withLeft:[UIImage imageNamed:@"icon_back"]];
+    
+    
+    
+    NSString *title = @"done";
+    NSString *resourcePath = @"HTML/Demo";
+    
+    
+    UIWebView *webView = [[UIWebView alloc] init];
+    self.webView = webView;
+    [self.view addSubview:webView];
+    webView.frame = CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT - 64);
+    NSString *path = [[NSBundle mainBundle] pathForResource:resourcePath
+                                                     ofType:@"html"];
+    
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
     
    static int mValue = 100;
     

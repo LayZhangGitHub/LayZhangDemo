@@ -36,7 +36,7 @@
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
         NSLog(@"notify：任务都完成了");
     });
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
      // 并不会无限的开启新的线程， 当线程多到一定 数量时， 也会等待前面的线程结束，重用线程
         dispatch_group_async(dispatchGroup, dispatchQueue, ^(){
             sleep(2);
