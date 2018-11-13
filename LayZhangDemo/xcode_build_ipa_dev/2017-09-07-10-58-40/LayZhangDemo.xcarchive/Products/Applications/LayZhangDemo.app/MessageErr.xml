@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <item name="Default">操作失敗</item>
-    
-    <item name="ERR_Name">错误信息</item>
-    <item name="ERR_Sample">错误示例</item>
-</resources>
