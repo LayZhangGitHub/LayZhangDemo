@@ -27,6 +27,11 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *str1 = @";;";
+    NSString *str2 = @";;";
+    NSInteger a= 1;
+    NSInteger b = 2;
+    XCTAssertEqual(str1, str2, @"111");
 }
 
 - (void)testPerformanceExample {

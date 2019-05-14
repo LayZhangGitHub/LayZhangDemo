@@ -93,6 +93,8 @@
 		4887B1051FCD51BE00FCA433 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1041FCD51BE00FCA433 /* Department.m */; };
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
+		489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180B2278366F0001BF5D /* EncodingDemoController.m */; };
+		489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180E2278369D0001BF5D /* CFounctionDemo.m */; };
 		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
 		48A549361FD103BC00FDBD18 /* GCDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549351FD103BC00FDBD18 /* GCDDemoController.m */; };
 		48A549AD1FD8EE6700FDBD18 /* AbstractPollingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A549AC1FD8EE6700FDBD18 /* AbstractPollingOperation.m */; };
@@ -182,6 +184,11 @@
 		48FD7B1C1FC6CAD200143911 /* MyBlockProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD7B1B1FC6CACD00143911 /* MyBlockProxy.m */; };
 		48FD93041FECB68800EE4C0A /* google.json in Resources */ = {isa = PBXBuildFile; fileRef = 48FD93031FECB68700EE4C0A /* google.json */; };
 		48FD93081FF0AAD400EE4C0A /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FD93071FF0AAD400EE4C0A /* URLSessionViewController.m */; };
+		48FF3F3022800CB300BF2CC4 /* AVPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FF3F2F22800CB300BF2CC4 /* AVPlayerController.m */; };
+		48FF3F3A22803A3B00BF2CC4 /* ZLPlayerLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FF3F3922803A3B00BF2CC4 /* ZLPlayerLayerView.m */; };
+		48FF3F3D22803A8F00BF2CC4 /* ZLVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FF3F3C22803A8F00BF2CC4 /* ZLVideoPlayerView.m */; };
+		48FF3F4022803B8400BF2CC4 /* ZLVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FF3F3F22803B8400BF2CC4 /* ZLVideoModel.m */; };
+		48FF3F5422815BA200BF2CC4 /* FirstResController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FF3F5322815BA200BF2CC4 /* FirstResController.m */; };
 		C89D7D028903EC69D34A5534 /* libPods-LayZhangDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -371,6 +378,10 @@
 		4887B1071FCD59DB00FCA433 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		4887B10D1FCE675800FCA433 /* IMDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMDemoController.h; sourceTree = "<group>"; };
 		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
+		489D180A2278366F0001BF5D /* EncodingDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingDemoController.h; sourceTree = "<group>"; };
+		489D180B2278366F0001BF5D /* EncodingDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingDemoController.m; sourceTree = "<group>"; };
+		489D180D2278369D0001BF5D /* CFounctionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFounctionDemo.h; sourceTree = "<group>"; };
+		489D180E2278369D0001BF5D /* CFounctionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFounctionDemo.m; sourceTree = "<group>"; };
 		489FF2A320DA50D000543CC8 /* HTML */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HTML; sourceTree = "<group>"; };
 		48A549341FD103BC00FDBD18 /* GCDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDDemoController.h; sourceTree = "<group>"; };
 		48A549351FD103BC00FDBD18 /* GCDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDDemoController.m; sourceTree = "<group>"; };
@@ -543,7 +554,6 @@
 		48F79A8C1ED67E2C00280CBB /* VPNDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNDemoController.h; sourceTree = "<group>"; };
 		48F79A8D1ED67E2C00280CBB /* VPNDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNDemoController.m; sourceTree = "<group>"; };
 		48F79A8F1ED67F2E00280CBB /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
-		48F79AD31ED6A66A00280CBB /* LayZhangDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LayZhangDemo copy-Info.plist"; path = "/Users/zhanglei/Desktop/zhanglei/myGitRepository/LayZhangDemo/LayZhangDemo/LayZhangDemo copy-Info.plist"; sourceTree = "<absolute>"; };
 		48FD7B0B1FBEDC1B00143911 /* LockDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockDemoController.h; sourceTree = "<group>"; };
 		48FD7B0C1FBEDC1B00143911 /* LockDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockDemoController.m; sourceTree = "<group>"; };
 		48FD7B121FC40BBA00143911 /* NSStreamDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStreamDemoController.h; sourceTree = "<group>"; };
@@ -553,6 +563,16 @@
 		48FD93031FECB68700EE4C0A /* google.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = google.json; sourceTree = "<group>"; };
 		48FD93061FF0AAD400EE4C0A /* URLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
 		48FD93071FF0AAD400EE4C0A /* URLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
+		48FF3F2E22800CB300BF2CC4 /* AVPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerController.h; sourceTree = "<group>"; };
+		48FF3F2F22800CB300BF2CC4 /* AVPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerController.m; sourceTree = "<group>"; };
+		48FF3F3822803A3B00BF2CC4 /* ZLPlayerLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLPlayerLayerView.h; sourceTree = "<group>"; };
+		48FF3F3922803A3B00BF2CC4 /* ZLPlayerLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLPlayerLayerView.m; sourceTree = "<group>"; };
+		48FF3F3B22803A8F00BF2CC4 /* ZLVideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLVideoPlayerView.h; sourceTree = "<group>"; };
+		48FF3F3C22803A8F00BF2CC4 /* ZLVideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLVideoPlayerView.m; sourceTree = "<group>"; };
+		48FF3F3E22803B8400BF2CC4 /* ZLVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLVideoModel.h; sourceTree = "<group>"; };
+		48FF3F3F22803B8400BF2CC4 /* ZLVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLVideoModel.m; sourceTree = "<group>"; };
+		48FF3F5222815BA200BF2CC4 /* FirstResController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstResController.h; sourceTree = "<group>"; };
+		48FF3F5322815BA200BF2CC4 /* FirstResController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstResController.m; sourceTree = "<group>"; };
 		5DBACEA7CFACB966748FEE93 /* libPods-LayZhangDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LayZhangDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6B860F93E35188319D88B4 /* Pods-LayZhangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayZhangDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -991,6 +1011,17 @@
 			path = IMDemo;
 			sourceTree = "<group>";
 		};
+		489D1809227836510001BF5D /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				489D180A2278366F0001BF5D /* EncodingDemoController.h */,
+				489D180B2278366F0001BF5D /* EncodingDemoController.m */,
+				489D180D2278369D0001BF5D /* CFounctionDemo.h */,
+				489D180E2278369D0001BF5D /* CFounctionDemo.m */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
 		48A549331FD103AF00FDBD18 /* GCDDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1291,7 +1322,6 @@
 				48E557E21EC0580000FE30E0 /* Products */,
 				15F6CEE04301F4E51C7120D4 /* Pods */,
 				72B67528C931486A4E099E7C /* Frameworks */,
-				48F79AD31ED6A66A00280CBB /* LayZhangDemo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1407,6 +1437,8 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				48FF3F2D22800C9F00BF2CC4 /* AVPlayer */,
+				489D1809227836510001BF5D /* Encoding */,
 				48150DD9219AB7130021BF4A /* AQuestion */,
 				484EB16220046AB5004D0A50 /* AVFoundationDemo */,
 				484EB0711FF6128B004D0A50 /* GLDemo */,
@@ -1614,6 +1646,31 @@
 			path = NSURLSessionDemo;
 			sourceTree = "<group>";
 		};
+		48FF3F2D22800C9F00BF2CC4 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				48FF3F342280396500BF2CC4 /* Player */,
+				48FF3F2E22800CB300BF2CC4 /* AVPlayerController.h */,
+				48FF3F2F22800CB300BF2CC4 /* AVPlayerController.m */,
+				48FF3F5222815BA200BF2CC4 /* FirstResController.h */,
+				48FF3F5322815BA200BF2CC4 /* FirstResController.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		48FF3F342280396500BF2CC4 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				48FF3F3822803A3B00BF2CC4 /* ZLPlayerLayerView.h */,
+				48FF3F3922803A3B00BF2CC4 /* ZLPlayerLayerView.m */,
+				48FF3F3B22803A8F00BF2CC4 /* ZLVideoPlayerView.h */,
+				48FF3F3C22803A8F00BF2CC4 /* ZLVideoPlayerView.m */,
+				48FF3F3E22803B8400BF2CC4 /* ZLVideoModel.h */,
+				48FF3F3F22803B8400BF2CC4 /* ZLVideoModel.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		72B67528C931486A4E099E7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1693,8 +1750,13 @@
 				TargetAttributes = {
 					48E557E01EC0580000FE30E0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GDMD4XZ24N;
+						DevelopmentTeam = 86LSCQAD57;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					48E557F91EC0580000FE30E0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1772,13 +1834,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LayZhangDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		525539ADAAE70B9E057D3EB9 /* [CP] Copy Pods Resources */ = {
@@ -1787,9 +1852,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1802,9 +1880,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LayZhangDemo/Pods-LayZhangDemo-frameworks.sh",
+				"${PODS_ROOT}/NIMSDK_LITE/NIMSDK/NIMSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1821,6 +1902,7 @@
 				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				48C152721F71FF5500C577AB /* ShowToast.m in Sources */,
+				489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */,
 				48150DDF219AC49E0021BF4A /* AQuestion02Controller.m in Sources */,
 				482CE3611ED71E4B00409C04 /* RuntimeDemoClass.m in Sources */,
 				48E558CE1EC3249C00FE30E0 /* ZLMVerifyCodeAlertView.m in Sources */,
@@ -1829,6 +1911,7 @@
 				484162641F9D9E13002B10AB /* JSBridgeDemoController.m in Sources */,
 				48E414251F62381F00E59D65 /* ZLThemeControl.m in Sources */,
 				48C1528C1F727E0E00C577AB /* UserInfoService.m in Sources */,
+				48FF3F4022803B8400BF2CC4 /* ZLVideoModel.m in Sources */,
 				48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */,
 				48C152631F711F0600C577AB /* BaseController.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
@@ -1854,7 +1937,10 @@
 				48BA56BC1EC9A5F1009DB6D0 /* ZLOperation.m in Sources */,
 				48D1A74C1FB14E98009FDBAE /* SubclassDemoController.m in Sources */,
 				48FD7B141FC40BBA00143911 /* NSStreamDemoController.m in Sources */,
+				48FF3F3A22803A3B00BF2CC4 /* ZLPlayerLayerView.m in Sources */,
 				4847B7121F4E9DE100F8A128 /* NSObject+Safe.m in Sources */,
+				48FF3F3D22803A8F00BF2CC4 /* ZLVideoPlayerView.m in Sources */,
+				489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */,
 				48FD7B1C1FC6CAD200143911 /* MyBlockProxy.m in Sources */,
 				48BA56A11EC5AF68009DB6D0 /* NSString+ZLEX.m in Sources */,
 				4887B1021FCD515300FCA433 /* GYDBDemoController.m in Sources */,
@@ -1902,6 +1988,7 @@
 				48C1526C1F713CB500C577AB /* ScrollableController.m in Sources */,
 				484EB1291FF61C32004D0A50 /* GLDrawImageController.m in Sources */,
 				482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */,
+				48FF3F5422815BA200BF2CC4 /* FirstResController.m in Sources */,
 				48C1526F1F71400800C577AB /* BaseTableController.m in Sources */,
 				484EB1712005E84F004D0A50 /* AVFoundation03Controller.m in Sources */,
 				48E5589C1EC30B7200FE30E0 /* CustomAlertController.m in Sources */,
@@ -1935,6 +2022,7 @@
 				480ABB331ED3DBCE00C6288E /* Dog.m in Sources */,
 				4847B7081F4E71F500F8A128 /* SafeKitController.m in Sources */,
 				48FD7B0D1FBEDC1B00143911 /* LockDemoController.m in Sources */,
+				48FF3F3022800CB300BF2CC4 /* AVPlayerController.m in Sources */,
 				48E558B51EC3154900FE30E0 /* CustomKeyboardController.m in Sources */,
 				48E4142C1F62677200E59D65 /* ZLDropDownMenu.m in Sources */,
 				48E5585B1EC2EFE400FE30E0 /* main.m in Sources */,
@@ -2125,12 +2213,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDMD4XZ24N;
+				DEVELOPMENT_TEAM = 86LSCQAD57;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Layzhang.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.husor.beidian.dev1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2143,12 +2231,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDMD4XZ24N;
+				DEVELOPMENT_TEAM = 86LSCQAD57;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LayZhangDemo/Supporting Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "ThemeType=1";
 				INFOPLIST_FILE = LayZhangDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Layzhang.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.husor.beidian.dev1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
