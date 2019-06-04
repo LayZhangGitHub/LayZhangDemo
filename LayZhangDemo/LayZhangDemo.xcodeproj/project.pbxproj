@@ -93,6 +93,11 @@
 		4887B1051FCD51BE00FCA433 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1041FCD51BE00FCA433 /* Department.m */; };
 		4887B1081FCD59DB00FCA433 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B1071FCD59DB00FCA433 /* Car.m */; };
 		4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887B10E1FCE675800FCA433 /* IMDemoController.m */; };
+		489B229822A6192200D67611 /* DCommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B229722A6192200D67611 /* DCommandViewController.m */; };
+		489B229D22A61A5700D67611 /* ConCommandA.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B229C22A61A5700D67611 /* ConCommandA.m */; };
+		489B22A022A61A8300D67611 /* ConCommandB.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B229F22A61A8300D67611 /* ConCommandB.m */; };
+		489B22A322A61AE800D67611 /* CReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22A222A61AE800D67611 /* CReceiver.m */; };
+		489B22A622A61D0E00D67611 /* CInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22A522A61D0E00D67611 /* CInvoker.m */; };
 		489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180B2278366F0001BF5D /* EncodingDemoController.m */; };
 		489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180E2278369D0001BF5D /* CFounctionDemo.m */; };
 		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
@@ -378,6 +383,17 @@
 		4887B1071FCD59DB00FCA433 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		4887B10D1FCE675800FCA433 /* IMDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMDemoController.h; sourceTree = "<group>"; };
 		4887B10E1FCE675800FCA433 /* IMDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMDemoController.m; sourceTree = "<group>"; };
+		489B229622A6192200D67611 /* DCommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCommandViewController.h; sourceTree = "<group>"; };
+		489B229722A6192200D67611 /* DCommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCommandViewController.m; sourceTree = "<group>"; };
+		489B229A22A61A2900D67611 /* ICommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICommand.h; sourceTree = "<group>"; };
+		489B229B22A61A5700D67611 /* ConCommandA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConCommandA.h; sourceTree = "<group>"; };
+		489B229C22A61A5700D67611 /* ConCommandA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConCommandA.m; sourceTree = "<group>"; };
+		489B229E22A61A8300D67611 /* ConCommandB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConCommandB.h; sourceTree = "<group>"; };
+		489B229F22A61A8300D67611 /* ConCommandB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConCommandB.m; sourceTree = "<group>"; };
+		489B22A122A61AE800D67611 /* CReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CReceiver.h; sourceTree = "<group>"; };
+		489B22A222A61AE800D67611 /* CReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CReceiver.m; sourceTree = "<group>"; };
+		489B22A422A61D0E00D67611 /* CInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CInvoker.h; sourceTree = "<group>"; };
+		489B22A522A61D0E00D67611 /* CInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CInvoker.m; sourceTree = "<group>"; };
 		489D180A2278366F0001BF5D /* EncodingDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingDemoController.h; sourceTree = "<group>"; };
 		489D180B2278366F0001BF5D /* EncodingDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingDemoController.m; sourceTree = "<group>"; };
 		489D180D2278369D0001BF5D /* CFounctionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFounctionDemo.h; sourceTree = "<group>"; };
@@ -1011,6 +1027,40 @@
 			path = IMDemo;
 			sourceTree = "<group>";
 		};
+		489B229422A6175700D67611 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				489B229522A6176200D67611 /* DCommand */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		489B229522A6176200D67611 /* DCommand */ = {
+			isa = PBXGroup;
+			children = (
+				489B229922A61A0E00D67611 /* Imp */,
+				489B229622A6192200D67611 /* DCommandViewController.h */,
+				489B229722A6192200D67611 /* DCommandViewController.m */,
+			);
+			path = DCommand;
+			sourceTree = "<group>";
+		};
+		489B229922A61A0E00D67611 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				489B229A22A61A2900D67611 /* ICommand.h */,
+				489B229B22A61A5700D67611 /* ConCommandA.h */,
+				489B229C22A61A5700D67611 /* ConCommandA.m */,
+				489B229E22A61A8300D67611 /* ConCommandB.h */,
+				489B229F22A61A8300D67611 /* ConCommandB.m */,
+				489B22A122A61AE800D67611 /* CReceiver.h */,
+				489B22A222A61AE800D67611 /* CReceiver.m */,
+				489B22A422A61D0E00D67611 /* CInvoker.h */,
+				489B22A522A61D0E00D67611 /* CInvoker.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
 		489D1809227836510001BF5D /* Encoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -1437,6 +1487,7 @@
 		48E558711EC2F3C800FE30E0 /* MainDemo */ = {
 			isa = PBXGroup;
 			children = (
+				489B229422A6175700D67611 /* Design */,
 				48FF3F2D22800C9F00BF2CC4 /* AVPlayer */,
 				489D1809227836510001BF5D /* Encoding */,
 				48150DD9219AB7130021BF4A /* AQuestion */,
@@ -1775,6 +1826,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1899,6 +1951,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489B229D22A61A5700D67611 /* ConCommandA.m in Sources */,
 				4860F3BE1F57BC54006E1648 /* FloatNoticeWindow.m in Sources */,
 				4847B6AF1F4C1E6100F8A128 /* CCellC.m in Sources */,
 				48C152721F71FF5500C577AB /* ShowToast.m in Sources */,
@@ -1914,6 +1967,7 @@
 				48FF3F4022803B8400BF2CC4 /* ZLVideoModel.m in Sources */,
 				48B8778F1EEA4FA3005FA03D /* PollingViewController.m in Sources */,
 				48C152631F711F0600C577AB /* BaseController.m in Sources */,
+				489B22A622A61D0E00D67611 /* CInvoker.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
 				482E490D1FECB0D800D4BD5B /* MockServerController.m in Sources */,
@@ -1931,6 +1985,7 @@
 				4887B0FE1FCD416600FCA433 /* ReactModel.m in Sources */,
 				482CE3741ED9292F00409C04 /* MiddleProxy.m in Sources */,
 				48E5587E1EC2F3C800FE30E0 /* ViewController.m in Sources */,
+				489B22A022A61A8300D67611 /* ConCommandB.m in Sources */,
 				48C1527D1F725E3200C577AB /* BaseApplicationEntity.m in Sources */,
 				480ABB041ECD809400C6288E /* Person.m in Sources */,
 				484EB16E2005C21F004D0A50 /* AVFoundation02Controller.m in Sources */,
@@ -1985,6 +2040,7 @@
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
+				489B22A322A61AE800D67611 /* CReceiver.m in Sources */,
 				48C1526C1F713CB500C577AB /* ScrollableController.m in Sources */,
 				484EB1291FF61C32004D0A50 /* GLDrawImageController.m in Sources */,
 				482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */,
@@ -2000,6 +2056,7 @@
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48F45ABC1FB574AD0074A275 /* TodoStore.m in Sources */,
 				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,
+				489B229822A6192200D67611 /* DCommandViewController.m in Sources */,
 				484EB17E2005F821004D0A50 /* MyView.m in Sources */,
 				4887B10F1FCE675800FCA433 /* IMDemoController.m in Sources */,
 				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
