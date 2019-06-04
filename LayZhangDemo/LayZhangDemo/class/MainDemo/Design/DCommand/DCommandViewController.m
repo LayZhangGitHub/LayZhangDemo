@@ -9,6 +9,7 @@
 #import "DCommandViewController.h"
 #import "ConCommandA.h"
 #import "ConCommandB.h"
+#import "ConCommandC.h"
 #import "CInvoker.h"
 
 /*
@@ -30,12 +31,12 @@
     [super viewDidLoad];
     [self createNavBarWithTitle:@"DCommand" withLeft:[UIImage imageNamed:@"icon_back"]];
     
-    
     self.receiver = [CReceiver new];
     self.invoker = [CInvoker new];
     self.commands = @[].mutableCopy;
     [self.commands addObject:[[ConCommandA alloc] initWithReceiver:self.receiver]];
     [self.commands addObject:[[ConCommandB alloc] initWithReceiver:self.receiver]];
+    [self.commands addObject:[[ConCommandC alloc] initWithReceiver:self.receiver]];
     
     [self doCommands];
 }

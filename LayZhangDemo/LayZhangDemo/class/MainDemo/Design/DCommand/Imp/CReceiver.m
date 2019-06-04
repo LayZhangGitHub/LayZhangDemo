@@ -20,4 +20,9 @@
     ZLFuncLog(@"B");
 }
 
+- (void)doActionC
+{
+    ZLFuncLog(@"C");
+}
+
 @end

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)doActionA;
 - (void)doActionB;
+- (void)doActionC;
 
 @end
 

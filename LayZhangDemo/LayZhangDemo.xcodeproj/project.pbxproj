@@ -98,6 +98,9 @@
 		489B22A022A61A8300D67611 /* ConCommandB.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B229F22A61A8300D67611 /* ConCommandB.m */; };
 		489B22A322A61AE800D67611 /* CReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22A222A61AE800D67611 /* CReceiver.m */; };
 		489B22A622A61D0E00D67611 /* CInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22A522A61D0E00D67611 /* CInvoker.m */; };
+		489B22AA22A64B6900D67611 /* DChainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22A922A64B6900D67611 /* DChainController.m */; };
+		489B22AE22A64BC900D67611 /* AbsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22AD22A64BC900D67611 /* AbsCommand.m */; };
+		489B22B122A64ED100D67611 /* ConCommandC.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22B022A64ED100D67611 /* ConCommandC.m */; };
 		489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180B2278366F0001BF5D /* EncodingDemoController.m */; };
 		489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180E2278369D0001BF5D /* CFounctionDemo.m */; };
 		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
@@ -394,6 +397,12 @@
 		489B22A222A61AE800D67611 /* CReceiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CReceiver.m; sourceTree = "<group>"; };
 		489B22A422A61D0E00D67611 /* CInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CInvoker.h; sourceTree = "<group>"; };
 		489B22A522A61D0E00D67611 /* CInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CInvoker.m; sourceTree = "<group>"; };
+		489B22A822A64B6900D67611 /* DChainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DChainController.h; sourceTree = "<group>"; };
+		489B22A922A64B6900D67611 /* DChainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DChainController.m; sourceTree = "<group>"; };
+		489B22AC22A64BC900D67611 /* AbsCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsCommand.h; sourceTree = "<group>"; };
+		489B22AD22A64BC900D67611 /* AbsCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbsCommand.m; sourceTree = "<group>"; };
+		489B22AF22A64ED100D67611 /* ConCommandC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConCommandC.h; sourceTree = "<group>"; };
+		489B22B022A64ED100D67611 /* ConCommandC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConCommandC.m; sourceTree = "<group>"; };
 		489D180A2278366F0001BF5D /* EncodingDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingDemoController.h; sourceTree = "<group>"; };
 		489D180B2278366F0001BF5D /* EncodingDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingDemoController.m; sourceTree = "<group>"; };
 		489D180D2278369D0001BF5D /* CFounctionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFounctionDemo.h; sourceTree = "<group>"; };
@@ -1030,6 +1039,7 @@
 		489B229422A6175700D67611 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				489B22A722A64B5300D67611 /* DChain */,
 				489B229522A6176200D67611 /* DCommand */,
 			);
 			path = Design;
@@ -1048,15 +1058,36 @@
 		489B229922A61A0E00D67611 /* Imp */ = {
 			isa = PBXGroup;
 			children = (
-				489B229A22A61A2900D67611 /* ICommand.h */,
+				489B22AC22A64BC900D67611 /* AbsCommand.h */,
+				489B22AD22A64BC900D67611 /* AbsCommand.m */,
+				489B22A422A61D0E00D67611 /* CInvoker.h */,
+				489B22A522A61D0E00D67611 /* CInvoker.m */,
 				489B229B22A61A5700D67611 /* ConCommandA.h */,
 				489B229C22A61A5700D67611 /* ConCommandA.m */,
 				489B229E22A61A8300D67611 /* ConCommandB.h */,
 				489B229F22A61A8300D67611 /* ConCommandB.m */,
+				489B22AF22A64ED100D67611 /* ConCommandC.h */,
+				489B22B022A64ED100D67611 /* ConCommandC.m */,
 				489B22A122A61AE800D67611 /* CReceiver.h */,
 				489B22A222A61AE800D67611 /* CReceiver.m */,
-				489B22A422A61D0E00D67611 /* CInvoker.h */,
-				489B22A522A61D0E00D67611 /* CInvoker.m */,
+				489B229A22A61A2900D67611 /* ICommand.h */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		489B22A722A64B5300D67611 /* DChain */ = {
+			isa = PBXGroup;
+			children = (
+				489B22AB22A64B9400D67611 /* Imp */,
+				489B22A822A64B6900D67611 /* DChainController.h */,
+				489B22A922A64B6900D67611 /* DChainController.m */,
+			);
+			path = DChain;
+			sourceTree = "<group>";
+		};
+		489B22AB22A64B9400D67611 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Imp;
 			sourceTree = "<group>";
@@ -2017,12 +2048,14 @@
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
 				4845D3081F7A51BE004D884B /* Test.m in Sources */,
+				489B22B122A64ED100D67611 /* ConCommandC.m in Sources */,
 				4860F2021F4FBD55006E1648 /* NSDictionary+Safe.m in Sources */,
 				4847B6AC1F4C1E5500F8A128 /* CCellB.m in Sources */,
 				48C1525D1F711ED400C577AB /* BaseTableCell.m in Sources */,
 				48D813E81EDE5E800080B5F3 /* BaseViewB.m in Sources */,
 				4860F3B81F56B3A3006E1648 /* MyWeakProxy.m in Sources */,
 				48E414221F61494700E59D65 /* NSMutableSet+Safe.m in Sources */,
+				489B22AA22A64B6900D67611 /* DChainController.m in Sources */,
 				48D813D41ED96EB70080B5F3 /* NSTimerDemoController.m in Sources */,
 				48D813EB1EDE5E890080B5F3 /* BaseViewC.m in Sources */,
 				480ABB0E1ECD9DBF00C6288E /* UIViewController+Swizzling.m in Sources */,
@@ -2053,6 +2086,7 @@
 				480ABAB21ECC2B4700C6288E /* TableTimerViewController.m in Sources */,
 				484EB16520046ADC004D0A50 /* AVFoundationController.m in Sources */,
 				480AACBB1F341BEF00D1BA51 /* CookieViewController.m in Sources */,
+				489B22AE22A64BC900D67611 /* AbsCommand.m in Sources */,
 				48E5589D1EC30B7200FE30E0 /* ZLCVerifyCodeAlertView.m in Sources */,
 				48F45ABC1FB574AD0074A275 /* TodoStore.m in Sources */,
 				48C152791F725C5900C577AB /* ZLApplicationEntity.m in Sources */,

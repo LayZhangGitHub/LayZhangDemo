@@ -6,15 +6,11 @@
 //  Copyright © 2019 Zhanglei. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "ICommand.h"
-#import "CReceiver.h"
+#import "AbsCommand.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ConCommandB : NSObject<ICommand>
-
-- (instancetype)initWithReceiver:(CReceiver *)receiver;
+@interface ConCommandB : AbsCommand
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  ConCommandA.h
+//  ConCommandC.h
 //  LayZhangDemo
 //
 //  Created by Lay on 2019/6/4.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ConCommandA : AbsCommand
+@interface ConCommandC : AbsCommand
 
 @end
 

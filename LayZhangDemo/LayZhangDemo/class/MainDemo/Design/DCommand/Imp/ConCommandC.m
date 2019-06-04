@@ -1,19 +1,19 @@
 //
-//  ConCommandA.m
+//  ConCommandC.m
 //  LayZhangDemo
 //
 //  Created by Lay on 2019/6/4.
 //  Copyright © 2019 Zhanglei. All rights reserved.
 //
 
-#import "ConCommandA.h"
+#import "ConCommandC.h"
 
-@implementation ConCommandA
+@implementation ConCommandC
 
 - (void)execute
 {
     if (self.receiver) {
-        [self.receiver doActionA];
+        [self.receiver doActionC];
     }
 }
 

@@ -8,19 +8,7 @@
 
 #import "ConCommandB.h"
 
-@interface ConCommandB()
-@property (nonatomic, strong) CReceiver *receiver;
-@end
-
 @implementation ConCommandB
-
-- (instancetype)initWithReceiver:(CReceiver *)receiver
-{
-    if (self = [super init]) {
-        _receiver = receiver;
-    }
-    return self;
-}
 
 - (void)execute
 {
