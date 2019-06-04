@@ -105,6 +105,14 @@
 		489B22B722A6508A00D67611 /* ConChainA.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22B622A6508A00D67611 /* ConChainA.m */; };
 		489B22BA22A650A200D67611 /* ConChainB.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22B922A650A200D67611 /* ConChainB.m */; };
 		489B22BD22A650B200D67611 /* ConChainC.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22BC22A650B200D67611 /* ConChainC.m */; };
+		489B22C122A661AA00D67611 /* DStateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22C022A661AA00D67611 /* DStateController.m */; };
+		489B22C522A661CC00D67611 /* DThreadContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22C422A661CC00D67611 /* DThreadContext.m */; };
+		489B22C822A661E600D67611 /* DAbsThreadState.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22C722A661E600D67611 /* DAbsThreadState.m */; };
+		489B22CC22A6620E00D67611 /* DThreadStateNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22CB22A6620E00D67611 /* DThreadStateNew.m */; };
+		489B22CF22A6622C00D67611 /* DThreadStateRunnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22CE22A6622C00D67611 /* DThreadStateRunnable.m */; };
+		489B22D222A6623E00D67611 /* DThreadStateRunning.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D122A6623E00D67611 /* DThreadStateRunning.m */; };
+		489B22D522A6626700D67611 /* DThreadStateBlocked.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D422A6626700D67611 /* DThreadStateBlocked.m */; };
+		489B22D822A6627C00D67611 /* DThreadStateDead.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D722A6627C00D67611 /* DThreadStateDead.m */; };
 		489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180B2278366F0001BF5D /* EncodingDemoController.m */; };
 		489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180E2278369D0001BF5D /* CFounctionDemo.m */; };
 		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
@@ -415,6 +423,22 @@
 		489B22B922A650A200D67611 /* ConChainB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConChainB.m; sourceTree = "<group>"; };
 		489B22BB22A650B200D67611 /* ConChainC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConChainC.h; sourceTree = "<group>"; };
 		489B22BC22A650B200D67611 /* ConChainC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConChainC.m; sourceTree = "<group>"; };
+		489B22BF22A661AA00D67611 /* DStateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DStateController.h; sourceTree = "<group>"; };
+		489B22C022A661AA00D67611 /* DStateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DStateController.m; sourceTree = "<group>"; };
+		489B22C322A661CC00D67611 /* DThreadContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadContext.h; sourceTree = "<group>"; };
+		489B22C422A661CC00D67611 /* DThreadContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadContext.m; sourceTree = "<group>"; };
+		489B22C622A661E600D67611 /* DAbsThreadState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAbsThreadState.h; sourceTree = "<group>"; };
+		489B22C722A661E600D67611 /* DAbsThreadState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAbsThreadState.m; sourceTree = "<group>"; };
+		489B22CA22A6620E00D67611 /* DThreadStateNew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateNew.h; sourceTree = "<group>"; };
+		489B22CB22A6620E00D67611 /* DThreadStateNew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateNew.m; sourceTree = "<group>"; };
+		489B22CD22A6622C00D67611 /* DThreadStateRunnable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateRunnable.h; sourceTree = "<group>"; };
+		489B22CE22A6622C00D67611 /* DThreadStateRunnable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateRunnable.m; sourceTree = "<group>"; };
+		489B22D022A6623E00D67611 /* DThreadStateRunning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateRunning.h; sourceTree = "<group>"; };
+		489B22D122A6623E00D67611 /* DThreadStateRunning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateRunning.m; sourceTree = "<group>"; };
+		489B22D322A6626700D67611 /* DThreadStateBlocked.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateBlocked.h; sourceTree = "<group>"; };
+		489B22D422A6626700D67611 /* DThreadStateBlocked.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateBlocked.m; sourceTree = "<group>"; };
+		489B22D622A6627C00D67611 /* DThreadStateDead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateDead.h; sourceTree = "<group>"; };
+		489B22D722A6627C00D67611 /* DThreadStateDead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateDead.m; sourceTree = "<group>"; };
 		489D180A2278366F0001BF5D /* EncodingDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingDemoController.h; sourceTree = "<group>"; };
 		489D180B2278366F0001BF5D /* EncodingDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingDemoController.m; sourceTree = "<group>"; };
 		489D180D2278369D0001BF5D /* CFounctionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFounctionDemo.h; sourceTree = "<group>"; };
@@ -1051,6 +1075,7 @@
 		489B229422A6175700D67611 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				489B22BE22A6618000D67611 /* DState */,
 				489B22A722A64B5300D67611 /* DChain */,
 				489B229522A6176200D67611 /* DCommand */,
 			);
@@ -1110,6 +1135,45 @@
 				489B22BC22A650B200D67611 /* ConChainC.m */,
 			);
 			path = Imp;
+			sourceTree = "<group>";
+		};
+		489B22BE22A6618000D67611 /* DState */ = {
+			isa = PBXGroup;
+			children = (
+				489B22C222A661B000D67611 /* Imp */,
+				489B22BF22A661AA00D67611 /* DStateController.h */,
+				489B22C022A661AA00D67611 /* DStateController.m */,
+			);
+			path = DState;
+			sourceTree = "<group>";
+		};
+		489B22C222A661B000D67611 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				489B22C922A661FC00D67611 /* State */,
+				489B22C322A661CC00D67611 /* DThreadContext.h */,
+				489B22C422A661CC00D67611 /* DThreadContext.m */,
+				489B22C622A661E600D67611 /* DAbsThreadState.h */,
+				489B22C722A661E600D67611 /* DAbsThreadState.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		489B22C922A661FC00D67611 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				489B22CA22A6620E00D67611 /* DThreadStateNew.h */,
+				489B22CB22A6620E00D67611 /* DThreadStateNew.m */,
+				489B22CD22A6622C00D67611 /* DThreadStateRunnable.h */,
+				489B22CE22A6622C00D67611 /* DThreadStateRunnable.m */,
+				489B22D022A6623E00D67611 /* DThreadStateRunning.h */,
+				489B22D122A6623E00D67611 /* DThreadStateRunning.m */,
+				489B22D322A6626700D67611 /* DThreadStateBlocked.h */,
+				489B22D422A6626700D67611 /* DThreadStateBlocked.m */,
+				489B22D622A6627C00D67611 /* DThreadStateDead.h */,
+				489B22D722A6627C00D67611 /* DThreadStateDead.m */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		489D1809227836510001BF5D /* Encoding */ = {
@@ -2068,6 +2132,7 @@
 				48F79A8E1ED67E2C00280CBB /* VPNDemoController.m in Sources */,
 				480ABB1C1ECEE44800C6288E /* URLDemoController.m in Sources */,
 				48BA56AB1EC98097009DB6D0 /* XMLParseController.m in Sources */,
+				489B22D522A6626700D67611 /* DThreadStateBlocked.m in Sources */,
 				48E5587C1EC2F3C800FE30E0 /* ZLViewController.m in Sources */,
 				4845D3081F7A51BE004D884B /* Test.m in Sources */,
 				489B22B122A64ED100D67611 /* ConCommandC.m in Sources */,
@@ -2097,6 +2162,7 @@
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
 				489B22A322A61AE800D67611 /* CReceiver.m in Sources */,
 				48C1526C1F713CB500C577AB /* ScrollableController.m in Sources */,
+				489B22D822A6627C00D67611 /* DThreadStateDead.m in Sources */,
 				484EB1291FF61C32004D0A50 /* GLDrawImageController.m in Sources */,
 				482CE36C1ED928FE00409C04 /* NSProxyDemoController.m in Sources */,
 				48FF3F5422815BA200BF2CC4 /* FirstResController.m in Sources */,
@@ -2118,6 +2184,7 @@
 				48C152831F72697500C577AB /* ZLModuleEntity.m in Sources */,
 				48E558921EC309EB00FE30E0 /* UIButton+ZLEX.m in Sources */,
 				4847B6B21F4C315E00F8A128 /* ZLUIKit.m in Sources */,
+				489B22C522A661CC00D67611 /* DThreadContext.m in Sources */,
 				48B388212032D7A6003EEA67 /* AVFoundation04Controller.m in Sources */,
 				480ABB181ECED05600C6288E /* UIControl+Log.m in Sources */,
 				489B22BA22A650A200D67611 /* ConChainB.m in Sources */,
@@ -2151,6 +2218,7 @@
 				48F45AC01FB574AD0074A275 /* RFAspects.m in Sources */,
 				48BA56B31EC99772009DB6D0 /* IPController.m in Sources */,
 				4847B6A31F4C1C4500F8A128 /* CollectionController.m in Sources */,
+				489B22C122A661AA00D67611 /* DStateController.m in Sources */,
 				480ABB271ED3D0C600C6288E /* LoadInitController.m in Sources */,
 				48D813CD1ED96E040080B5F3 /* ZLSignatureView.m in Sources */,
 				480ABB301ED3DB9900C6288E /* Animal.m in Sources */,
@@ -2158,6 +2226,7 @@
 				48D813D81ED970EA0080B5F3 /* KeyChainDemoController.m in Sources */,
 				48C1528F1F738B0600C577AB /* UserInfo.m in Sources */,
 				482CE3751ED9292F00409C04 /* ProductAProvider.m in Sources */,
+				489B22D222A6623E00D67611 /* DThreadStateRunning.m in Sources */,
 				48D1A74F1FB151E3009FDBAE /* MFObject.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
 				485D1D5921A6B3F4007C1104 /* AQuestion04Controller.m in Sources */,
@@ -2167,11 +2236,13 @@
 				48F45ABE1FB574AD0074A275 /* Todo.m in Sources */,
 				4887B1081FCD59DB00FCA433 /* Car.m in Sources */,
 				48D813DB1ED972450080B5F3 /* KeyChainUtil.m in Sources */,
+				489B22CC22A6620E00D67611 /* DThreadStateNew.m in Sources */,
 				48A549B61FD9438700FDBD18 /* SubObject.m in Sources */,
 				485D1D5621A6B2A9007C1104 /* AQuestion03Controller.m in Sources */,
 				48FD93081FF0AAD400EE4C0A /* URLSessionViewController.m in Sources */,
 				48C1525F1F711ED400C577AB /* ZLTabbar.m in Sources */,
 				484EB0741FF612AD004D0A50 /* GLDrawController.m in Sources */,
+				489B22CF22A6622C00D67611 /* DThreadStateRunnable.m in Sources */,
 				484EB16B2005BA2C004D0A50 /* AVFoundation01Controller.m in Sources */,
 				482CE35E1ED71CB200409C04 /* RuntimeDemoController.m in Sources */,
 				48F79A8A1ED6702B00280CBB /* UIView+QuickNew.m in Sources */,
@@ -2180,6 +2251,7 @@
 				48C152661F711FCB00C577AB /* ZLTabbarController.m in Sources */,
 				480ABAAE1ECAF6EA00C6288E /* TestObject.m in Sources */,
 				48F79A871ED59FEF00280CBB /* MessageModel.m in Sources */,
+				489B22C822A661E600D67611 /* DAbsThreadState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
