@@ -113,6 +113,11 @@
 		489B22D222A6623E00D67611 /* DThreadStateRunning.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D122A6623E00D67611 /* DThreadStateRunning.m */; };
 		489B22D522A6626700D67611 /* DThreadStateBlocked.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D422A6626700D67611 /* DThreadStateBlocked.m */; };
 		489B22D822A6627C00D67611 /* DThreadStateDead.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22D722A6627C00D67611 /* DThreadStateDead.m */; };
+		489B22DD22A7E37900D67611 /* DFlyweightController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22DC22A7E37900D67611 /* DFlyweightController.m */; };
+		489B22E022A7E39500D67611 /* DAbsFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22DF22A7E39500D67611 /* DAbsFlyweight.m */; };
+		489B22E322A7E54A00D67611 /* ConFlywight.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22E222A7E54A00D67611 /* ConFlywight.m */; };
+		489B22E622A7E75F00D67611 /* UnshareConFlywight.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22E522A7E75F00D67611 /* UnshareConFlywight.m */; };
+		489B22E922A7E7BA00D67611 /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 489B22E822A7E7BA00D67611 /* FlyweightFactory.m */; };
 		489D180C2278366F0001BF5D /* EncodingDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180B2278366F0001BF5D /* EncodingDemoController.m */; };
 		489D180F2278369D0001BF5D /* CFounctionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 489D180E2278369D0001BF5D /* CFounctionDemo.m */; };
 		489FF2A420DA50D000543CC8 /* HTML in Resources */ = {isa = PBXBuildFile; fileRef = 489FF2A320DA50D000543CC8 /* HTML */; };
@@ -439,6 +444,16 @@
 		489B22D422A6626700D67611 /* DThreadStateBlocked.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateBlocked.m; sourceTree = "<group>"; };
 		489B22D622A6627C00D67611 /* DThreadStateDead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DThreadStateDead.h; sourceTree = "<group>"; };
 		489B22D722A6627C00D67611 /* DThreadStateDead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DThreadStateDead.m; sourceTree = "<group>"; };
+		489B22DB22A7E37900D67611 /* DFlyweightController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFlyweightController.h; sourceTree = "<group>"; };
+		489B22DC22A7E37900D67611 /* DFlyweightController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFlyweightController.m; sourceTree = "<group>"; };
+		489B22DE22A7E39500D67611 /* DAbsFlyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAbsFlyweight.h; sourceTree = "<group>"; };
+		489B22DF22A7E39500D67611 /* DAbsFlyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAbsFlyweight.m; sourceTree = "<group>"; };
+		489B22E122A7E54A00D67611 /* ConFlywight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConFlywight.h; sourceTree = "<group>"; };
+		489B22E222A7E54A00D67611 /* ConFlywight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConFlywight.m; sourceTree = "<group>"; };
+		489B22E422A7E75F00D67611 /* UnshareConFlywight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnshareConFlywight.h; sourceTree = "<group>"; };
+		489B22E522A7E75F00D67611 /* UnshareConFlywight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnshareConFlywight.m; sourceTree = "<group>"; };
+		489B22E722A7E7BA00D67611 /* FlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
+		489B22E822A7E7BA00D67611 /* FlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
 		489D180A2278366F0001BF5D /* EncodingDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingDemoController.h; sourceTree = "<group>"; };
 		489D180B2278366F0001BF5D /* EncodingDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingDemoController.m; sourceTree = "<group>"; };
 		489D180D2278369D0001BF5D /* CFounctionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFounctionDemo.h; sourceTree = "<group>"; };
@@ -1075,6 +1090,7 @@
 		489B229422A6175700D67611 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				489B22D922A7E35400D67611 /* DFlyweight */,
 				489B22BE22A6618000D67611 /* DState */,
 				489B22A722A64B5300D67611 /* DChain */,
 				489B229522A6176200D67611 /* DCommand */,
@@ -1174,6 +1190,31 @@
 				489B22D722A6627C00D67611 /* DThreadStateDead.m */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		489B22D922A7E35400D67611 /* DFlyweight */ = {
+			isa = PBXGroup;
+			children = (
+				489B22DA22A7E36200D67611 /* Imp */,
+				489B22DB22A7E37900D67611 /* DFlyweightController.h */,
+				489B22DC22A7E37900D67611 /* DFlyweightController.m */,
+			);
+			path = DFlyweight;
+			sourceTree = "<group>";
+		};
+		489B22DA22A7E36200D67611 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				489B22DE22A7E39500D67611 /* DAbsFlyweight.h */,
+				489B22DF22A7E39500D67611 /* DAbsFlyweight.m */,
+				489B22E122A7E54A00D67611 /* ConFlywight.h */,
+				489B22E222A7E54A00D67611 /* ConFlywight.m */,
+				489B22E422A7E75F00D67611 /* UnshareConFlywight.h */,
+				489B22E522A7E75F00D67611 /* UnshareConFlywight.m */,
+				489B22E722A7E7BA00D67611 /* FlyweightFactory.h */,
+				489B22E822A7E7BA00D67611 /* FlyweightFactory.m */,
+			);
+			path = Imp;
 			sourceTree = "<group>";
 		};
 		489D1809227836510001BF5D /* Encoding */ = {
@@ -2085,6 +2126,7 @@
 				48C152631F711F0600C577AB /* BaseController.m in Sources */,
 				489B22A622A61D0E00D67611 /* CInvoker.m in Sources */,
 				48E5587A1EC2F3C800FE30E0 /* UIImage+ZLEX.m in Sources */,
+				489B22E922A7E7BA00D67611 /* FlyweightFactory.m in Sources */,
 				48F79A811ED59E2800280CBB /* CacheHeightTableController.m in Sources */,
 				489B22BD22A650B200D67611 /* ConChainC.m in Sources */,
 				482E490D1FECB0D800D4BD5B /* MockServerController.m in Sources */,
@@ -2097,6 +2139,7 @@
 				4860F2051F4FD041006E1648 /* NSMutableDictionary+Safe.m in Sources */,
 				480ABB231ECEFE1100C6288E /* AFDemoController.m in Sources */,
 				48BA56B91EC9A5C9009DB6D0 /* NSOperationQueueViewController.m in Sources */,
+				489B22E022A7E39500D67611 /* DAbsFlyweight.m in Sources */,
 				48E5587B1EC2F3C800FE30E0 /* UIView+ZLEX.m in Sources */,
 				480ABB431ED3EB3600C6288E /* JSONModel01.m in Sources */,
 				4887B0FE1FCD416600FCA433 /* ReactModel.m in Sources */,
@@ -2157,6 +2200,7 @@
 				48E5589E1EC30B7200FE30E0 /* ZLCVerifyCodeInputView.m in Sources */,
 				48C152691F713B4800C577AB /* ZLNavigationController.m in Sources */,
 				4847B6861F4A796A00F8A128 /* AsyncToSyncController.m in Sources */,
+				489B22DD22A7E37900D67611 /* DFlyweightController.m in Sources */,
 				480ABB011ECD803F00C6288E /* KVOController.m in Sources */,
 				48E558CA1EC31CD500FE30E0 /* ScreenAuotoSizeScale.m in Sources */,
 				480ABB201ECEF81E00C6288E /* AFURLRequestSerialization.m in Sources */,
@@ -2229,8 +2273,10 @@
 				489B22D222A6623E00D67611 /* DThreadStateRunning.m in Sources */,
 				48D1A74F1FB151E3009FDBAE /* MFObject.m in Sources */,
 				482CE35A1ED70D1100409C04 /* SemaphoreDemoController.m in Sources */,
+				489B22E622A7E75F00D67611 /* UnshareConFlywight.m in Sources */,
 				485D1D5921A6B3F4007C1104 /* AQuestion04Controller.m in Sources */,
 				48C152801F72633B00C577AB /* ZLNavigationService.m in Sources */,
+				489B22E322A7E54A00D67611 /* ConFlywight.m in Sources */,
 				4847B6A61F4C1DFB00F8A128 /* BaseCell.m in Sources */,
 				480AACBE1F344DDC00D1BA51 /* CountDownButton.m in Sources */,
 				48F45ABE1FB574AD0074A275 /* Todo.m in Sources */,
