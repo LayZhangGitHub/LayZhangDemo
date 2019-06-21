@@ -10,6 +10,7 @@
 #import "DAbsThreadState.h"
 #import "DThreadContext.h"
 
+static int count = 10;
 @implementation DStateController
 
 - (void)viewDidLoad {
@@ -22,6 +23,16 @@
     [context getCPU];
     [context getCPU];
     [context stop];
+    
+    while (count) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.navigationController pushViewController:[[NSClassFromString(@"DStateController") alloc] init]
+                                                 animated:YES];
+            count--;
+        });
+        
+    }
+    
 }
 
 @end

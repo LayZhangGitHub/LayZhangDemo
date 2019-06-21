@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) UIWebView *webView;
 
+@property (nonatomic, strong) UIImageView *testImage;
+
 @end
 
 @implementation MockServerController
@@ -25,6 +27,17 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self request];
+    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIImage *image = [self gimage];
+        self.testImage = [UIImageView new];
+        self.testImage.frame = CGRectMake(180, 150, 100, 100);
+        self.testImage.contentMode = UIViewContentModeScaleAspectFit;
+        self.testImage.clipsToBounds = YES;
+        self.testImage.backgroundColor = [UIColor redColor];
+        [self.view addSubview:self.testImage];
+        [self.testImage setImage:image];
     });
 }
 
@@ -39,6 +52,16 @@
 //    }];
 }
 
+- (UIImage *)gimage
+{
+    UIGraphicsBeginImageContextWithOptions(self.webView.bounds.size, YES, 0);
+    self.webView.layer.backgroundColor = [UIColor clearColor].CGColor;
+    [self.webView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return viewImage;
+}
+
 - (void)request {
     
     NSString *url = @"http://www.baidu.com";
@@ -48,6 +71,10 @@
     [NSURLConnection connectionWithRequest:request delegate:self];
 //    NSURLConnection *con = [NSURLConnection connectionWithRequest:connectionRequest
 //                                                         delegate:self];
+    
+//    [self.webView.layer renderInContext:nil];
+    
+   
     
 //    NSData *data = [NSURLConnection sendSynchronousRequest:request
 //                                         returningResponse:&response
@@ -80,9 +107,9 @@
 //
 //    [dataTask resume];
     
-//    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 100, 100, 300)];
-//    [self.view addSubview:self.webView];
-//    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(100, 900, 100, 1000)];
+    [self.view addSubview:self.webView];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
     
 }
 
